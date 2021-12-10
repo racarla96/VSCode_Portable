@@ -1,0 +1,9 @@
+[2021-12-10 11:16:09.183] [main] [info] update#setState idle
+[2021-12-10 11:16:09.224] [main] [info] ExtensionHostStarterWorker created
+[2021-12-10 11:16:09.809] [main] [info] Starting extension host with pid 820 (fork() took 9 ms).
+[2021-12-10 11:16:39.183] [main] [info] update#setState checking for updates
+[2021-12-10 11:16:39.233] [main] [info] update#setState idle
+[2021-12-10 11:24:33.348] [main] [info] Extension host with pid 820 exited with code: 0, signal: null.
+[2021-12-10 11:24:34.037] [main] [info] Starting extension host with pid 14472 (fork() took 8 ms).
+[2021-12-10 11:48:45.546] [main] [info] Waiting for extension host with pid 14472 to exit.
+[2021-12-10 11:48:45.567] [main] [info] Extension host with pid 14472 exited with code: 0, signal: null.

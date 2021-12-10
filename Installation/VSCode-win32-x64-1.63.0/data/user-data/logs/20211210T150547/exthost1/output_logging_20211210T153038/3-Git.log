@@ -1,0 +1,334 @@
+La validación encontró Git en: C:\Program Files\Git\cmd\git.exe
+Usando GIT 2.29.2.windows.3 desde C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\Users\racarla1\Documents\Git\VSCode_Portable
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/platformio.ini
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\platformio.ini
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/DRV_DC_Motor.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\DRV_DC_Motor.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/Abstract_Motor_Driver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\Abstract_Motor_Driver.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractMotorDriver.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git check-ignore -v -z --stdin
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/DC_Motor_Plant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\DC_Motor_Plant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/DC_Motor_Plant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\DC_Motor_Plant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/DCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\DCMotorPlant.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/ImplDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\ImplDCMotorPlant.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/ImplDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\ImplDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/.vscode/c_cpp_properties.json
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\.vscode\c_cpp_properties.json
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/.vscode/c_cpp_properties.json
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\.vscode\c_cpp_properties.json
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/.vscode/c_cpp_properties.json
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\.vscode\c_cpp_properties.json
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/ST
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\ST
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STH_
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STH_
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/speed_control.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\speed_control.cpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/STRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\STRobot.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/SLHRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\SLHRobot.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractCommon.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractCommon.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorPlant.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorPlant.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/AbstractDCMotorDriver.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\AbstractDCMotorDriver.h
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/SLHRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\SLHRobot.h
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/lib/Robot_Library/src
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\lib\Robot_Library\src
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/SLHRobot.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\SLHRobot.h

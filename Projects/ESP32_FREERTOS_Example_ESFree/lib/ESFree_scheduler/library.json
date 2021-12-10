@@ -1,0 +1,18 @@
+{
+    "name": "ESFree for FreeRTOS and ESP32 (ESP-IDF)",
+    "keywords": "ESFree, FreeRTOS, esp32, esp-idf, espressif",
+    "description": "Library for work with ESFree and FreeRTOS.",
+    "authors": {
+        "name": "Rafael Carbonell",
+        "email": "racarla1@inf.upv.es",
+        "url": "",
+        "maintainer": true
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "version": "1.0.0",
+    "frameworks": "espidf",
+    "platforms": "espressif32"
+}

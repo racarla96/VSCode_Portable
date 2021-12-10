@@ -1,8 +1,0 @@
-[2021-12-08 19:22:47.098] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
-[2021-12-08 19:25:21.501] [sharedprocess] [info] Installing extension: ms-ceintl.vscode-language-pack-es
-[2021-12-08 19:25:22.615] [sharedprocess] [info] Downloaded extension: ms-ceintl.vscode-language-pack-es c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-ceintl.vscode-language-pack-es-1.62.4
-[2021-12-08 19:25:22.917] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.163d6817-7892-4194-be75-e4b4e4dd9ef5: ms-ceintl.vscode-language-pack-es
-[2021-12-08 19:25:22.939] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-ceintl.vscode-language-pack-es-1.62.4
-[2021-12-08 19:25:22.946] [sharedprocess] [info] Extracting completed. ms-ceintl.vscode-language-pack-es
-[2021-12-08 19:25:22.947] [sharedprocess] [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-es
-[2021-12-08 19:25:23.000] [sharedprocess] [info] Extension installed successfully: ms-ceintl.vscode-language-pack-es

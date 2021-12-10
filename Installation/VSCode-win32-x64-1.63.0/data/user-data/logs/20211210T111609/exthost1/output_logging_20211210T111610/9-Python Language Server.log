@@ -1,0 +1,11 @@
+[Info  - 11:16:12] Pylance language server 2021.12.1 (pyright fcab8004) starting
+[Info  - 11:16:12] Server root directory: c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.1\dist
+[Info  - 11:16:12] No pyproject.toml file found.
+[Info  - 11:16:12] Setting pythonPath for service "<default>": "C:\ProgramData\Miniconda3\python.exe"
+[Warn  - 11:16:12] stubPath typings is not a valid directory.
+[Info  - 11:16:12] Assuming Python version 3.9
+[Info  - 11:16:12] Assuming Python platform Windows
+[Info  - 11:16:12] Searching for source files
+[Info  - 11:16:12] No source files found.
+[Info  - 11:16:12] Background analysis(1) root directory: c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.1\dist
+[Info  - 11:16:12] Background analysis(1) started

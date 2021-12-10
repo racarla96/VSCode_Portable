@@ -1,0 +1,8 @@
+La validación encontró Git en: C:\Program Files\Git\cmd\git.exe
+Usando GIT 2.29.2.windows.3 desde C:\Program Files\Git\cmd\git.exe
+Opening repository for path='c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Example_Periodic_Task\src' failed; ex=spawn C:\Program Files\Git\cmd\git.exe ENOENT {
+  "gitErrorCode": "NotAGitRepository"
+}Error: spawn C:\Program Files\Git\cmd\git.exe ENOENT
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)
+	at onErrorNT (internal/child_process.js:465:16)
+	at processTicksAndRejections (internal/process/task_queues.js:80:21)

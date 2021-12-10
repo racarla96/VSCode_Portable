@@ -1,0 +1,13 @@
+La validación encontró Git en: C:\Program Files\Git\cmd\git.exe
+Usando GIT 2.29.2.windows.3 desde C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\Users\racarla1\Documents\Git\NEXUS_4WD_MECANUM_WHEEL_MOBILE
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :Real_Experiments/TEST_1_30_11_2021/Arduino/TEST_1_Robot/Robot_Mecanum_dual_drv.h
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\NEXUS_4WD_MECANUM_WHEEL_MOBILE\Real_Experiments\TEST_1_30_11_2021\Arduino\TEST_1_Robot\Robot_Mecanum_dual_drv.h

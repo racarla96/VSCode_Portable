@@ -1,0 +1,330 @@
+Jupyter Extension Version: 2021.11.1001550889.
+Python Extension Verison: 2021.12.1559732655.
+Info 11:16:10: Experimentation service retrieved: [object Object]
+User belongs to experiment group 'jupyterTest'
+User belongs to experiment group 'jupyterEnhancedDataViewer'
+Info 11:16:10: ZMQ install verified.
+Info 11:16:10: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 11:16:11: Setting setActiveController for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:11: KernelProvider switched kernel to id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 11:16:11: Starting Notebook in kernel.ts id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 11:16:11: Creating raw notebook for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:11: Getting preferred kernel for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:11: Computing working directory c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:11: Starting raw kernel base (Python 3.9.5)
+Info 11:16:11: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 11:16:11: IPykernel found previously in this enviornment C:\ProgramData\Miniconda3\python.exe
+Info 11:16:11: Kernel launching with ports 9000,9001,9002,9003,9004. Start port is 9000
+Info 11:16:11: Launching kernel daemon for Python 3.9.5 64-bit ('base': conda) # C:\ProgramData\Miniconda3\python.exe
+Info 11:16:11: Creating controller for jupyter-notebook with interpreter C:\ProgramData\Miniconda3\python.exe
+Info 11:16:11: Find preferred kernel for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.5"}} & preferred interpreter C:\ProgramData\Miniconda3\python.exe
+Info 11:16:11: findKernel found base (Python 3.9.5)
+Info 11:16:11: PreferredConnection: .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher found for NotebookDocument: c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:11: TargetController found ID: .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher for document c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:11: Setting controller affinity for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 11:16:11: Registering dummy command feature
+Info 11:16:11: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m pip list
+> C:\ProgramData\Miniconda3\python.exe -m pip list
+Info 11:16:11: Creating daemon process for C:\ProgramData\Miniconda3\python.exe with env variables count 77
+Info 11:16:11: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 11:16:11: Starting kernel from scratch
+Warn 11:16:11: StdErr from Kernel Process C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+
+Error 11:16:11: Kernel died [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+} C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+
+Error 11:16:11: KernelProcess Exit Exit - 1, C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+ [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:11: Disposing kernel process due to an error [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:11: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+
+Info 11:16:11: Dispose Kernel process
+Info 11:16:11: kill daemon
+Error 11:16:11: Failed to connect raw kernel session: Error: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+Error 11:16:11: failed to create INotebook in kernel, UI Disabled = true [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:11: failed to start INotebook in kernel, UI Disabled = true [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Info 11:16:15: Execute Cells request 1, 3, 5, 6, 8, 10, 11
+Info 11:16:15: Execute Cell 1 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Starting Notebook in kernel.ts id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 11:16:15: Creating raw notebook for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Getting preferred kernel for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Computing working directory c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Execute Cell 3 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Execute Cell 5 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Execute Cell 6 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Execute Cell 8 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Execute Cell 10 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Execute Cell 11 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:15: Starting raw kernel base (Python 3.9.5)
+Info 11:16:15: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 11:16:15: IPykernel found previously in this enviornment C:\ProgramData\Miniconda3\python.exe
+Info 11:16:15: Kernel launching with ports 9008,9009,9010,9011,9012. Start port is 9000
+Info 11:16:15: Launching kernel daemon for Python 3.9.5 64-bit ('base': conda) # C:\ProgramData\Miniconda3\python.exe
+Info 11:16:15: Creating daemon process for C:\ProgramData\Miniconda3\python.exe with env variables count 77
+Info 11:16:15: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 11:16:15: Starting kernel from scratch
+Warn 11:16:15: StdErr from Kernel Process C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+
+Error 11:16:15: Kernel died [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+} C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+
+Error 11:16:15: KernelProcess Exit Exit - 1, C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+ [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:15: Disposing kernel process due to an error [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:15: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher
+
+Info 11:16:15: Dispose Kernel process
+Info 11:16:15: kill daemon
+Error 11:16:15: Failed to connect raw kernel session: Error: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+Error 11:16:15: failed to create INotebook in kernel, UI Disabled = false [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:15: failed to start INotebook in kernel, UI Disabled = false [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Error 11:16:15: Failed to execute cells in CellExecutionQueue [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Info 11:16:15: Cancel pending cells
+Info 11:16:15: Process Execution: > C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"
+> C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"
+Info 11:16:15: Cell 1 executed with state Idle
+Info 11:16:15: Cell 3 executed with state Idle
+Info 11:16:15: Cell 5 executed with state Idle
+Info 11:16:15: Cell 6 executed with state Idle
+Info 11:16:15: Cell 8 executed with state Idle
+Info 11:16:15: Cell 10 executed with state Idle
+Info 11:16:15: Cell 11 executed with state Idle
+Info 11:16:15: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 11:16:15: Process Execution: > C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"
+> C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"
+Info 11:16:17: Got result from python installer for ipykernel, result = 2
+Info 11:16:49: Got result from python installer for ipykernel, result = 0
+Info 11:16:49: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m pip list
+> C:\ProgramData\Miniconda3\python.exe -m pip list
+Info 11:16:49: Process Execution: > C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"
+> C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"
+Error 11:16:50: DataScience Error [o [Error]: The kernel died. View Jupyter [log](command:jupyter.viewOutput) for further details. 
+Error: C:\ProgramData\Miniconda3\python.exe: No module named ipykernel_launcher....
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:1023351
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:695951
+	at c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:696169
+	at Immediate._onImmediate (c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-toolsai.jupyter-2021.11.1001550889\out\client\extension.js:66:697734)
+	at processImmediate (internal/timers.js:461:21)] {
+  category: 'kerneldied',
+  errorMessage: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher. \n',
+  stdErr: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n',
+  exitCode: 1,
+  reason: 'C:\\ProgramData\\Miniconda3\\python.exe: No module named ipykernel_launcher\r\n'
+}
+Info 11:16:53: Execute Cells request 1, 3, 5, 6, 8, 10, 11
+Info 11:16:53: Execute Cell 1 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Starting Notebook in kernel.ts id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 11:16:53: Creating raw notebook for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Getting preferred kernel for c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Computing working directory c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Execute Cell 3 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Execute Cell 5 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Execute Cell 6 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Execute Cell 8 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Execute Cell 10 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Execute Cell 11 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:16:53: Starting raw kernel base (Python 3.9.5)
+Info 11:16:53: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 11:16:53: IPykernel found previously in this enviornment C:\ProgramData\Miniconda3\python.exe
+Info 11:16:53: Kernel launching with ports 9016,9017,9018,9019,9020. Start port is 9000
+Info 11:16:53: Launching kernel daemon for Python 3.9.5 64-bit ('base': conda) # C:\ProgramData\Miniconda3\python.exe
+Info 11:16:53: Creating daemon process for C:\ProgramData\Miniconda3\python.exe with env variables count 77
+Info 11:16:53: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 11:16:53: Starting kernel from scratch
+Warn 11:16:54: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+
+Warn 11:16:54: StdErr from Kernel Process   warn(
+
+Warn 11:16:54: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use '62f84a95-019d-4ae4-807f-fc5e6e132451' instead of 'b"62f84a95-019d-4ae4-807f-fc5e6e132451"'.
+
+Warn 11:16:54: StdErr from Kernel Process   warn(
+
+Info 11:16:54: Raw session started and connected
+Started kernel base (Python 3.9.5)
+Info 11:16:54: Finished connecting 0a43b429-7ce6-4c23-8216-956811874438
+Info 11:16:54: UpdateWorkingDirectoryAndPath in Kernel
+Info 11:16:54: changeDirectoryIfPossible
+Info 11:16:54: Executing (status idle) silently Code = import os\nimport sys\n%cd "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\
+Info 11:16:54: Executing silently Code (completed) = import os\nimport sys\n%cd "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\
+Info 11:16:54: Executing (status idle) silently Code = %config Completer.use_jedi = False
+Info 11:16:54: Executing silently Code (completed) = %config Completer.use_jedi = False
+Info 11:16:54: Executing (status idle) silently Code = %config InlineBackend.figure_formats = ['png']
+Info 11:16:54: Executing silently Code (completed) = %config InlineBackend.figure_formats = ['png']
+Info 11:16:54: Executing (status idle) silently Code = import sys\nprint(sys.executable)
+Info 11:16:54: Executing silently Code (completed) = import sys\nprint(sys.executable)
+Info 11:16:54: Waiting for idle on (kernel): 7c3f2a43-8099-46a7-97b1-eb22ab7eb7d8 -> idle
+Info 11:16:54: Finished waiting for idle on (kernel): 7c3f2a43-8099-46a7-97b1-eb22ab7eb7d8 -> idle
+Info 11:16:54: IPyWidgetScriptSource.initialize
+Info 11:16:54: Cancel all remaining cells true || Error
+Info 11:16:54: Cancel pending cells
+Info 11:16:54: Cell 1 executed with state Error
+Info 11:16:54: Cell 3 executed with state Idle
+Info 11:16:54: Cell 5 executed with state Idle
+Info 11:16:54: Cell 6 executed with state Idle
+Info 11:16:54: Cell 8 executed with state Idle
+Info 11:16:54: Cell 10 executed with state Idle
+Info 11:16:54: Cell 11 executed with state Idle
+Info 11:18:22: Execute Cells request 1, 3, 5, 6, 8, 10, 11
+Info 11:18:22: Execute Cell 1 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:22: Execute Cell 3 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:22: Execute Cell 5 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:22: Execute Cell 6 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:22: Execute Cell 8 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:22: Execute Cell 10 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:22: Execute Cell 11 c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:18:23: Cell 1 executed with state Success
+Warn 11:18:25: StdErr from Kernel Process luatex: security risk: running with elevated privileges
+
+Info 11:18:53: Cell 3 executed with state Success
+Info 11:18:53: Cell 5 executed with state Success
+Info 11:19:08: Cell 6 executed with state Success
+Info 11:19:08: Cell 8 executed with state Success
+Info 11:19:08: Cell 10 executed with state Success
+Info 11:19:08: Cell 11 executed with state Idle
+Info 11:19:26: Disposing kernel .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher for notebook c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb due to selection of another kernel or closing of the notebook
+Info 11:19:26: Dispose kernel file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ButterworthFilter/Design/ButterworthFilter.ipynb
+Info 11:19:26: Dispose Kernel process
+Info 11:19:26: kill daemon
+Info 11:19:26: Notebook Closed c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\ButterworthFilter.ipynb
+Info 11:24:33: Shutting down notebooks for 0a43b429-7ce6-4c23-8216-956811874438
+Info 11:24:33: Disposing HostJupyterExecution 981f5dfd-2ba8-4986-ab44-08c1046d8375
+Info 11:24:33: Disposing super HostJupyterExecution 981f5dfd-2ba8-4986-ab44-08c1046d8375
+Info 11:24:33: Disposing HostJupyterExecution 981f5dfd-2ba8-4986-ab44-08c1046d8375
+Info 11:24:33: Finished disposing HostJupyterExecution  981f5dfd-2ba8-4986-ab44-08c1046d8375
+Info 11:24:33: Cleaning up server cache 981f5dfd-2ba8-4986-ab44-08c1046d8375
+Info 11:24:33: Finished disposing HostJupyterExecution  981f5dfd-2ba8-4986-ab44-08c1046d8375

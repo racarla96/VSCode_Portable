@@ -1,0 +1,82 @@
+[2021-12-10 12:07:56.931] [renderer1] [error] [Extension Host] (node:2436) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `Code --trace-deprecation ...` to show where the warning was created)
+[2021-12-10 12:07:59.165] [renderer1] [error] Bad progress location: platformio-ide.projectTasks: Error: Bad progress location: platformio-ide.projectTasks
+    at r.withProgress (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1720:31725)
+    at b.$startProgress (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1499:29066)
+    at u._doInvokeHandler (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1506:13116)
+    at u._invokeHandler (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1506:12800)
+    at u._receiveRequest (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1506:11462)
+    at u._receiveOneMessage (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1506:10140)
+    at vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:1506:8236
+    at a.fire (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:69:1712)
+    at o.fire (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:85:19631)
+    at d._receiveMessage (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:85:24212)
+    at vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:85:21746
+    at a.fire (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:69:1712)
+    at s.acceptChunk (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:85:16459)
+    at vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:85:15589
+    at Socket.O (vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/out/vs/workbench/workbench.desktop.main.js:2984:8477)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-12-10 12:08:03.086] [renderer1] [error] [Extension Host] Could not fetch project targets for 'esp32dev' environment => Error: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "C:\Users\racarla1\.platformio\penv\lib\site-packages\platformio\project\helpers.py", line 124, in load_project_ide_data
+    result.update(_load_project_ide_data(project_dir, missed_env_names))
+  File "C:\Users\racarla1\.platformio\penv\lib\site-packages\platformio\project\helpers.py", line 144, in _load_project_ide_data
+    raise exception.PlatformioException(result.output)
+platformio.exception.PlatformioException: Processing esp32dev (platform: espressif32; board: esp32dev; framework: espidf)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (3.4.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (esp-prog) External (esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-espidf 3.40301.0 (4.3.1) 
+ - tool-cmake 3.16.4 
+ - tool-esptoolpy 1.30100.210531 (3.1.0) 
+ - tool-idf 1.0.1 
+ - tool-mconf 1.4060000.20190628 (406.0.0) 
+ - tool-ninja 1.9.0 
+ - toolchain-esp32ulp 1.22851.191205 (2.28.51) 
+ - toolchain-riscv32-esp 8.4.0+2021r1 
+ - toolchain-xtensa-esp32 8.4.0+2021r1 
+ - toolchain-xtensa-esp32s2 8.4.0+2021r1
+Reading CMake configuration...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_1/sdkconfig.esp32dev
+-- Could NOT find Perl (missing: PERL_EXECUTABLE) 
+-- App "ESP32_FREERTOS_Example_1" version: 4b2bd32-dirty
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom/esp32/ld/esp32.rom.newlib-time.ld
+-- Adding linker script C:/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_1/.pio/build/esp32dev/esp-idf/esp32/esp32_out.ld
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp32/ld/esp32.project.ld.in
+-- Adding linker script C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp32/ld/esp32.peripherals.ld
+-- Components: __pio_env app_trace app_update asio bootloader bootloader_support bt cbor cmock coap console cxx driver efuse esp-tls esp32 esp_adc_cal esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_ipc esp_local_ctrl esp_netif esp_pm esp_ringbuf esp_rom esp_serial_slave_link esp_system esp_timer esp_websocket_client esp_wifi espcoredump esptool_py expat fatfs freemodbus freertos hal heap idf_test jsmn json libsodium log lwip mbedtls mdns mqtt newlib nghttp nvs_flash openssl partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs src tcp_transport tcpip_adapter tinyusb ulp unity vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_1/.pio/build/esp32dev/__pio_env C:/Users/racarla1/.platformio/packages/framework-espidf/components/app_trace C:/Users/racarla1/.platformio/packages/framework-espidf/components/app_update C:/Users/racarla1/.platformio/packages/framework-espidf/components/asio C:/Users/racarla1/.platformio/packages/framework-espidf/components/bootloader C:/Users/racarla1/.platformio/packages/framework-espidf/components/bootloader_support C:/Users/racarla1/.platformio/packages/framework-espidf/components/bt C:/Users/racarla1/.platformio/packages/framework-espidf/components/cbor C:/Users/racarla1/.platformio/packages/framework-espidf/components/cmock C:/Users/racarla1/.platformio/packages/framework-espidf/components/coap C:/Users/racarla1/.platformio/packages/framework-espidf/components/console C:/Users/racarla1/.platformio/packages/framework-espidf/components/cxx C:/Users/racarla1/.platformio/packages/framework-espidf/components/driver C:/Users/racarla1/.platformio/packages/framework-espidf/components/efuse C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp-tls C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp32 C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_adc_cal C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_common C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_eth C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_event C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_gdbstub C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_hid C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_http_client C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_http_server C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_https_ota C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_https_server C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_hw_support C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_ipc C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_local_ctrl C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_netif C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_pm C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_ringbuf C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_rom C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_serial_slave_link C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_system C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_timer C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_websocket_client C:/Users/racarla1/.platformio/packages/framework-espidf/components/esp_wifi C:/Users/racarla1/.platformio/packages/framework-espidf/components/espcoredump C:/Users/racarla1/.platformio/packages/framework-espidf/components/esptool_py C:/Users/racarla1/.platformio/packages/framework-espidf/components/expat C:/Users/racarla1/.platformio/packages/framework-espidf/components/fatfs C:/Users/racarla1/.platformio/packages/framework-espidf/components/freemodbus C:/Users/racarla1/.platformio/packages/framework-espidf/components/freertos C:/Users/racarla1/.platformio/packages/framework-espidf/components/hal C:/Users/racarla1/.platformio/packages/framework-espidf/components/heap C:/Users/racarla1/.platformio/packages/framework-espidf/components/idf_test C:/Users/racarla1/.platformio/packages/framework-espidf/components/jsmn C:/Users/racarla1/.platformio/packages/framework-espidf/components/json C:/Users/racarla1/.platformio/packages/framework-espidf/components/libsodium C:/Users/racarla1/.platformio/packages/framework-espidf/components/log C:/Users/racarla1/.platformio/packages/framework-espidf/components/lwip C:/Users/racarla1/.platformio/packages/framework-espidf/components/mbedtls C:/Users/racarla1/.platformio/packages/framework-espidf/components/mdns C:/Users/racarla1/.platformio/packages/framework-espidf/components/mqtt C:/Users/racarla1/.platformio/packages/framework-espidf/components/newlib C:/Users/racarla1/.platformio/packages/framework-espidf/components/nghttp C:/Users/racarla1/.platformio/packages/framework-espidf/components/nvs_flash C:/Users/racarla1/.platformio/packages/framework-espidf/components/openssl C:/Users/racarla1/.platformio/packages/framework-espidf/components/partition_table C:/Users/racarla1/.platformio/packages/framework-espidf/components/perfmon C:/Users/racarla1/.platformio/packages/framework-espidf/components/protobuf-c C:/Users/racarla1/.platformio/packages/framework-espidf/components/protocomm C:/Users/racarla1/.platformio/packages/framework-espidf/components/pthread C:/Users/racarla1/.platformio/packages/framework-espidf/components/sdmmc C:/Users/racarla1/.platformio/packages/framework-espidf/components/soc C:/Users/racarla1/.platformio/packages/framework-espidf/components/spi_flash C:/Users/racarla1/.platformio/packages/framework-espidf/components/spiffs C:/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_1/src C:/Users/racarla1/.platformio/packages/framework-espidf/components/tcp_transport C:/Users/racarla1/.platformio/packages/framework-espidf/components/tcpip_adapter C:/Users/racarla1/.platformio/packages/framework-espidf/components/tinyusb C:/Users/racarla1/.platformio/packages/framework-espidf/components/ulp C:/Users/racarla1/.platformio/packages/framework-espidf/components/unity C:/Users/racarla1/.platformio/packages/framework-espidf/components/vfs C:/Users/racarla1/.platformio/packages/framework-espidf/components/wear_levelling C:/Users/racarla1/.platformio/packages/framework-espidf/components/wifi_provisioning C:/Users/racarla1/.platformio/packages/framework-espidf/components/wpa_supplicant C:/Users/racarla1/.platformio/packages/framework-espidf/components/xtensa
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_1/.pio/build/esp32dev/CMakeFiles/CMakeOutput.log".
+
+fatal: not a git repository (or any of the parent directories): .git
+CMake Error at C:/Users/racarla1/.platformio/packages/framework-espidf/tools/cmake/component.cmake:475 (add_library):
+  add_library cannot create target "__idf_src" because another target with
+  the same name already exists.  The existing target is a static library
+  created in source directory
+  "C:/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_1/src".
+  See documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  src/CMakeLists.txt:8 (idf_component_register)
+
+
+
+========================== [FAILED] Took 3.65 seconds ==========================
+
+

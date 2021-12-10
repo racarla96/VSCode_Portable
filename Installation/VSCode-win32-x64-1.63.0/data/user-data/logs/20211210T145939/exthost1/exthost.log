@@ -1,0 +1,22 @@
+[2021-12-10 14:59:40.737] [exthost] [info] Extension host with pid 1248 started
+[2021-12-10 14:59:40.737] [exthost] [info] Skipping acquiring lock for c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\e8f1fccb8a89a1a30dd4d9c4da087b6b.
+[2021-12-10 14:59:40.846] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2021-12-10 14:59:40.856] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2021-12-10 14:59:40.983] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: false, activationEvent: 'onLanguage:cpp'
+[2021-12-10 14:59:41.015] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-10 14:59:41.018] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-10 14:59:41.187] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2021-12-10 14:59:41.201] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-10 14:59:41.206] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2021-12-10 14:59:41.571] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-10 14:59:41.574] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-10 14:59:41.579] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-10 14:59:41.592] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-10 14:59:41.629] [exthost] [info] Eager extensions activated
+[2021-12-10 14:59:41.631] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2021-12-10 14:59:41.660] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-10 14:59:41.667] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-10 14:59:41.670] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-10 14:59:41.677] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2021-12-10 15:01:14.422] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-12-10 15:01:14.447] [exthost] [info] Extension host with pid 1248 exiting with code 0

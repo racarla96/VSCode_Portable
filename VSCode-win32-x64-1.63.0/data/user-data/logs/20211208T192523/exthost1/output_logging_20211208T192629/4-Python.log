@@ -1,8 +1,0 @@
-> conda info --json
-> ~\AppData\Local\Programs\Python\Python39\python.exe ~\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.python-2021.11.1422169775\pythonFiles\interpreterInfo.py
-> "C:\Program Files\Inkscape\bin\python.exe" ~\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.python-2021.11.1422169775\pythonFiles\interpreterInfo.py
-Python interpreter path: ~\AppData\Local\Programs\Python\Python39\python.exe
-Starting Pylance language server.
-> conda --version
-Error 2021-12-08 19:30:18: Error while running worker[Worker 2]. undefined
-Error 2021-12-08 19:30:18: Error while running worker[Worker 1]. undefined

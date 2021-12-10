@@ -1,0 +1,37 @@
+[2021-12-10 11:16:12.218] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-10 11:24:34.182] [sharedprocess] [info] Starting worker process with pid 10244 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 11:33:48.971] [sharedprocess] [info] Installing extension: ms-vscode.cpptools-extension-pack
+[2021-12-10 11:33:51.042] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-wsl
+[2021-12-10 11:33:51.042] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-containers
+[2021-12-10 11:33:51.042] [sharedprocess] [info] Installing extension: ms-vscode-remote.remote-ssh
+[2021-12-10 11:33:51.043] [sharedprocess] [info] Extension is already requested to install ms-vscode-remote.remote-ssh
+[2021-12-10 11:33:51.043] [sharedprocess] [info] Extension is already requested to install ms-vscode-remote.remote-containers
+[2021-12-10 11:33:51.043] [sharedprocess] [info] Extension is already requested to install ms-vscode-remote.remote-ssh
+[2021-12-10 11:33:52.134] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-ssh c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ms-vscode-remote.remote-ssh-0.68.0
+[2021-12-10 11:33:52.229] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\.5be42666-0cdc-4c08-8a2d-a1caf897e3e5: ms-vscode-remote.remote-ssh
+[2021-12-10 11:33:52.238] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode-remote.remote-ssh-0.68.0
+[2021-12-10 11:33:52.244] [sharedprocess] [info] Extracting completed. ms-vscode-remote.remote-ssh
+[2021-12-10 11:33:52.346] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-containers c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ms-vscode-remote.remote-containers-0.209.3
+[2021-12-10 11:33:52.347] [sharedprocess] [info] Downloaded extension: ms-vscode-remote.remote-wsl c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ms-vscode-remote.remote-wsl-0.63.4
+[2021-12-10 11:33:52.435] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\.49c73256-5f69-4c3d-adcf-720d1f11c602: ms-vscode-remote.remote-wsl
+[2021-12-10 11:33:52.445] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode-remote.remote-wsl-0.63.4
+[2021-12-10 11:33:52.451] [sharedprocess] [info] Extracting completed. ms-vscode-remote.remote-wsl
+[2021-12-10 11:33:52.853] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\.2259c928-7352-40c9-aa3b-b474cae2cda9: ms-vscode-remote.remote-containers
+[2021-12-10 11:33:52.865] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode-remote.remote-containers-0.209.3
+[2021-12-10 11:33:52.870] [sharedprocess] [info] Extracting completed. ms-vscode-remote.remote-containers
+[2021-12-10 11:33:53.781] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools-extension-pack c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ms-vscode.cpptools-extension-pack-1.1.0
+[2021-12-10 11:33:53.795] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\.edd26886-7615-4f32-8d5c-f4fbd1a89c5c: ms-vscode.cpptools-extension-pack
+[2021-12-10 11:33:53.802] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode.cpptools-extension-pack-1.1.0
+[2021-12-10 11:33:53.807] [sharedprocess] [info] Extracting completed. ms-vscode.cpptools-extension-pack
+[2021-12-10 11:33:53.809] [sharedprocess] [info] Extension installed successfully: ms-vscode-remote.remote-ssh
+[2021-12-10 11:33:53.809] [sharedprocess] [info] Extension installed successfully: ms-vscode-remote.remote-wsl
+[2021-12-10 11:33:53.809] [sharedprocess] [info] Extension installed successfully: ms-vscode-remote.remote-containers
+[2021-12-10 11:33:53.809] [sharedprocess] [info] Extension installed successfully: ms-vscode.cpptools-extension-pack
+[2021-12-10 11:33:57.509] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-wsl
+[2021-12-10 11:33:57.821] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-wsl
+[2021-12-10 11:34:04.615] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-containers
+[2021-12-10 11:34:04.864] [sharedprocess] [info] Detected extension removed from another source ms-vscode-remote.remote-containers
+[2021-12-10 11:34:04.926] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-containers
+[2021-12-10 11:34:06.555] [sharedprocess] [info] Uninstalling extension: ms-vscode-remote.remote-ssh
+[2021-12-10 11:34:06.799] [sharedprocess] [info] Detected extension removed from another source ms-vscode-remote.remote-ssh
+[2021-12-10 11:34:06.889] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode-remote.remote-ssh

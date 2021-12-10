@@ -1,0 +1,14 @@
+[2021-12-10 13:18:39.863] [main] [info] update#setState idle
+[2021-12-10 13:18:39.940] [main] [info] ExtensionHostStarterWorker created
+[2021-12-10 13:18:40.730] [main] [error] vscode-file: Refused to load resource c:\Users\racarla1\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\resources\app\extensions\theme-seti\icons\seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/resources/app/extensions/theme-seti/icons/seti.woff)
+[2021-12-10 13:18:41.085] [main] [info] Starting extension host with pid 13604 (fork() took 10 ms).
+[2021-12-10 13:19:09.870] [main] [info] update#setState checking for updates
+[2021-12-10 13:19:09.922] [main] [info] update#setState idle
+[2021-12-10 13:19:24.495] [main] [info] Extension host with pid 13604 exited with code: 0, signal: null.
+[2021-12-10 13:19:25.121] [main] [info] Starting extension host with pid 2024 (fork() took 8 ms).
+[2021-12-10 13:22:42.105] [main] [info] Extension host with pid 2024 exited with code: 0, signal: null.
+[2021-12-10 13:22:42.772] [main] [info] Starting extension host with pid 10652 (fork() took 8 ms).
+[2021-12-10 14:19:09.903] [main] [info] update#setState checking for updates
+[2021-12-10 14:19:10.220] [main] [info] update#setState idle
+[2021-12-10 14:30:23.627] [main] [info] Waiting for extension host with pid 10652 to exit.
+[2021-12-10 14:30:23.656] [main] [info] Extension host with pid 10652 exited with code: 0, signal: null.

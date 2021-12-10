@@ -1,0 +1,8 @@
+[2021-12-10 15:01:44.460] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-10 15:01:56.610] [sharedprocess] [info] Starting worker process with pid 8424 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 15:03:30.484] [sharedprocess] [info] Installing extension: daniellin.auto-header
+[2021-12-10 15:03:32.833] [sharedprocess] [info] Downloaded extension: daniellin.auto-header c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\daniellin.auto-header-1.0.1
+[2021-12-10 15:03:34.079] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.a7b0fd0c-9855-4911-83a7-8db698aa1d91: daniellin.auto-header
+[2021-12-10 15:03:34.089] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\daniellin.auto-header-1.0.1
+[2021-12-10 15:03:34.095] [sharedprocess] [info] Extracting completed. daniellin.auto-header
+[2021-12-10 15:03:34.096] [sharedprocess] [info] Extension installed successfully: daniellin.auto-header

@@ -1,0 +1,20 @@
+Experiment 'pythonaa' is active
+Experiment 'pythonTensorboardExperiment' is active
+Experiment 'PythonPyTorchProfiler' is active
+Experiment 'pythonDeprecatePythonPath' is active
+Experiment 'pythonRunFailedTestsButtonDisplayed' is active
+Experiment 'pythonRefreshTestsButtonDisplayed' is active
+Experiment 'pythonRememberDebugConfig' is active
+> conda info --json
+> C:\ProgramData\Miniconda3\python.exe ~\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-python.python-2021.12.1559732655\pythonFiles\interpreterInfo.py
+> C:\Python27\python.exe ~\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-python.python-2021.12.1559732655\pythonFiles\interpreterInfo.py
+> ~\AppData\Local\Programs\Python\Python39\python.exe ~\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-python.python-2021.12.1559732655\pythonFiles\interpreterInfo.py
+Python interpreter path: C:\ProgramData\Miniconda3\python.exe
+> ~\AppData\Local\Programs\Python\Python36\python.exe ~\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.63.0\data\extensions\ms-python.python-2021.12.1559732655\pythonFiles\interpreterInfo.py
+> "C:/ProgramData/Miniconda3/Scripts/activate && conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/data/extensions/ms-python.python-2021.12.1559732655/pythonFiles/printEnvVariables.py"
+> "C:/ProgramData/Miniconda3/Scripts/activate && conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/data/extensions/ms-python.python-2021.12.1559732655/pythonFiles/printEnvVariables.py"
+> "C:/ProgramData/Miniconda3/Scripts/activate && conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/data/extensions/ms-python.python-2021.12.1559732655/pythonFiles/printEnvVariables.py"
+> "C:/ProgramData/Miniconda3/Scripts/activate && conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python c:/Users/racarla1/Documents/Git/VSCode_Portable/VSCode-win32-x64-1.63.0/data/extensions/ms-python.python-2021.12.1559732655/pythonFiles/printEnvVariables.py"
+Starting Pylance language server.
+> C:\ProgramData\Miniconda3\python.exe -c "import pip"
+> C:\ProgramData\Miniconda3\python.exe -c "import ipykernel"

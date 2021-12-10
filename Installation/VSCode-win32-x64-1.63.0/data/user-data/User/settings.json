@@ -1,0 +1,29 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "python.defaultInterpreterPath": "C:\\ProgramData\\Miniconda3\\python.exe",
+    "python.diagnostics.sourceMapsEnabled": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "cmake.configureOnOpen": true,
+    "autoHeader": {
+        "format": {
+            "startWith": "/**",
+            "middleWith": "*",
+            "endWith": "*/",
+            "headerPrefix": "@",
+        },
+        "header": {
+            "Modified by": {
+                "type": "modifier",
+                "value": "Rafael Carbonell",
+            },
+            "Modified time": {
+                "type": "modifyTime",
+                "format": "DD-MM-YYYY"
+            }        
+        }
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "doxdocgen.generic.authorEmail": "racarla96 @ gmail.com",
+    "doxdocgen.generic.authorName": "Rafael Carbonell Lázaro",
+    "doxdocgen.generic.dateFormat": "DD-MM-YYYY",
+}

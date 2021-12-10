@@ -1,0 +1,17 @@
+[2021-12-10 15:05:48.705] [sharedprocess] [info] Starting worker process with pid 10672 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 15:05:48.742] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-10 15:06:04.348] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2021-12-10 15:06:06.375] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.5838cc5d-67d9-426c-9dde-524f73b80ef1: ms-vscode.cpptools
+[2021-12-10 15:06:06.390] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode.cpptools-1.8.0-insiders2
+[2021-12-10 15:06:06.398] [sharedprocess] [info] Extracting completed. ms-vscode.cpptools
+[2021-12-10 15:06:06.401] [sharedprocess] [info] Extension installed successfully: ms-vscode.cpptools
+[2021-12-10 15:09:46.454] [sharedprocess] [info] Starting worker process with pid 14712 (type: watcherServiceParcelSharedProcess, window: 3).
+[2021-12-10 15:30:36.808] [sharedprocess] [info] Worker process with pid 10672 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 15:30:37.555] [sharedprocess] [info] Starting worker process with pid 3484 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 16:53:45.104] [sharedprocess] [info] Worker process with pid 14712 terminated normally (type: watcherServiceParcelSharedProcess, window: 3).
+[2021-12-10 17:28:13.195] [sharedprocess] [info] Worker process with pid 3484 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 17:28:13.888] [sharedprocess] [info] Starting worker process with pid 5084 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 17:28:27.471] [sharedprocess] [info] Worker process with pid 5084 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 17:28:28.268] [sharedprocess] [info] Starting worker process with pid 17036 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-10 17:29:08.178] [sharedprocess] [info] Starting worker process with pid 16548 (type: watcherServiceParcelSharedProcess, window: 4).
+[2021-12-10 17:37:16.550] [sharedprocess] [info] Worker process with pid 16548 terminated normally (type: watcherServiceParcelSharedProcess, window: 4).

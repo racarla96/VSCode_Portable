@@ -1,0 +1,64 @@
+{
+    "telemetry.machineId": "c22c6c1da008438bb24c878c0c61d01097b85808f89f52fda8120879efc7c04c",
+    "openedPathsList": {
+        "entries": [
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_ESFree"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/NEXUS_4WD_MECANUM_WHEEL_MOBILE/Real_Experiments/TEST_1_30_11_2021/Arduino/TEST_1_Robot"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Learning_resources_FreeRTOS"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/PlatformIO/Projects/ESP32_FreeRTOS_Example_Periodic_Task"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/PlatformIO/Projects/211208-193242-esp32dev"
+            }
+        ]
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot",
+            "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\17af947e99333d6c7138b51cb1d7f904",
+            "uiState": {
+                "mode": 0,
+                "x": 168,
+                "y": 139,
+                "width": 1024,
+                "height": 650
+            }
+        },
+        "openedWindows": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "windowSplash": {
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#cccccc",
+            "background": "#1e1e1e",
+            "editorBackground": "#1e1e1e",
+            "titleBarBackground": "#3c3c3c",
+            "activityBarBackground": "#333333",
+            "sideBarBackground": "#252526",
+            "statusBarBackground": "#007acc",
+            "statusBarNoFolderBackground": "#68217a"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 30,
+            "activityBarWidth": 48,
+            "sideBarWidth": 271,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects"
+}
