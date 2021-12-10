@@ -1,0 +1,20 @@
+[Info  - 22:57:05] Pylance language server 2021.12.0 (pyright acfc919d) starting
+[Info  - 22:57:05] Server root directory: c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.vscode-pylance-2021.12.0\dist
+[Info  - 22:57:05] No configuration file found.
+[Info  - 22:57:05] No pyproject.toml file found.
+[Info  - 22:57:05] Setting pythonPath for service "ButterworthFilter": "C:\Users\Racarla\Documents\Git\VSCode_Portable\python-3.10.1-embed-amd64\python.exe"
+[Warn  - 22:57:05] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:57:05] Unable to get Python version from interpreter
+[Info  - 22:57:05] Assuming Python platform Windows
+[Info  - 22:57:05] Searching for source files
+[Info  - 22:57:05] No source files found.
+[Info  - 22:57:05] Background analysis(1) root directory: c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.vscode-pylance-2021.12.0\dist
+[Info  - 22:57:05] Background analysis(1) started
+[Info  - 22:57:17] No configuration file found.
+[Info  - 22:57:17] No pyproject.toml file found.
+[Info  - 22:57:17] Setting pythonPath for service "ButterworthFilter": "C:\ProgramData\Miniconda3\python.exe"
+[Warn  - 22:57:17] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:57:17] Assuming Python version 3.9
+[Info  - 22:57:17] Assuming Python platform Windows
+[Info  - 22:57:17] Searching for source files
+[Info  - 22:57:17] No source files found.

@@ -1,0 +1,164 @@
+[Info  - 22:37:38] Pylance language server 2021.12.0 (pyright acfc919d) starting
+[Info  - 22:37:38] Server root directory: c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.vscode-pylance-2021.12.0\dist
+[Info  - 22:37:38] No configuration file found.
+[Info  - 22:37:38] No pyproject.toml file found.
+[Info  - 22:37:38] Setting pythonPath for service "ButterworthFilter": "C:\Users\Racarla\AppData\Local\Programs\Python\Python39\python.exe"
+[Warn  - 22:37:38] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:37:38] Assuming Python version 3.9
+[Info  - 22:37:38] Assuming Python platform Windows
+[Info  - 22:37:38] Searching for source files
+[Info  - 22:37:38] No source files found.
+[Info  - 22:37:38] Background analysis(1) root directory: c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.vscode-pylance-2021.12.0\dist
+[Info  - 22:37:38] Background analysis(1) started
+[Info  - 22:43:55] No configuration file found.
+[Info  - 22:43:55] No pyproject.toml file found.
+[Info  - 22:43:55] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects"
+[Warn  - 22:43:55] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:43:55] Unable to get Python version from interpreter
+[Info  - 22:43:55] Assuming Python platform Windows
+[Info  - 22:43:55] Searching for source files
+[Info  - 22:43:55] No source files found.
+[Info  - 22:43:55] No configuration file found.
+[Info  - 22:43:55] No pyproject.toml file found.
+[Info  - 22:43:55] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects"
+[Warn  - 22:43:55] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:43:55] Unable to get Python version from interpreter
+[Info  - 22:43:55] Assuming Python platform Windows
+[Info  - 22:43:55] Searching for source files
+[Info  - 22:43:55] No source files found.
+[Info  - 22:43:56] No configuration file found.
+[Info  - 22:43:56] No pyproject.toml file found.
+[Info  - 22:43:56] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:43:56] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:43:56] Unable to get Python version from interpreter
+[Info  - 22:43:56] Assuming Python platform Windows
+[Info  - 22:43:56] Searching for source files
+[Info  - 22:43:56] No source files found.
+[Info  - 22:43:56] No configuration file found.
+[Info  - 22:43:56] No pyproject.toml file found.
+[Info  - 22:43:56] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:43:56] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:43:56] Unable to get Python version from interpreter
+[Info  - 22:43:56] Assuming Python platform Windows
+[Info  - 22:43:56] Searching for source files
+[Info  - 22:43:56] No source files found.
+[Info  - 22:43:58] No configuration file found.
+[Info  - 22:43:58] No pyproject.toml file found.
+[Info  - 22:43:58] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:43:58] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:43:58] Unable to get Python version from interpreter
+[Info  - 22:43:58] Assuming Python platform Windows
+[Info  - 22:43:58] Searching for source files
+[Info  - 22:43:58] No source files found.
+[Info  - 22:43:58] No configuration file found.
+[Info  - 22:43:58] No pyproject.toml file found.
+[Info  - 22:43:58] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:43:58] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:43:58] Unable to get Python version from interpreter
+[Info  - 22:43:58] Assuming Python platform Windows
+[Info  - 22:43:58] Searching for source files
+[Info  - 22:43:58] No source files found.
+[Info  - 22:44:12] No configuration file found.
+[Info  - 22:44:12] No pyproject.toml file found.
+[Info  - 22:44:12] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:44:12] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:44:12] Unable to get Python version from interpreter
+[Info  - 22:44:12] Assuming Python platform Windows
+[Info  - 22:44:12] Searching for source files
+[Info  - 22:44:12] No source files found.
+[Info  - 22:44:23] No configuration file found.
+[Info  - 22:44:23] No pyproject.toml file found.
+[Info  - 22:44:23] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:44:23] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:44:23] Unable to get Python version from interpreter
+[Info  - 22:44:23] Assuming Python platform Windows
+[Info  - 22:44:23] Searching for source files
+[Info  - 22:44:23] No source files found.
+[Info  - 22:44:23] No configuration file found.
+[Info  - 22:44:23] No pyproject.toml file found.
+[Info  - 22:44:23] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:44:23] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:44:23] Unable to get Python version from interpreter
+[Info  - 22:44:23] Assuming Python platform Windows
+[Info  - 22:44:23] Searching for source files
+[Info  - 22:44:23] No source files found.
+[Info  - 22:45:48] No configuration file found.
+[Info  - 22:45:48] No pyproject.toml file found.
+[Info  - 22:45:48] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:48] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:48] Unable to get Python version from interpreter
+[Info  - 22:45:48] Assuming Python platform Windows
+[Info  - 22:45:48] Searching for source files
+[Info  - 22:45:48] No source files found.
+[Info  - 22:45:48] No configuration file found.
+[Info  - 22:45:48] No pyproject.toml file found.
+[Info  - 22:45:48] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:48] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:48] Unable to get Python version from interpreter
+[Info  - 22:45:48] Assuming Python platform Windows
+[Info  - 22:45:48] Searching for source files
+[Info  - 22:45:48] No source files found.
+[Info  - 22:45:54] No configuration file found.
+[Info  - 22:45:54] No pyproject.toml file found.
+[Info  - 22:45:54] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:54] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:54] Unable to get Python version from interpreter
+[Info  - 22:45:54] Assuming Python platform Windows
+[Info  - 22:45:54] Searching for source files
+[Info  - 22:45:54] No source files found.
+[Info  - 22:45:54] No configuration file found.
+[Info  - 22:45:54] No pyproject.toml file found.
+[Info  - 22:45:54] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:54] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:54] Unable to get Python version from interpreter
+[Info  - 22:45:54] Assuming Python platform Windows
+[Info  - 22:45:54] Searching for source files
+[Info  - 22:45:54] No source files found.
+[Info  - 22:45:56] No configuration file found.
+[Info  - 22:45:56] No pyproject.toml file found.
+[Info  - 22:45:56] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:56] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:56] Unable to get Python version from interpreter
+[Info  - 22:45:56] Assuming Python platform Windows
+[Info  - 22:45:56] Searching for source files
+[Info  - 22:45:56] No source files found.
+[Info  - 22:45:56] No configuration file found.
+[Info  - 22:45:56] No pyproject.toml file found.
+[Info  - 22:45:56] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:56] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:56] Unable to get Python version from interpreter
+[Info  - 22:45:56] Assuming Python platform Windows
+[Info  - 22:45:56] Searching for source files
+[Info  - 22:45:56] No source files found.
+[Info  - 22:45:59] No configuration file found.
+[Info  - 22:45:59] No pyproject.toml file found.
+[Info  - 22:45:59] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:59] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:59] Unable to get Python version from interpreter
+[Info  - 22:45:59] Assuming Python platform Windows
+[Info  - 22:45:59] Searching for source files
+[Info  - 22:45:59] No source files found.
+[Info  - 22:45:59] No configuration file found.
+[Info  - 22:45:59] No pyproject.toml file found.
+[Info  - 22:45:59] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:45:59] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:45:59] Unable to get Python version from interpreter
+[Info  - 22:45:59] Assuming Python platform Windows
+[Info  - 22:45:59] Searching for source files
+[Info  - 22:45:59] No source files found.
+[Info  - 22:46:08] No configuration file found.
+[Info  - 22:46:08] No pyproject.toml file found.
+[Info  - 22:46:08] Setting pythonPath for service "ButterworthFilter": "c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\python-3.10.1-embed-amd64"
+[Warn  - 22:46:08] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:46:08] Unable to get Python version from interpreter
+[Info  - 22:46:08] Assuming Python platform Windows
+[Info  - 22:46:08] Searching for source files
+[Info  - 22:46:08] No source files found.
+[Info  - 22:46:15] No configuration file found.
+[Info  - 22:46:15] No pyproject.toml file found.
+[Info  - 22:46:15] Setting pythonPath for service "ButterworthFilter": "C:\Users\Racarla\Documents\Git\VSCode_Portable\python-3.10.1-embed-amd64\python.exe"
+[Warn  - 22:46:15] stubPath c:\Users\Racarla\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\typings is not a valid directory.
+[Info  - 22:46:15] Assuming Python version 3.10
+[Info  - 22:46:15] Assuming Python platform Windows
+[Info  - 22:46:16] Searching for source files
+[Info  - 22:46:16] No source files found.

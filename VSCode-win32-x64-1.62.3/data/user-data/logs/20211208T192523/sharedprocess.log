@@ -1,0 +1,76 @@
+[2021-12-08 19:25:25.765] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-08 19:26:12.369] [sharedprocess] [info] Installing extension: ms-python.python
+[2021-12-08 19:26:14.009] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2021-12-08 19:26:14.774] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter-keymap
+[2021-12-08 19:26:14.774] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter-renderers
+[2021-12-08 19:26:15.137] [sharedprocess] [info] Extension is already requested to install ms-toolsai.jupyter
+[2021-12-08 19:26:15.138] [sharedprocess] [info] Extension is already requested to install ms-toolsai.jupyter-keymap
+[2021-12-08 19:26:15.138] [sharedprocess] [info] Extension is already requested to install ms-toolsai.jupyter-renderers
+[2021-12-08 19:26:15.138] [sharedprocess] [info] Installing extension: ms-python.vscode-pylance
+[2021-12-08 19:26:15.832] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter-keymap c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-toolsai.jupyter-keymap-1.0.0
+[2021-12-08 19:26:15.875] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.aeb75935-14c3-415a-b64c-5ac087b04e0a: ms-toolsai.jupyter-keymap
+[2021-12-08 19:26:15.894] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-toolsai.jupyter-keymap-1.0.0
+[2021-12-08 19:26:15.907] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter-keymap
+[2021-12-08 19:26:15.952] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter-renderers c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-toolsai.jupyter-renderers-1.0.4
+[2021-12-08 19:26:16.168] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.2a6e928a-ecc0-44c7-ad49-029d9112ea81: ms-toolsai.jupyter-renderers
+[2021-12-08 19:26:16.184] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-toolsai.jupyter-renderers-1.0.4
+[2021-12-08 19:26:16.192] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter-renderers
+[2021-12-08 19:26:16.385] [sharedprocess] [info] Downloaded extension: ms-python.python c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-python.python-2021.11.1422169775
+[2021-12-08 19:26:17.315] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-toolsai.jupyter-2021.10.1101450599
+[2021-12-08 19:26:18.092] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.9d2560be-0e09-4e6d-931a-40610ac62dce: ms-toolsai.jupyter
+[2021-12-08 19:26:18.124] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-toolsai.jupyter-2021.10.1101450599
+[2021-12-08 19:26:18.135] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2021-12-08 19:26:18.138] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter-keymap
+[2021-12-08 19:26:18.139] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+[2021-12-08 19:26:18.139] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter
+[2021-12-08 19:26:20.439] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.45c17f3e-ba9d-4b35-bf4c-04acc9cbef8b: ms-python.python
+[2021-12-08 19:26:20.467] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.python-2021.11.1422169775
+[2021-12-08 19:26:20.478] [sharedprocess] [info] Extracting completed. ms-python.python
+[2021-12-08 19:26:21.692] [sharedprocess] [info] Downloaded extension: ms-python.vscode-pylance c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-python.vscode-pylance-2021.12.0
+[2021-12-08 19:26:28.708] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.5d6a07e6-a1ce-4838-81e7-15f40bc112c9: ms-python.vscode-pylance
+[2021-12-08 19:26:28.744] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-python.vscode-pylance-2021.12.0
+[2021-12-08 19:26:28.753] [sharedprocess] [info] Extracting completed. ms-python.vscode-pylance
+[2021-12-08 19:26:28.757] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2021-12-08 19:26:28.758] [sharedprocess] [info] Extension installed successfully: ms-python.vscode-pylance
+[2021-12-08 19:26:32.173] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2021-12-08 19:26:33.292] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-vscode.cpptools-1.7.1
+[2021-12-08 19:26:33.820] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.0b7cb265-5de6-4cba-9dc5-65d9352a2375: ms-vscode.cpptools
+[2021-12-08 19:26:33.846] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-vscode.cpptools-1.7.1
+[2021-12-08 19:26:33.856] [sharedprocess] [info] Extracting completed. ms-vscode.cpptools
+[2021-12-08 19:26:33.861] [sharedprocess] [info] Extension installed successfully: ms-vscode.cpptools
+[2021-12-08 19:26:40.363] [sharedprocess] [info] Installing extension: ms-vscode.cmake-tools
+[2021-12-08 19:26:41.172] [sharedprocess] [info] Installing extension: twxs.cmake
+[2021-12-08 19:26:42.967] [sharedprocess] [info] Downloaded extension: twxs.cmake c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\twxs.cmake-0.0.17
+[2021-12-08 19:26:43.127] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.aa5676d9-5162-4ecd-93c3-71397e0ce4d0: twxs.cmake
+[2021-12-08 19:26:43.143] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\twxs.cmake-0.0.17
+[2021-12-08 19:26:43.149] [sharedprocess] [info] Extracting completed. twxs.cmake
+[2021-12-08 19:26:44.077] [sharedprocess] [info] Downloaded extension: ms-vscode.cmake-tools c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-vscode.cmake-tools-1.9.2
+[2021-12-08 19:26:44.293] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.941a61c8-a364-491b-80d0-4c5bfc8a8228: ms-vscode.cmake-tools
+[2021-12-08 19:26:44.311] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-vscode.cmake-tools-1.9.2
+[2021-12-08 19:26:44.320] [sharedprocess] [info] Extracting completed. ms-vscode.cmake-tools
+[2021-12-08 19:26:44.321] [sharedprocess] [info] Extension installed successfully: twxs.cmake
+[2021-12-08 19:26:44.322] [sharedprocess] [info] Extension installed successfully: ms-vscode.cmake-tools
+[2021-12-08 19:26:45.047] [sharedprocess] [info] Installing extension: ms-vscode.cpptools-themes
+[2021-12-08 19:26:46.063] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools-themes c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\ms-vscode.cpptools-themes-1.0.0
+[2021-12-08 19:26:46.089] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.e924d71b-773e-44dc-93be-f66346d35371: ms-vscode.cpptools-themes
+[2021-12-08 19:26:46.102] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\ms-vscode.cpptools-themes-1.0.0
+[2021-12-08 19:26:46.109] [sharedprocess] [info] Extracting completed. ms-vscode.cpptools-themes
+[2021-12-08 19:26:46.110] [sharedprocess] [info] Extension installed successfully: ms-vscode.cpptools-themes
+[2021-12-08 19:26:48.893] [sharedprocess] [info] Installing extension: jeff-hykin.better-cpp-syntax
+[2021-12-08 19:26:49.949] [sharedprocess] [info] Downloaded extension: jeff-hykin.better-cpp-syntax c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\jeff-hykin.better-cpp-syntax-1.15.10
+[2021-12-08 19:26:49.991] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.708b84b7-f4a4-4452-a577-a4b952f02143: jeff-hykin.better-cpp-syntax
+[2021-12-08 19:26:50.012] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\jeff-hykin.better-cpp-syntax-1.15.10
+[2021-12-08 19:26:50.019] [sharedprocess] [info] Extracting completed. jeff-hykin.better-cpp-syntax
+[2021-12-08 19:26:50.019] [sharedprocess] [info] Extension installed successfully: jeff-hykin.better-cpp-syntax
+[2021-12-08 19:26:54.103] [sharedprocess] [info] Installing extension: cschlosser.doxdocgen
+[2021-12-08 19:26:55.284] [sharedprocess] [info] Downloaded extension: cschlosser.doxdocgen c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\cschlosser.doxdocgen-1.3.2
+[2021-12-08 19:26:56.607] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.e2c60e19-372f-4f15-988a-d307ac909870: cschlosser.doxdocgen
+[2021-12-08 19:26:56.621] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\cschlosser.doxdocgen-1.3.2
+[2021-12-08 19:26:56.629] [sharedprocess] [info] Extracting completed. cschlosser.doxdocgen
+[2021-12-08 19:26:56.629] [sharedprocess] [info] Extension installed successfully: cschlosser.doxdocgen
+[2021-12-08 19:27:56.302] [sharedprocess] [info] Installing extension: platformio.platformio-ide
+[2021-12-08 19:27:57.445] [sharedprocess] [info] Downloaded extension: platformio.platformio-ide c:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\user-data\CachedExtensionVSIXs\platformio.platformio-ide-2.4.0
+[2021-12-08 19:27:59.576] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\.a8b5b104-b55e-4291-bd30-bcb2e5afedf8: platformio.platformio-ide
+[2021-12-08 19:27:59.613] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\VSCode-win32-x64-1.62.3\data\extensions\platformio.platformio-ide-2.4.0
+[2021-12-08 19:27:59.621] [sharedprocess] [info] Extracting completed. platformio.platformio-ide
+[2021-12-08 19:27:59.623] [sharedprocess] [info] Extension installed successfully: platformio.platformio-ide
