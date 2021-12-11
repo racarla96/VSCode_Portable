@@ -1,3 +1,2 @@
-2021/12/10-18:10:54.989 3a04 Reusing MANIFEST C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\Service Worker\Database/MANIFEST-000001
-2021/12/10-18:10:54.996 3a04 Recovering log #3
-2021/12/10-18:10:54.997 3a04 Reusing old log C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\Service Worker\Database/000003.log 
+2021/12/11-00:14:29.980 2f90 Creating DB C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\Service Worker\Database since it was missing.
+2021/12/11-00:14:29.998 2f90 Reusing MANIFEST C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\Service Worker\Database/MANIFEST-000001
