@@ -1,0 +1,2 @@
+[2021-12-13 08:45:44.863] [renderer3] [error] [Extension Host] (node:1608) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `Code --trace-deprecation ...` to show where the warning was created)

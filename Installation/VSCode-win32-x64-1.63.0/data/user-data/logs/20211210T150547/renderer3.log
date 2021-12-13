@@ -1,5 +1,0 @@
-[2021-12-10 15:09:27.903] [renderer3] [error] [Extension Host] (node:16336) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `Code --trace-deprecation ...` to show where the warning was created)
-[2021-12-10 15:09:46.830] [renderer3] [error] [Extension Host] (node:12356) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `Code --trace-deprecation ...` to show where the warning was created)
-[2021-12-10 15:32:32.225] [renderer3] [warning] Settings pattern "keyboard.*" doesn't match any settings

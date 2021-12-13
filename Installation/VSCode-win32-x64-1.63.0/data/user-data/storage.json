@@ -3,10 +3,19 @@
     "openedPathsList": {
         "entries": [
             {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP8266_FreeRTOS_Robot"
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/Identificacion_Motor_DC"
             },
             {
                 "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_WEMOS_FreeRTOS_Robot"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP8266_FreeRTOS_Robot"
             },
             {
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_ESFree"
@@ -27,14 +36,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot",
-            "backupPath": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\a1364c2a1b64a94ce6a243ddbddaea35",
+            "folder": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification",
+            "backupPath": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\ae629b28e8d58af5c6242a185b17f08f",
             "uiState": {
                 "mode": 0,
-                "x": -1024,
-                "y": 52,
+                "x": 1618,
+                "y": 28,
                 "width": 1024,
-                "height": 650
+                "height": 768
             }
         },
         "openedWindows": []
@@ -58,7 +67,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 203,
+            "sideBarWidth": 184,
             "statusBarHeight": 22,
             "windowBorder": false
         }

@@ -1,0 +1,19 @@
+[2021-12-11 19:22:50.307] [main] [info] update#setState idle
+[2021-12-11 19:22:50.419] [main] [info] ExtensionHostStarterWorker created
+[2021-12-11 19:22:51.367] [main] [info] Starting extension host with pid 15920 (fork() took 13 ms).
+[2021-12-11 19:22:57.946] [main] [info] Extension host with pid 15920 exited with code: 0, signal: null.
+[2021-12-11 19:22:59.056] [main] [info] Starting extension host with pid 9748 (fork() took 10 ms).
+[2021-12-11 19:23:20.313] [main] [info] update#setState checking for updates
+[2021-12-11 19:23:20.365] [main] [info] update#setState idle
+[2021-12-11 20:23:20.316] [main] [info] update#setState checking for updates
+[2021-12-11 20:23:20.628] [main] [info] update#setState idle
+[2021-12-11 20:26:44.855] [main] [error] [uncaught exception in main]: Error: SharedProcess: crashed (detail: killed, code: 1073807364)
+[2021-12-11 20:26:44.855] [main] [error] Error: SharedProcess: crashed (detail: killed, code: 1073807364)
+    at C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:77:71205
+    at g.fire (C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:16:1712)
+    at C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:14:52933
+    at g.fire (C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:16:1712)
+    at Object.<anonymous> (C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:76:11946)
+    at Object.emit (events.js:327:22)
+[2021-12-11 20:26:44.920] [main] [error] CodeWindow: renderer process crashed (reason: killed, code: 1073807364)
+[2021-12-11 20:26:44.934] [main] [info] Extension host with pid 9748 exited with code: 1073807364, signal: null.

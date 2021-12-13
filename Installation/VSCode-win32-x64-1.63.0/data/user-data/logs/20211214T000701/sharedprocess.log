@@ -1,0 +1,10 @@
+[2021-12-14 00:07:04.670] [sharedprocess] [info] Starting worker process with pid 8744 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-14 00:07:04.844] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-14 00:07:06.777] [sharedprocess] [info] Installing extension: ms-python.vscode-pylance
+[2021-12-14 00:07:07.952] [sharedprocess] [info] Downloaded extension: ms-python.vscode-pylance c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ms-python.vscode-pylance-2021.12.2
+[2021-12-14 00:07:13.131] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.e0e7263f-b5a7-42c2-9f93-edf38d3aea84: ms-python.vscode-pylance
+[2021-12-14 00:07:13.165] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2
+[2021-12-14 00:07:13.174] [sharedprocess] [info] Extracting completed. ms-python.vscode-pylance
+[2021-12-14 00:07:13.183] [sharedprocess] [info] Extension installed successfully: ms-python.vscode-pylance
+[2021-12-14 00:07:22.883] [sharedprocess] [info] Worker process with pid 8744 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-14 00:07:23.959] [sharedprocess] [info] Starting worker process with pid 6960 (type: watcherServiceParcelSharedProcess, window: 1).

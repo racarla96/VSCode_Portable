@@ -1,0 +1,23 @@
+[2021-12-13 23:00:39.831] [exthost] [info] Extension host with pid 6276 started
+[2021-12-13 23:00:39.832] [exthost] [info] Skipping acquiring lock for c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\1b67da6a297700937a31de4243c251f1.
+[2021-12-13 23:00:40.085] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2021-12-13 23:00:40.253] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+[2021-12-13 23:00:40.397] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+[2021-12-13 23:00:40.500] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-13 23:00:40.553] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-13 23:00:40.611] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2021-12-13 23:00:40.843] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2021-12-13 23:00:41.699] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2021-12-13 23:00:41.797] [exthost] [info] ExtensionService#_doActivateExtension bierner.markdown-checkbox, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2021-12-13 23:00:41.834] [exthost] [info] ExtensionService#_doActivateExtension bierner.markdown-emoji, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2021-12-13 23:00:41.857] [exthost] [info] ExtensionService#_doActivateExtension bierner.markdown-yaml-preamble, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+[2021-12-13 23:00:41.931] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2021-12-13 23:00:42.107] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-13 23:00:42.158] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2021-12-13 23:00:46.937] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2021-12-13 23:00:47.015] [exthost] [info] Eager extensions activated
+[2021-12-13 23:00:47.017] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-13 23:00:47.099] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-13 23:00:47.128] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-14 00:05:07.104] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-12-14 00:05:07.108] [exthost] [info] Extension host with pid 6276 exiting with code 0

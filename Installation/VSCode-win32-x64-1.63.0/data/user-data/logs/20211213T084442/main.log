@@ -1,0 +1,15 @@
+[2021-12-13 08:44:42.406] [main] [info] update#setState idle
+[2021-12-13 08:44:42.542] [main] [info] ExtensionHostStarterWorker created
+[2021-12-13 08:44:43.886] [main] [info] Starting extension host with pid 15184 (fork() took 14 ms).
+[2021-12-13 08:44:52.292] [main] [info] Enabling inspect port on extension host with pid 15184.
+[2021-12-13 08:44:52.636] [main] [info] Enabling inspect port on extension host with pid 15184.
+[2021-12-13 08:45:12.411] [main] [info] update#setState checking for updates
+[2021-12-13 08:45:12.463] [main] [info] update#setState idle
+[2021-12-13 08:45:44.426] [main] [info] Starting extension host with pid 1608 (fork() took 11 ms).
+[2021-12-13 08:45:46.366] [main] [info] Extension host with pid 1608 exited with code: 0, signal: null.
+[2021-12-13 09:45:12.423] [main] [info] update#setState checking for updates
+[2021-12-13 09:45:12.686] [main] [info] update#setState idle
+[2021-12-13 09:53:35.121] [main] [info] Extension host with pid 15184 exited with code: 0, signal: null.
+[2021-12-13 09:53:36.060] [main] [info] Starting extension host with pid 15064 (fork() took 9 ms).
+[2021-12-13 09:53:50.600] [main] [info] Waiting for extension host with pid 15064 to exit.
+[2021-12-13 09:53:50.600] [main] [info] Extension host with pid 15064 exited with code: 0, signal: null.

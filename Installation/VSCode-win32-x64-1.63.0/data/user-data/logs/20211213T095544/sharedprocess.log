@@ -1,0 +1,2 @@
+[2021-12-13 09:55:47.431] [sharedprocess] [info] Starting worker process with pid 15104 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-13 09:55:48.021] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles

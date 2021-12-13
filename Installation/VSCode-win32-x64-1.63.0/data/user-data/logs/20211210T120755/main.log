@@ -1,7 +1,0 @@
-[2021-12-10 12:07:55.792] [main] [info] update#setState idle
-[2021-12-10 12:07:55.837] [main] [info] ExtensionHostStarterWorker created
-[2021-12-10 12:07:56.696] [main] [info] Starting extension host with pid 2436 (fork() took 9 ms).
-[2021-12-10 12:08:25.808] [main] [info] update#setState checking for updates
-[2021-12-10 12:08:25.883] [main] [info] update#setState idle
-[2021-12-10 13:02:05.521] [main] [info] Waiting for extension host with pid 2436 to exit.
-[2021-12-10 13:02:05.579] [main] [info] Extension host with pid 2436 exited with code: 0, signal: null.

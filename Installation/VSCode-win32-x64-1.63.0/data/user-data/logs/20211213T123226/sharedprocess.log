@@ -1,0 +1,57 @@
+[2021-12-13 12:32:30.742] [sharedprocess] [info] Starting worker process with pid 4720 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-13 12:32:30.831] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-13 13:01:55.670] [sharedprocess] [error] [uncaught exception in sharedProcess]: Cannot resize a pty that has already exited: Error: Cannot resize a pty that has already exited
+    at WindowsPtyAgent.resize (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsPtyAgent.js:141:23)
+    at WindowsTerminal.<anonymous> (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsTerminal.js:132:26)
+    at WindowsTerminal._defer (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsTerminal.js:157:24)
+    at WindowsTerminal.resize (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsTerminal.js:131:14)
+    at De.resize (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:14:46415)
+    at s.resize (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:17:9524)
+    at l.resize (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:17:2736)
+    at Object.call (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:13:8419)
+    at L.onPromise (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:12:4940)
+    at L.onRawMessage (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:12:4299)
+    at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:12:3552
+    at R.fire (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:8:1712)
+    at process.Q (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:6:32597)
+    at process.emit (events.js:315:20)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[2021-12-13 14:55:17.243] [sharedprocess] [info] Starting worker process with pid 16800 (type: watcherServiceParcelSharedProcess, window: 3).
+[2021-12-13 15:00:23.578] [sharedprocess] [info] Installing extension: bierner.github-markdown-preview
+[2021-12-13 15:00:26.806] [sharedprocess] [info] Installing extension: bierner.markdown-preview-github-styles
+[2021-12-13 15:00:26.806] [sharedprocess] [info] Installing extension: bierner.markdown-emoji
+[2021-12-13 15:00:26.806] [sharedprocess] [info] Installing extension: bierner.markdown-checkbox
+[2021-12-13 15:00:26.806] [sharedprocess] [info] Installing extension: bierner.markdown-yaml-preamble
+[2021-12-13 15:00:26.807] [sharedprocess] [info] Extension is already requested to install bierner.markdown-yaml-preamble
+[2021-12-13 15:00:26.807] [sharedprocess] [info] Extension is already requested to install bierner.markdown-checkbox
+[2021-12-13 15:00:26.807] [sharedprocess] [info] Extension is already requested to install bierner.markdown-yaml-preamble
+[2021-12-13 15:00:26.807] [sharedprocess] [info] Extension is already requested to install bierner.markdown-emoji
+[2021-12-13 15:00:26.807] [sharedprocess] [info] Extension is already requested to install bierner.markdown-checkbox
+[2021-12-13 15:00:26.807] [sharedprocess] [info] Extension is already requested to install bierner.markdown-yaml-preamble
+[2021-12-13 15:00:28.320] [sharedprocess] [info] Downloaded extension: bierner.markdown-preview-github-styles c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\bierner.markdown-preview-github-styles-0.2.0
+[2021-12-13 15:00:28.321] [sharedprocess] [info] Downloaded extension: bierner.markdown-yaml-preamble c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\bierner.markdown-yaml-preamble-0.1.0
+[2021-12-13 15:00:28.446] [sharedprocess] [info] Downloaded extension: bierner.markdown-checkbox c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\bierner.markdown-checkbox-0.3.2
+[2021-12-13 15:00:28.458] [sharedprocess] [info] Downloaded extension: bierner.markdown-emoji c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\bierner.markdown-emoji-0.2.1
+[2021-12-13 15:00:28.580] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.f16342d4-2390-4021-bf1b-7966a81cc4be: bierner.markdown-checkbox
+[2021-12-13 15:00:28.596] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.44c4d758-eb91-43ad-a532-84d224f06ea6: bierner.markdown-emoji
+[2021-12-13 15:00:28.602] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\bierner.markdown-checkbox-0.3.2
+[2021-12-13 15:00:28.613] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\bierner.markdown-emoji-0.2.1
+[2021-12-13 15:00:28.614] [sharedprocess] [info] Extracting completed. bierner.markdown-checkbox
+[2021-12-13 15:00:28.622] [sharedprocess] [info] Extracting completed. bierner.markdown-emoji
+[2021-12-13 15:00:28.635] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.fa3722ae-f878-4925-bc1f-e28e42bf28dd: bierner.markdown-yaml-preamble
+[2021-12-13 15:00:28.651] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\bierner.markdown-yaml-preamble-0.1.0
+[2021-12-13 15:00:28.659] [sharedprocess] [info] Extracting completed. bierner.markdown-yaml-preamble
+[2021-12-13 15:00:29.059] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.dc2acfa5-2824-4f6c-b19a-85b9dd7ab1af: bierner.markdown-preview-github-styles
+[2021-12-13 15:00:29.079] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\bierner.markdown-preview-github-styles-0.2.0
+[2021-12-13 15:00:29.086] [sharedprocess] [info] Extracting completed. bierner.markdown-preview-github-styles
+[2021-12-13 15:00:30.078] [sharedprocess] [info] Downloaded extension: bierner.github-markdown-preview c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\bierner.github-markdown-preview-0.1.0
+[2021-12-13 15:00:30.110] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.86ebb435-bb80-48a1-8c05-45aabb1c18d8: bierner.github-markdown-preview
+[2021-12-13 15:00:30.124] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\bierner.github-markdown-preview-0.1.0
+[2021-12-13 15:00:30.133] [sharedprocess] [info] Extracting completed. bierner.github-markdown-preview
+[2021-12-13 15:00:30.135] [sharedprocess] [info] Extension installed successfully: bierner.markdown-checkbox
+[2021-12-13 15:00:30.135] [sharedprocess] [info] Extension installed successfully: bierner.markdown-emoji
+[2021-12-13 15:00:30.135] [sharedprocess] [info] Extension installed successfully: bierner.markdown-yaml-preamble
+[2021-12-13 15:00:30.135] [sharedprocess] [info] Extension installed successfully: bierner.markdown-preview-github-styles
+[2021-12-13 15:00:30.135] [sharedprocess] [info] Extension installed successfully: bierner.github-markdown-preview
+[2021-12-13 19:48:51.733] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds

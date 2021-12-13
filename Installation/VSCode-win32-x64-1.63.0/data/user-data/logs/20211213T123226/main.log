@@ -1,0 +1,24 @@
+[2021-12-13 12:32:26.955] [main] [info] update#setState idle
+[2021-12-13 12:32:27.055] [main] [info] ExtensionHostStarterWorker created
+[2021-12-13 12:32:28.031] [main] [info] Starting extension host with pid 18768 (fork() took 12 ms).
+[2021-12-13 12:32:56.964] [main] [info] update#setState checking for updates
+[2021-12-13 12:32:57.019] [main] [info] update#setState idle
+[2021-12-13 13:32:56.975] [main] [info] update#setState checking for updates
+[2021-12-13 13:32:57.197] [main] [info] update#setState idle
+[2021-12-13 14:32:56.991] [main] [info] update#setState checking for updates
+[2021-12-13 14:32:57.252] [main] [info] update#setState idle
+[2021-12-13 14:54:48.424] [main] [info] Starting extension host with pid 6400 (fork() took 12 ms).
+[2021-12-13 14:55:16.217] [main] [info] Extension host with pid 6400 exited with code: 0, signal: null.
+[2021-12-13 14:55:17.221] [main] [info] Starting extension host with pid 17792 (fork() took 9 ms).
+[2021-12-13 15:32:57.006] [main] [info] update#setState checking for updates
+[2021-12-13 15:32:57.239] [main] [info] update#setState idle
+[2021-12-13 16:32:57.022] [main] [info] update#setState checking for updates
+[2021-12-13 16:32:57.255] [main] [info] update#setState idle
+[2021-12-13 17:32:57.034] [main] [info] update#setState checking for updates
+[2021-12-13 17:32:57.276] [main] [info] update#setState idle
+[2021-12-13 18:32:57.042] [main] [info] update#setState checking for updates
+[2021-12-13 18:32:57.254] [main] [info] update#setState idle
+[2021-12-13 19:32:57.044] [main] [info] update#setState checking for updates
+[2021-12-13 19:32:57.269] [main] [info] update#setState idle
+[2021-12-13 20:32:56.781] [main] [info] update#setState checking for updates
+[2021-12-13 20:32:57.005] [main] [info] update#setState idle
