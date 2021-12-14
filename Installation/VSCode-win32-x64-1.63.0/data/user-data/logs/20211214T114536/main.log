@@ -1,0 +1,12 @@
+[2021-12-14 11:45:36.907] [main] [info] update#setState idle
+[2021-12-14 11:45:37.002] [main] [info] ExtensionHostStarterWorker created
+[2021-12-14 11:45:37.605] [main] [info] Starting extension host with pid 5276 (fork() took 9 ms).
+[2021-12-14 11:45:46.370] [main] [info] Extension host with pid 5276 exited with code: 0, signal: null.
+[2021-12-14 11:45:46.759] [main] [info] Starting extension host with pid 2208 (fork() took 6 ms).
+[2021-12-14 11:46:06.839] [main] [info] update#setState checking for updates
+[2021-12-14 11:46:06.890] [main] [info] update#setState idle
+[2021-12-14 12:46:06.809] [main] [info] update#setState checking for updates
+[2021-12-14 12:46:07.164] [main] [info] update#setState idle
+[2021-12-14 13:46:06.841] [main] [info] update#setState checking for updates
+[2021-12-14 13:46:07.082] [main] [info] update#setState idle
+[2021-12-14 14:25:25.273] [main] [error] CodeWindow: renderer process crashed (reason: killed, code: 1073807364)

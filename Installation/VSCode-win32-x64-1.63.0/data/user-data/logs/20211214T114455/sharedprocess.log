@@ -1,0 +1,3 @@
+[2021-12-14 11:44:57.482] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-14 11:44:57.872] [sharedprocess] [info] Deleted from disk ms-python.vscode-pylance c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.1
+[2021-12-14 11:45:08.909] [sharedprocess] [info] Starting worker process with pid 11344 (type: watcherServiceParcelSharedProcess, window: 1).

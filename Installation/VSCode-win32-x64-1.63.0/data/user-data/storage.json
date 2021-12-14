@@ -3,7 +3,10 @@
     "openedPathsList": {
         "entries": [
             {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification"
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-WiFi"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects"
             },
             {
                 "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/Identificacion_Motor_DC"
@@ -36,12 +39,12 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification",
-            "backupPath": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\ae629b28e8d58af5c6242a185b17f08f",
+            "folder": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-WiFi",
+            "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\6351fea6ceba50312a9e4d10e6a0c732",
             "uiState": {
                 "mode": 0,
-                "x": 1618,
-                "y": 28,
+                "x": -650,
+                "y": 83,
                 "width": 1024,
                 "height": 768
             }
@@ -67,10 +70,10 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 184,
+            "sideBarWidth": 319,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
-    "pickerWorkingDir": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Projects"
+    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects"
 }
