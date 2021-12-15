@@ -56,7 +56,7 @@ class DCMotorDriverImpl : public AbstractDCMotorDriver {
             _value_i = (int16_t) _value_c;
             _value_u = (uint16_t) abs(_value_c);
 
-            if(_value_i == 0) {_motor->run(RELEASE);}     
+            if(_value_i == 0) {_motor->run(BRAKE);}     
             else if(_value_i > 0) {_motor->run(BACKWARD);}          
             else if(_value_i < 0) { _motor->run(FORWARD);}
             _motor->setSpeedFine(_value_u); 

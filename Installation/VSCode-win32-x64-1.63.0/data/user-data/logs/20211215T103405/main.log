@@ -1,0 +1,7 @@
+[2021-12-15 10:34:05.583] [main] [info] update#setState idle
+[2021-12-15 10:34:05.726] [main] [info] ExtensionHostStarterWorker created
+[2021-12-15 10:34:06.370] [main] [info] Starting extension host with pid 15564 (fork() took 8 ms).
+[2021-12-15 10:34:35.589] [main] [info] update#setState checking for updates
+[2021-12-15 10:34:35.593] [main] [info] update#setState available for download
+[2021-12-15 11:10:05.103] [main] [info] Waiting for extension host with pid 15564 to exit.
+[2021-12-15 11:10:05.127] [main] [info] Extension host with pid 15564 exited with code: 0, signal: null.

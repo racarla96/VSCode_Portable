@@ -26,4 +26,5 @@
     "doxdocgen.generic.authorEmail": "racarla96 @ gmail.com",
     "doxdocgen.generic.authorName": "Rafael Carbonell Lázaro",
     "doxdocgen.generic.dateFormat": "DD-MM-YYYY",
+    "terminal.integrated.scrollback": 100000,
 }

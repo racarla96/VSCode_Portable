@@ -1,0 +1,34 @@
+[Info  - 9:11:39] Pylance language server 2021.12.2 (pyright 211ebe44) starting
+[Info  - 9:11:39] Server root directory: C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2\dist
+[Info  - 9:11:39] No configuration file found.
+[Info  - 9:11:39] No pyproject.toml file found.
+[Info  - 9:11:39] Setting pythonPath for service "ESP32_FreeRTOS_Robot-Steps_Identification": "C:\ProgramData\Miniconda3\python.exe"
+[Warn  - 9:11:39] stubPath c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\typings is not a valid directory.
+[Info  - 9:11:39] Assuming Python version 3.9
+[Info  - 9:11:39] Assuming Python platform Windows
+[Info  - 9:11:39] Searching for source files
+[Info  - 9:11:40] Found 2 source files
+[Info  - 9:11:40] Background analysis(1) root directory: C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2\dist
+[Info  - 9:11:40] Background analysis(1) started
+[Info  - 9:12:00] Searching for source files
+[Info  - 9:12:00] Found 2 source files
+[Info  - 9:22:43] Searching for source files
+[Info  - 9:22:43] Found 2 source files
+[Info  - 9:22:45] Searching for source files
+[Info  - 9:22:45] Found 2 source files
+[Info  - 9:27:36] Searching for source files
+[Info  - 9:27:36] Found 2 source files
+[Info  - 9:32:37] Searching for source files
+[Info  - 9:32:37] Found 2 source files
+[Info  - 9:57:21] Searching for source files
+[Info  - 9:57:21] Found 2 source files
+[Info  - 10:15:20] Searching for source files
+[Info  - 10:15:20] Found 2 source files
+[Info  - 10:15:21] Searching for source files
+[Info  - 10:15:21] Found 2 source files
+[Info  - 10:15:22] Searching for source files
+[Info  - 10:15:23] Found 2 source files
+[Info  - 10:15:24] Searching for source files
+[Info  - 10:15:24] Found 2 source files
+[Info  - 10:15:25] Searching for source files
+[Info  - 10:15:25] Found 2 source files

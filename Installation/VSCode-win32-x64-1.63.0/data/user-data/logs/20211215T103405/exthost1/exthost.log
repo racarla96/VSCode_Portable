@@ -1,0 +1,36 @@
+[2021-12-15 10:34:06.836] [exthost] [info] Extension host with pid 15564 started
+[2021-12-15 10:34:06.836] [exthost] [info] Skipping acquiring lock for c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\2f028072f4c7250498b5f9a963d76428.
+[2021-12-15 10:34:06.887] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2021-12-15 10:34:06.957] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: false, activationEvent: 'onNotebook:jupyter-notebook}'
+[2021-12-15 10:34:07.013] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-15 10:34:07.032] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-15 10:34:07.049] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2021-12-15 10:34:07.135] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2021-12-15 10:34:07.530] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2021-12-15 10:34:07.663] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-15 10:34:07.697] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2021-12-15 10:34:10.153] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onNotebook:jupyter-notebook'
+[2021-12-15 10:34:10.368] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'onNotebook:*'
+[2021-12-15 10:34:10.378] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-15 10:34:10.408] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-15 10:34:10.467] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-15 10:34:10.548] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2021-12-15 10:34:10.628] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.vscode-pylance
+[2021-12-15 10:34:10.863] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2021-12-15 10:34:10.889] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2021-12-15 10:34:10.941] [exthost] [info] Eager extensions activated
+[2021-12-15 10:34:11.283] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 10:34:11.322] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 10:34:11.337] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 10:34:11.505] [exthost] [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+[2021-12-15 10:34:11.931] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 685
+[2021-12-15 10:34:12.152] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2021-12-15 10:34:16.008] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 699
+[2021-12-15 10:34:21.403] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 712
+[2021-12-15 10:34:29.216] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 712
+[2021-12-15 10:53:57.226] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 715
+[2021-12-15 11:07:04.224] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 715
+[2021-12-15 11:09:14.903] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 715
+[2021-12-15 11:09:20.297] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 715
+[2021-12-15 11:10:05.063] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-12-15 11:10:05.110] [exthost] [info] Extension host with pid 15564 exiting with code 0

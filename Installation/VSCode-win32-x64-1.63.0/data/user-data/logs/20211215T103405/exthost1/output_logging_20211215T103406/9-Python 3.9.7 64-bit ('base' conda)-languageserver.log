@@ -1,0 +1,22 @@
+[Info  - 10:34:12] Pylance language server 2021.12.2 (pyright 211ebe44) starting
+[Info  - 10:34:12] Server root directory: C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2\dist
+[Info  - 10:34:12] Background analysis(1) root directory: C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2\dist
+[Info  - 10:34:12] Background analysis(1) started
+[Info  - 10:34:12] No configuration file found.
+[Info  - 10:34:12] No pyproject.toml file found.
+[Info  - 10:34:12] Setting pythonPath for service "ESP32_FreeRTOS_Robot-Steps_Identification": "C:\ProgramData\Miniconda3\python.exe"
+[Warn  - 10:34:12] stubPath c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\typings is not a valid directory.
+[Info  - 10:34:12] Assuming Python version 3.9
+[Info  - 10:34:12] Assuming Python platform Windows
+[Info  - 10:34:13] Searching for source files
+[Info  - 10:34:13] Found 2 source files
+[Info  - 10:51:49] Searching for source files
+[Info  - 10:51:49] Found 2 source files
+[Info  - 10:51:58] Searching for source files
+[Info  - 10:51:58] Found 2 source files
+[Info  - 11:05:30] Searching for source files
+[Info  - 11:05:30] Found 2 source files
+[Info  - 11:05:32] Searching for source files
+[Info  - 11:05:32] Found 2 source files
+[Info  - 11:07:03] Searching for source files
+[Info  - 11:07:03] Found 2 source files

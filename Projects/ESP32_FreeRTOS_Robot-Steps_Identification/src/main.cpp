@@ -36,6 +36,7 @@ void loop() {}
 #include <DCMotorPosSensorImpl.h>
 
 #include <ErriezINA219.h>
+#include <DiscreteLowPassFilter.h>
 
 #define N_MOTORS 4
 #define COUNTS2RAD ((2.0f * PI) / (70.0f * 64.0f))
@@ -57,8 +58,12 @@ const uint8_t pin_enc[N_MOTORS][2] = // Encoders pinout of ESP32
 AbstractDCMotorDriver *Motors[N_MOTORS];
 AbstractDCMotorPosSensor *MotorsPosSensors[N_MOTORS];
 AbstractDCMotorPlant *DCMotorPlant[N_MOTORS];
-ZBlock *AngVelBlock[N_MOTORS];
+float AngPos[N_MOTORS];
+float AngPosLast[N_MOTORS];
 float AngVelEst[N_MOTORS];
+DiscreteLowPassFilter *VBattery;
+DiscreteLowPassFilter *AngVelEst_F[N_MOTORS];
+
 INA219 *CVSensor; // Current and voltage sensor
 float voltage_bias = -0.1;
 float voltage;
@@ -80,7 +85,7 @@ const uint8_t B = 4;
 
 //#define CTRL_TASK_DEBUG
 #define CTRL_TASK_CYCLE_RATE_MS 10
-const float ctrl_task_period_s = (((float)CTRL_TASK_CYCLE_RATE_MS) / 1000.0f);
+const float ctrl_task_period_s = 0.01f;
 
 void PlantControlTask(void *pvParameters)
 {
@@ -94,9 +99,14 @@ void PlantControlTask(void *pvParameters)
   pinMode(G, OUTPUT);
   pinMode(B, OUTPUT);
 
+  VBattery = new DiscreteLowPassFilter(0.92442789, 0.03778605, 0.03778605);
+
   for (int i = 0; i < N_MOTORS; i++)
   {
-    AngVelBlock[i] = new ZBlock(0, ctrl_task_period_s, 1.0f, ZBlockType::Z_TYPE_DER, ZBlockMethod::Z_METHOD_STD);
+    AngPos[i] = 0;
+    AngPosLast[i] = 0;
+    AngVelEst[i] = 0;
+    AngVelEst_F[i] = new DiscreteLowPassFilter(0.4360604, 0.2819698, 0.2819698);
   }
 
   for (int i = 0; i < N_MOTORS; i++)
@@ -155,7 +165,7 @@ void PlantControlTask(void *pvParameters)
 
   for (int i = 0; i < N_MOTORS; i++)
   {
-    DCMotorPlant[i] = new AbstractDCMotorPlant(Motors[i], MotorsPosSensors[i], 1 / 13.1, max_voltage, min_voltage);
+    DCMotorPlant[i] = new AbstractDCMotorPlant(Motors[i], MotorsPosSensors[i], 1 / (voltage - 0.6), max_voltage, min_voltage);
   }
 
   stepVoltage = max_voltage;
@@ -198,11 +208,15 @@ void PlantControlTask(void *pvParameters)
 
     for (int i = 0; i < N_MOTORS; i++)
     {
-      AngVelEst[i] = AngVelBlock[i]->forwardStep(DCMotorPlant[i]->getPosition());
+      AngPos[i] = DCMotorPlant[i]->getPosition();
+      AngVelEst[i] = (AngPos[i] - AngPosLast[i])/(2.0f*ctrl_task_period_s);
+      AngVelEst[i] = -1*AngVelEst_F[i]->step(AngVelEst[i]); // FILTER
+      AngPosLast[i] = AngPos[i];
     }
 
+    voltage = VBattery->step(voltage); // FILTER
+
     Serial.print(xLastWakeTime);
-    Serial.print(",");
     for (int i = 0; i < N_MOTORS; i++)
     {
       Serial.print(",");

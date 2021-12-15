@@ -1,0 +1,22 @@
+Jupyter Extension Version: 2021.11.1001550889.
+Python Extension Verison: 2021.12.1559732655.
+Info 10:34:10: Experimentation service retrieved: [object Object]
+User belongs to experiment group 'jupyterTest'
+User belongs to experiment group 'jupyterEnhancedDataViewer'
+Info 10:34:11: ZMQ install verified.
+Info 10:34:11: Notebook Closed c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 10:34:11: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 10:34:11: Creating controller for jupyter-notebook with interpreter C:\ProgramData\Miniconda3\python.exe
+Info 10:34:12: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m pip list
+> C:\ProgramData\Miniconda3\python.exe -m pip list
+Info 10:34:12: Registering dummy command feature
+Info 10:34:13: Find preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.7"}} & preferred interpreter C:\ProgramData\Miniconda3\python.exe
+Info 10:34:13: findKernel found Python 3.9.7 64-bit
+Info 10:34:13: Find preferred kernel cancelled
+Info 11:10:05: Shutting down notebooks for 69783a73-4e4c-4f46-8caa-e536217fa6ee
+Info 11:10:05: Disposing HostJupyterExecution 79e01489-37bb-47fc-86f1-25e67c704473
+Info 11:10:05: Disposing super HostJupyterExecution 79e01489-37bb-47fc-86f1-25e67c704473
+Info 11:10:05: Disposing HostJupyterExecution 79e01489-37bb-47fc-86f1-25e67c704473
+Info 11:10:05: Finished disposing HostJupyterExecution  79e01489-37bb-47fc-86f1-25e67c704473
+Info 11:10:05: Cleaning up server cache 79e01489-37bb-47fc-86f1-25e67c704473
+Info 11:10:05: Finished disposing HostJupyterExecution  79e01489-37bb-47fc-86f1-25e67c704473

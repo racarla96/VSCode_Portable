@@ -1,0 +1,12 @@
+[2021-12-15 09:08:07.921] [sharedprocess] [info] Starting worker process with pid 13932 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 09:08:08.082] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-15 09:08:09.862] [sharedprocess] [info] Installing extension: ms-ceintl.vscode-language-pack-es
+[2021-12-15 09:08:10.943] [sharedprocess] [info] Downloaded extension: ms-ceintl.vscode-language-pack-es c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ms-ceintl.vscode-language-pack-es-1.63.3
+[2021-12-15 09:08:11.147] [sharedprocess] [info] Extracted extension to C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.0a4a27a8-9510-4f9f-9ec3-f0b6794cf903: ms-ceintl.vscode-language-pack-es
+[2021-12-15 09:08:11.155] [sharedprocess] [info] Renamed to C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-ceintl.vscode-language-pack-es-1.63.3
+[2021-12-15 09:08:11.161] [sharedprocess] [info] Extracting completed. ms-ceintl.vscode-language-pack-es
+[2021-12-15 09:08:11.163] [sharedprocess] [info] Adding language packs from the extension ms-ceintl.vscode-language-pack-es
+[2021-12-15 09:08:11.204] [sharedprocess] [info] Extension installed successfully: ms-ceintl.vscode-language-pack-es
+[2021-12-15 09:08:47.680] [sharedprocess] [error] [uncaught exception in sharedProcess]: Error del sistema (ENOENT: no such file or directory, scandir 'C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\clp\1a0efdb61e44124e1e10edd3da0bcd30.es'): Error: ENOENT: no such file or directory, scandir 'C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\clp\1a0efdb61e44124e1e10edd3da0bcd30.es'
+[2021-12-15 09:08:53.591] [sharedprocess] [info] Worker process with pid 13932 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 09:08:54.394] [sharedprocess] [info] Starting worker process with pid 15064 (type: watcherServiceParcelSharedProcess, window: 1).
