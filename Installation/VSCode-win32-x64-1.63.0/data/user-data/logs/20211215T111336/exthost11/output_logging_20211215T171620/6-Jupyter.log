@@ -1,0 +1,113 @@
+Jupyter Extension Version: 2021.11.1001550889.
+Python Extension Verison: 2021.12.1559732655.
+Info 17:16:24: Experimentation service retrieved: [object Object]
+User belongs to experiment group 'jupyterTest'
+User belongs to experiment group 'jupyterEnhancedDataViewer'
+Info 17:16:24: ZMQ install verified.
+Info 17:16:24: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 17:16:24: Setting setActiveController for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb
+Info 17:16:24: KernelProvider switched kernel to id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 17:16:24: Starting Notebook in kernel.ts id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 17:16:24: Creating raw notebook for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb
+Info 17:16:24: Getting preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb
+Info 17:16:24: Computing working directory c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb
+Info 17:16:24: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m pip list
+> C:\ProgramData\Miniconda3\python.exe -m pip list
+Info 17:16:24: Starting raw kernel base (Python 3.9.7)
+Info 17:16:24: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 17:16:24: IPykernel found previously in this enviornment C:\ProgramData\Miniconda3\python.exe
+Info 17:16:25: Kernel launching with ports 9005,9006,9007,9008,9009. Start port is 9000
+Info 17:16:25: Launching kernel daemon for Python 3.9.7 64-bit ('base': conda) # C:\ProgramData\Miniconda3\python.exe
+Info 17:16:25: Creating controller for jupyter-notebook with interpreter C:\ProgramData\Miniconda3\python.exe
+Info 17:16:25: Find preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.7"}} & preferred interpreter C:\ProgramData\Miniconda3\python.exe
+Info 17:16:25: findKernel found Python 3.9.7 64-bit
+Info 17:16:25: PreferredConnection: .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher found for NotebookDocument: c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb
+Info 17:16:25: TargetController found ID: .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher for document c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb
+Info 17:16:25: Setting controller affinity for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Steps.ipynb .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher
+Info 17:16:25: Registering dummy command feature
+Info 17:16:25: Creating daemon process for C:\ProgramData\Miniconda3\python.exe with env variables count 80
+Info 17:16:25: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 17:16:25: Starting kernel from scratch
+Warn 17:16:26: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+
+Warn 17:16:26: StdErr from Kernel Process   warn(
+
+Warn 17:16:26: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use '6eb842eb-bebd-4816-8946-f325e9e04c47' instead of 'b"6eb842eb-bebd-4816-8946-f325e9e04c47"'.
+
+Warn 17:16:26: StdErr from Kernel Process   warn(
+
+Info 17:16:27: Raw session started and connected
+Started kernel base (Python 3.9.7)
+Info 17:16:27: Finished connecting 13448e6a-afc8-42f7-bde1-ac8bd9614304
+Info 17:16:27: UpdateWorkingDirectoryAndPath in Kernel
+Info 17:16:27: changeDirectoryIfPossible
+Info 17:16:27: Executing (status idle) silently Code = import os\nimport sys\n%cd "c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Ro
+Info 17:16:27: Executing silently Code (completed) = import os\nimport sys\n%cd "c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Ro
+Info 17:16:27: Executing (status idle) silently Code = %config Completer.use_jedi = False
+Info 17:16:27: Executing silently Code (completed) = %config Completer.use_jedi = False
+Info 17:16:27: Executing (status idle) silently Code = %config InlineBackend.figure_formats = ['png']
+Info 17:16:27: Executing silently Code (completed) = %config InlineBackend.figure_formats = ['png']
+Info 17:16:27: Executing (status idle) silently Code = import sys\nprint(sys.executable)
+Info 17:16:27: Executing silently Code (completed) = import sys\nprint(sys.executable)
+Info 17:16:27: Waiting for idle on (kernel): 52fabad9-44b9-4eb2-a1e2-a8b47fd75c49 -> idle
+Info 17:16:27: Finished waiting for idle on (kernel): 52fabad9-44b9-4eb2-a1e2-a8b47fd75c49 -> idle
+Info 17:16:27: IPyWidgetScriptSource.initialize
+Info 17:17:49: Setting setActiveController for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 17:17:49: KernelProvider switched kernel to id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 17:17:49: Starting Notebook in kernel.ts id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 17:17:49: Creating raw notebook for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 17:17:49: Getting preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 17:17:49: Computing working directory c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 17:17:49: Starting raw kernel base (Python 3.9.7)
+Info 17:17:49: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 17:17:49: IPykernel found previously in this enviornment C:\ProgramData\Miniconda3\python.exe
+Info 17:17:49: Kernel launching with ports 9010,9011,9012,9013,9014. Start port is 9000
+Info 17:17:49: Launching kernel daemon for Python 3.9.7 64-bit ('base': conda) # C:\ProgramData\Miniconda3\python.exe
+Info 17:17:49: Creating daemon process for C:\ProgramData\Miniconda3\python.exe with env variables count 80
+Info 17:17:49: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 17:17:49: Find preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.7"}} & preferred interpreter C:\ProgramData\Miniconda3\python.exe
+Info 17:17:49: findKernel found Python 3.9.7 64-bit
+Info 17:17:49: PreferredConnection: .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher found for NotebookDocument: c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 17:17:49: TargetController found ID: .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher for document c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb
+Info 17:17:49: Setting controller affinity for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\analysis\LowPassFilter_Batt.ipynb .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher
+Info 17:17:49: Creating controller for jupyter-notebook with interpreter C:\ProgramData\Miniconda3\python.exe
+Info 17:17:49: Starting kernel from scratch
+Warn 17:17:50: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+
+Warn 17:17:50: StdErr from Kernel Process   warn(
+
+Warn 17:17:50: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use 'a1ec412f-e2f7-4a21-823a-7693c0e0eefa' instead of 'b"a1ec412f-e2f7-4a21-823a-7693c0e0eefa"'.
+
+Warn 17:17:50: StdErr from Kernel Process   warn(
+
+Info 17:17:50: Raw session started and connected
+Started kernel base (Python 3.9.7)
+Info 17:17:50: Finished connecting 13448e6a-afc8-42f7-bde1-ac8bd9614304
+Info 17:17:50: UpdateWorkingDirectoryAndPath in Kernel
+Info 17:17:50: changeDirectoryIfPossible
+Info 17:17:50: Executing (status idle) silently Code = import os\nimport sys\n%cd "c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Ro
+Info 17:17:50: Executing silently Code (completed) = import os\nimport sys\n%cd "c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Ro
+Info 17:17:50: Executing (status idle) silently Code = %config Completer.use_jedi = False
+Info 17:17:50: Executing silently Code (completed) = %config Completer.use_jedi = False
+Info 17:17:50: Executing (status idle) silently Code = %config InlineBackend.figure_formats = ['png']
+Info 17:17:50: Executing silently Code (completed) = %config InlineBackend.figure_formats = ['png']
+Info 17:17:50: Executing (status idle) silently Code = import sys\nprint(sys.executable)
+Info 17:17:50: Executing silently Code (completed) = import sys\nprint(sys.executable)
+Info 17:17:50: Waiting for idle on (kernel): 2bd65942-e728-4cf0-8b5d-c24913a00435 -> idle
+Info 17:17:50: Finished waiting for idle on (kernel): 2bd65942-e728-4cf0-8b5d-c24913a00435 -> idle
+Info 17:17:50: IPyWidgetScriptSource.initialize
+Info 17:18:06: Shutting down notebooks for 13448e6a-afc8-42f7-bde1-ac8bd9614304
+Info 17:18:06: Disposing HostJupyterExecution 30656cf9-016d-4c65-8254-002ac64e1739
+Info 17:18:06: Disposing super HostJupyterExecution 30656cf9-016d-4c65-8254-002ac64e1739
+Info 17:18:06: Dispose kernel file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification/analysis/LowPassFilter_Steps.ipynb
+Info 17:18:06: Dispose Kernel process
+Info 17:18:06: kill daemon
+Info 17:18:06: Dispose kernel file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification/analysis/LowPassFilter_Batt.ipynb
+Info 17:18:06: Dispose Kernel process
+Info 17:18:06: kill daemon
+Info 17:18:06: Disposing HostJupyterExecution 30656cf9-016d-4c65-8254-002ac64e1739
+Info 17:18:06: Finished disposing HostJupyterExecution  30656cf9-016d-4c65-8254-002ac64e1739
+Info 17:18:06: Cleaning up server cache 30656cf9-016d-4c65-8254-002ac64e1739
+Info 17:18:06: Finished disposing HostJupyterExecution  30656cf9-016d-4c65-8254-002ac64e1739

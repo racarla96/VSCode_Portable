@@ -1,0 +1,391 @@
+La validación encontró Git en: C:\Program Files\Git\cmd\git.exe
+Usando GIT 2.29.2.windows.3 desde C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\Users\racarla1\Documents\Git\VSCode_Portable
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/platformio.ini
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\platformio.ini
+> git config --get commit.template
+> git cat-file -s 946128118fe3b1505c33326ebde1df32ad4d3308
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/platformio.ini
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\platformio.ini
+> git cat-file -s 946128118fe3b1505c33326ebde1df32ad4d3308
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/platformio.ini
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\platformio.ini
+> git cat-file -s 946128118fe3b1505c33326ebde1df32ad4d3308
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git cat-file -s c8094e4b422d08c87a6feceb927c29eda4973a3f
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskUDPPose.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskUDPPose.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskWiFi.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git cat-file -s c8094e4b422d08c87a6feceb927c29eda4973a3f
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskUDPPose.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskUDPPose.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskWiFi.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskUDPPose.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskUDPPose.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskWiFi.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskUDPPose.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskUDPPose.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git cat-file -s c8094e4b422d08c87a6feceb927c29eda4973a3f
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskWiFi.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskUDPPose.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskUDPPose.hpp
+> git status -z -u
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskWiFi.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template

@@ -1,0 +1,53 @@
+[2021-12-15 11:13:37.398] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-15 11:14:18.197] [sharedprocess] [info] Starting worker process with pid 15920 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 12:11:44.178] [sharedprocess] [error] [uncaught exception in sharedProcess]: Cannot resize a pty that has already exited: Error: Cannot resize a pty that has already exited
+    at WindowsPtyAgent.resize (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsPtyAgent.js:141:23)
+    at WindowsTerminal.<anonymous> (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsTerminal.js:132:26)
+    at WindowsTerminal._defer (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsTerminal.js:157:24)
+    at WindowsTerminal.resize (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\node-pty\lib\windowsTerminal.js:131:14)
+    at De.resize (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:14:46415)
+    at s.resize (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:17:9524)
+    at l.resize (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:17:2736)
+    at Object.call (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:13:8419)
+    at L.onPromise (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:12:4940)
+    at L.onRawMessage (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:12:4299)
+    at c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:12:3552
+    at R.fire (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:8:1712)
+    at process.Q (c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\platform\terminal\node\ptyHostMain.js:6:32597)
+    at process.emit (events.js:315:20)
+    at emit (internal/child_process.js:903:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[2021-12-15 12:35:38.677] [sharedprocess] [info] Worker process with pid 15920 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 12:35:39.302] [sharedprocess] [info] Starting worker process with pid 10896 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 12:42:15.269] [sharedprocess] [info] Starting worker process with pid 5036 (type: watcherServiceParcelSharedProcess, window: 4).
+[2021-12-15 12:54:04.922] [sharedprocess] [info] Worker process with pid 5036 terminated normally (type: watcherServiceParcelSharedProcess, window: 4).
+[2021-12-15 14:28:25.110] [sharedprocess] [info] Worker process with pid 10896 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 14:28:25.874] [sharedprocess] [info] Starting worker process with pid 8064 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 14:29:05.727] [sharedprocess] [info] Starting worker process with pid 12852 (type: watcherServiceParcelSharedProcess, window: 5).
+[2021-12-15 14:43:43.949] [sharedprocess] [info] Worker process with pid 12852 terminated normally (type: watcherServiceParcelSharedProcess, window: 5).
+[2021-12-15 14:43:55.545] [sharedprocess] [info] Worker process with pid 8064 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-15 14:43:58.956] [sharedprocess] [info] Starting worker process with pid 5384 (type: watcherServiceParcelSharedProcess, window: 6).
+[2021-12-15 15:06:10.759] [sharedprocess] [info] Worker process with pid 5384 terminated normally (type: watcherServiceParcelSharedProcess, window: 6).
+[2021-12-15 15:06:11.503] [sharedprocess] [info] Starting worker process with pid 4512 (type: watcherServiceParcelSharedProcess, window: 6).
+[2021-12-15 15:06:33.600] [sharedprocess] [info] Starting worker process with pid 15132 (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 15:07:07.152] [sharedprocess] [info] Worker process with pid 4512 terminated normally (type: watcherServiceParcelSharedProcess, window: 6).
+[2021-12-15 15:31:44.533] [sharedprocess] [info] Worker process with pid 15132 terminated normally (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 15:31:45.307] [sharedprocess] [info] Starting worker process with pid 6612 (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 15:35:20.067] [sharedprocess] [info] Worker process with pid 6612 terminated normally (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 15:35:20.854] [sharedprocess] [info] Starting worker process with pid 15196 (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 16:10:28.467] [sharedprocess] [info] Worker process with pid 15196 terminated normally (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 16:10:29.241] [sharedprocess] [info] Starting worker process with pid 264 (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 16:11:41.404] [sharedprocess] [info] Worker process with pid 264 terminated normally (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 16:11:42.129] [sharedprocess] [info] Starting worker process with pid 16348 (type: watcherServiceParcelSharedProcess, window: 7).
+[2021-12-15 16:22:53.570] [sharedprocess] [info] Starting worker process with pid 16840 (type: watcherServiceParcelSharedProcess, window: 8).
+[2021-12-15 16:30:35.461] [sharedprocess] [info] Worker process with pid 16840 terminated normally (type: watcherServiceParcelSharedProcess, window: 8).
+[2021-12-15 16:30:36.174] [sharedprocess] [info] Starting worker process with pid 6668 (type: watcherServiceParcelSharedProcess, window: 8).
+[2021-12-15 16:40:16.679] [sharedprocess] [info] Worker process with pid 6668 terminated normally (type: watcherServiceParcelSharedProcess, window: 8).
+[2021-12-15 16:40:31.476] [sharedprocess] [info] Starting worker process with pid 19668 (type: watcherServiceParcelSharedProcess, window: 9).
+[2021-12-15 17:12:46.637] [sharedprocess] [info] Starting worker process with pid 2024 (type: watcherServiceParcelSharedProcess, window: 10).
+[2021-12-15 17:16:20.281] [sharedprocess] [info] Starting worker process with pid 17768 (type: watcherServiceParcelSharedProcess, window: 11).
+[2021-12-15 17:18:06.160] [sharedprocess] [info] Worker process with pid 17768 terminated normally (type: watcherServiceParcelSharedProcess, window: 11).
+[2021-12-15 17:18:39.158] [sharedprocess] [info] Worker process with pid 2024 terminated normally (type: watcherServiceParcelSharedProcess, window: 10).
+[2021-12-15 17:34:59.769] [sharedprocess] [info] Worker process with pid 19668 terminated normally (type: watcherServiceParcelSharedProcess, window: 9).
+[2021-12-15 18:51:51.806] [sharedprocess] [info] Starting worker process with pid 15932 (type: watcherServiceParcelSharedProcess, window: 12).
+[2021-12-15 18:59:23.503] [sharedprocess] [info] Worker process with pid 15932 terminated normally (type: watcherServiceParcelSharedProcess, window: 12).

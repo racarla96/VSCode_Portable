@@ -1,0 +1,35 @@
+[2021-12-15 12:42:00.569] [exthost] [info] Extension host with pid 8408 started
+[2021-12-15 12:42:00.615] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2021-12-15 12:42:00.623] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-15 12:42:00.626] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-15 12:42:00.629] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2021-12-15 12:42:00.641] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2021-12-15 12:42:00.734] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2021-12-15 12:42:00.746] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-15 12:42:00.749] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2021-12-15 12:42:01.042] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2021-12-15 12:42:01.064] [exthost] [info] Eager extensions activated
+[2021-12-15 12:42:01.072] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 12:42:01.076] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 12:42:01.079] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 12:42:14.640] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-12-15 12:42:14.644] [exthost] [info] Extension host with pid 8408 exiting with code 0
+[2021-12-15 12:42:15.680] [exthost] [info] Extension host with pid 6952 started
+[2021-12-15 12:42:15.680] [exthost] [info] Skipping acquiring lock for c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\965c53b565f5f9ea46332f5763d23053.
+[2021-12-15 12:42:15.723] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2021-12-15 12:42:15.730] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2021-12-15 12:42:15.733] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2021-12-15 12:42:15.736] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2021-12-15 12:42:15.749] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2021-12-15 12:42:15.857] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2021-12-15 12:42:15.870] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2021-12-15 12:42:15.873] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2021-12-15 12:42:16.123] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2021-12-15 12:42:16.128] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cmake-tools, startup: true, activationEvent: 'workspaceContains:*/CMakeLists.txt,*/*/CMakeLists.txt,*/*/*/CMakeLists.txt'
+[2021-12-15 12:42:16.543] [exthost] [info] Eager extensions activated
+[2021-12-15 12:42:16.551] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 12:42:16.559] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 12:42:16.561] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2021-12-15 12:43:19.084] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2021-12-15 12:54:04.914] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-12-15 12:54:04.952] [exthost] [info] Extension host with pid 6952 exiting with code 0

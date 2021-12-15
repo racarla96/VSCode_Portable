@@ -3,13 +3,25 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ButterworthFilter/Design"
+            },
+            {
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot__"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects"
             },
             {
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-WiFi"
             },
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects"
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-BNO055"
             },
             {
                 "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/Identificacion_Motor_DC"
@@ -42,12 +54,12 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification",
-            "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\5e9f378d3fcc2c34d02f8295bc525878",
+            "folder": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot",
+            "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\17af947e99333d6c7138b51cb1d7f904",
             "uiState": {
                 "mode": 0,
-                "x": -650,
-                "y": 83,
+                "x": 448,
+                "y": 156,
                 "width": 1024,
                 "height": 768
             }
@@ -73,10 +85,10 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 261,
+            "sideBarWidth": 281,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
-    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects"
+    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects\\ButterworthFilter"
 }

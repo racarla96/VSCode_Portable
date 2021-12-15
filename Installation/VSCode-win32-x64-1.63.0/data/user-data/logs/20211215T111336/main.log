@@ -1,0 +1,63 @@
+[2021-12-15 11:13:36.102] [main] [info] update#setState idle
+[2021-12-15 11:13:36.154] [main] [info] ExtensionHostStarterWorker created
+[2021-12-15 11:13:36.727] [main] [info] Starting extension host with pid 9596 (fork() took 9 ms).
+[2021-12-15 11:14:06.107] [main] [info] update#setState checking for updates
+[2021-12-15 11:14:06.110] [main] [info] update#setState available for download
+[2021-12-15 11:14:17.451] [main] [info] Extension host with pid 9596 exited with code: 0, signal: null.
+[2021-12-15 11:14:18.079] [main] [info] Starting extension host with pid 5972 (fork() took 7 ms).
+[2021-12-15 12:35:38.725] [main] [info] Extension host with pid 5972 exited with code: 0, signal: null.
+[2021-12-15 12:35:39.281] [main] [info] Starting extension host with pid 14828 (fork() took 6 ms).
+[2021-12-15 12:41:20.281] [main] [info] Starting extension host with pid 14876 (fork() took 7 ms).
+[2021-12-15 12:41:28.477] [main] [info] Extension host with pid 14876 exited with code: 0, signal: null.
+[2021-12-15 12:42:00.189] [main] [info] Starting extension host with pid 8408 (fork() took 7 ms).
+[2021-12-15 12:42:14.655] [main] [info] Extension host with pid 8408 exited with code: 0, signal: null.
+[2021-12-15 12:42:15.258] [main] [info] Starting extension host with pid 6952 (fork() took 7 ms).
+[2021-12-15 12:54:04.967] [main] [info] Extension host with pid 6952 exited with code: 0, signal: null.
+[2021-12-15 14:28:25.201] [main] [info] Extension host with pid 14828 exited with code: 0, signal: null.
+[2021-12-15 14:28:25.810] [main] [info] Starting extension host with pid 14660 (fork() took 7 ms).
+[2021-12-15 14:29:02.878] [main] [info] Starting extension host with pid 15608 (fork() took 6 ms).
+[2021-12-15 14:29:04.982] [main] [info] Extension host with pid 15608 exited with code: 0, signal: null.
+[2021-12-15 14:29:05.675] [main] [info] Starting extension host with pid 12916 (fork() took 7 ms).
+[2021-12-15 14:43:44.007] [main] [info] Extension host with pid 12916 exited with code: 0, signal: null.
+[2021-12-15 14:43:48.383] [main] [info] Starting extension host with pid 14368 (fork() took 7 ms).
+[2021-12-15 14:43:55.582] [main] [info] Extension host with pid 14660 exited with code: 0, signal: null.
+[2021-12-15 14:43:58.211] [main] [info] Extension host with pid 14368 exited with code: 0, signal: null.
+[2021-12-15 14:43:58.889] [main] [info] Starting extension host with pid 1272 (fork() took 6 ms).
+[2021-12-15 15:06:10.815] [main] [info] Extension host with pid 1272 exited with code: 0, signal: null.
+[2021-12-15 15:06:11.448] [main] [info] Starting extension host with pid 13540 (fork() took 6 ms).
+[2021-12-15 15:06:31.804] [main] [info] Starting extension host with pid 1768 (fork() took 6 ms).
+[2021-12-15 15:06:32.844] [main] [info] Extension host with pid 1768 exited with code: 0, signal: null.
+[2021-12-15 15:06:33.542] [main] [info] Starting extension host with pid 14096 (fork() took 6 ms).
+[2021-12-15 15:07:07.204] [main] [info] Extension host with pid 13540 exited with code: 0, signal: null.
+[2021-12-15 15:31:44.583] [main] [info] Extension host with pid 14096 exited with code: 0, signal: null.
+[2021-12-15 15:31:45.240] [main] [info] Starting extension host with pid 7864 (fork() took 6 ms).
+[2021-12-15 15:35:20.109] [main] [info] Extension host with pid 7864 exited with code: 0, signal: null.
+[2021-12-15 15:35:20.794] [main] [info] Starting extension host with pid 14296 (fork() took 6 ms).
+[2021-12-15 16:10:28.545] [main] [info] Extension host with pid 14296 exited with code: 0, signal: null.
+[2021-12-15 16:10:29.177] [main] [info] Starting extension host with pid 12368 (fork() took 7 ms).
+[2021-12-15 16:11:41.447] [main] [info] Extension host with pid 12368 exited with code: 0, signal: null.
+[2021-12-15 16:11:42.116] [main] [info] Starting extension host with pid 16768 (fork() took 6 ms).
+[2021-12-15 16:22:39.725] [main] [info] Starting extension host with pid 17892 (fork() took 6 ms).
+[2021-12-15 16:22:52.915] [main] [info] Extension host with pid 17892 exited with code: 0, signal: null.
+[2021-12-15 16:22:53.550] [main] [info] Starting extension host with pid 18264 (fork() took 6 ms).
+[2021-12-15 16:30:35.513] [main] [info] Extension host with pid 18264 exited with code: 0, signal: null.
+[2021-12-15 16:30:36.141] [main] [info] Starting extension host with pid 17160 (fork() took 6 ms).
+[2021-12-15 16:40:16.709] [main] [info] Extension host with pid 17160 exited with code: 0, signal: null.
+[2021-12-15 16:40:22.154] [main] [info] Starting extension host with pid 18084 (fork() took 6 ms).
+[2021-12-15 16:40:30.724] [main] [info] Extension host with pid 18084 exited with code: 0, signal: null.
+[2021-12-15 16:40:31.301] [main] [info] Starting extension host with pid 18524 (fork() took 6 ms).
+[2021-12-15 17:12:24.879] [main] [info] Starting extension host with pid 13388 (fork() took 7 ms).
+[2021-12-15 17:12:46.005] [main] [info] Extension host with pid 13388 exited with code: 0, signal: null.
+[2021-12-15 17:12:46.625] [main] [info] Starting extension host with pid 19184 (fork() took 7 ms).
+[2021-12-15 17:16:03.758] [main] [info] Starting extension host with pid 16892 (fork() took 6 ms).
+[2021-12-15 17:16:19.522] [main] [info] Extension host with pid 16892 exited with code: 0, signal: null.
+[2021-12-15 17:16:20.217] [main] [info] Starting extension host with pid 17988 (fork() took 7 ms).
+[2021-12-15 17:18:07.171] [main] [info] Extension host with pid 17988 exited with code: 0, signal: null.
+[2021-12-15 17:18:40.177] [main] [info] Extension host with pid 19184 exited with code: 0, signal: null.
+[2021-12-15 17:34:59.818] [main] [info] Extension host with pid 18524 exited with code: 0, signal: null.
+[2021-12-15 18:50:55.723] [main] [info] Starting extension host with pid 17684 (fork() took 7 ms).
+[2021-12-15 18:51:50.637] [main] [info] Extension host with pid 17684 exited with code: 0, signal: null.
+[2021-12-15 18:51:51.237] [main] [info] Starting extension host with pid 19984 (fork() took 6 ms).
+[2021-12-15 18:59:24.523] [main] [info] Extension host with pid 19984 exited with code: 0, signal: null.
+[2021-12-15 19:16:44.402] [main] [info] Waiting for extension host with pid 16768 to exit.
+[2021-12-15 19:16:44.445] [main] [info] Extension host with pid 16768 exited with code: 0, signal: null.

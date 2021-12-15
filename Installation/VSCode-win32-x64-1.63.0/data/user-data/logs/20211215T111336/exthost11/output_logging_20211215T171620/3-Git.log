@@ -1,0 +1,39 @@
+La validación encontró Git en: C:\Program Files\Git\cmd\git.exe
+Usando GIT 2.29.2.windows.3 desde C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\Users\racarla1\Documents\Git\VSCode_Portable
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot-Steps_Identification/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot-Steps_Identification\src\main.cpp
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git cat-file -s b82ae193b4f1309034ea2db5301fca726a7f4c47
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u

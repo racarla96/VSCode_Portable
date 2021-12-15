@@ -1,0 +1,249 @@
+Jupyter Extension Version: 2021.11.1001550889.
+Python Extension Verison: 2021.12.1559732655.
+Info 18:51:53: Experimentation service retrieved: [object Object]
+User belongs to experiment group 'jupyterTest'
+User belongs to experiment group 'jupyterEnhancedDataViewer'
+Info 18:51:53: ZMQ install verified.
+Info 18:51:53: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 18:51:53: Creating controller for jupyter-notebook with interpreter C:\ProgramData\Miniconda3\python.exe
+Info 18:51:53: Find preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb with metadata {"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.7"}} & preferred interpreter C:\ProgramData\Miniconda3\python.exe
+Info 18:51:53: findKernel found Python 3.9.7 64-bit
+Info 18:51:53: PreferredConnection: .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher found for NotebookDocument: c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:51:53: TargetController found ID: .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher for document c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:51:53: Setting controller affinity for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb .jvsc74a57bd055e6edab1a59ae4a97c66f3d6cfb332611812d02aad2a23f5e8043bbee13845b.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.C:\Users\racarla1\AppData\Local\Programs\Python\Python39\python.exe.-m#ipykernel_launcher
+Info 18:51:53: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m pip list
+> C:\ProgramData\Miniconda3\python.exe -m pip list
+Info 18:51:54: Registering dummy command feature
+Info 18:52:03: Setting setActiveController for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:52:03: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Starting Notebook in kernel.ts id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 18:52:03: Creating raw notebook for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Getting preferred kernel for c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Computing working directory c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:52:03: KernelProvider switched kernel to id = .jvsc74a57bd0ecf5722fdaf1897a315d257d89d94520bfcaa453217d5becf09b39e73618b0de.C:\ProgramData\Miniconda3\python.exe.C:\ProgramData\Miniconda3\python.exe.-m#ipykernel_launcher
+Info 18:52:03: Starting raw kernel base (Python 3.9.7)
+Info 18:52:03: installMissingDependencies C:\ProgramData\Miniconda3\python.exe
+Info 18:52:03: IPykernel found previously in this enviornment C:\ProgramData\Miniconda3\python.exe
+Info 18:52:03: Kernel launching with ports 9000,9001,9002,9003,9004. Start port is 9000
+Info 18:52:03: Launching kernel daemon for Python 3.9.7 64-bit ('base': conda) # C:\ProgramData\Miniconda3\python.exe
+Info 18:52:03: Creating daemon process for C:\ProgramData\Miniconda3\python.exe with env variables count 80
+Info 18:52:03: Process Execution: > C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> C:\ProgramData\Miniconda3\python.exe -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 18:52:03: Starting kernel from scratch
+Warn 18:52:04: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+
+Warn 18:52:04: StdErr from Kernel Process   warn(
+
+Warn 18:52:04: StdErr from Kernel Process C:\ProgramData\Miniconda3\lib\site-packages\traitlets\traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use '229ca717-d8fe-4ae6-ac58-c6f1250205c1' instead of 'b"229ca717-d8fe-4ae6-ac58-c6f1250205c1"'.
+
+Warn 18:52:04: StdErr from Kernel Process   warn(
+
+Info 18:52:05: Raw session started and connected
+Started kernel base (Python 3.9.7)
+Info 18:52:05: Finished connecting 88f0a7d6-9873-499f-85ab-497bf74303b1
+Info 18:52:05: UpdateWorkingDirectoryAndPath in Kernel
+Info 18:52:05: changeDirectoryIfPossible
+Info 18:52:05: Executing (status idle) silently Code = import os\nimport sys\n%cd "c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter
+Info 18:52:05: Executing silently Code (completed) = import os\nimport sys\n%cd "c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter
+Info 18:52:05: Executing (status idle) silently Code = %config Completer.use_jedi = False
+Info 18:52:05: Executing silently Code (completed) = %config Completer.use_jedi = False
+Info 18:52:05: Executing (status idle) silently Code = %config InlineBackend.figure_formats = ['png']
+Info 18:52:05: Executing silently Code (completed) = %config InlineBackend.figure_formats = ['png']
+Info 18:52:05: Executing (status idle) silently Code = import sys\nprint(sys.executable)
+Info 18:52:05: Executing silently Code (completed) = import sys\nprint(sys.executable)
+Info 18:52:05: Waiting for idle on (kernel): c3469e9d-95c0-4654-843d-700dc9fa575a -> idle
+Info 18:52:05: Finished waiting for idle on (kernel): c3469e9d-95c0-4654-843d-700dc9fa575a -> idle
+Info 18:52:05: IPyWidgetScriptSource.initialize
+Info 18:52:06: Cell 1 executed with state Success
+Info 18:52:07: Cell 3 executed with state Success
+Info 18:52:10: Cell 5 executed with state Success
+Info 18:52:10: Cell 7 executed with state Success
+Info 18:52:10: Cell 9 executed with state Success
+Info 18:52:10: Cell 10 executed with state Idle
+Info 18:53:16: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:53:16: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:16: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:16: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:16: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:16: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:16: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:17: Cell 1 executed with state Success
+Info 18:53:17: Cell 3 executed with state Success
+Info 18:53:18: Cell 5 executed with state Success
+Info 18:53:18: Cell 7 executed with state Success
+Info 18:53:18: Cell 9 executed with state Success
+Info 18:53:18: Cell 10 executed with state Idle
+Info 18:53:43: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:53:43: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:43: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:43: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:43: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:43: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:43: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:43: Cell 1 executed with state Success
+Info 18:53:43: Cancel all remaining cells true || Error
+Info 18:53:43: Cancel pending cells
+Info 18:53:43: Cell 3 executed with state Error
+Info 18:53:43: Cell 5 executed with state Idle
+Info 18:53:43: Cell 7 executed with state Idle
+Info 18:53:43: Cell 9 executed with state Idle
+Info 18:53:43: Cell 10 executed with state Idle
+Info 18:53:55: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:53:55: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:55: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:55: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:55: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:55: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:55: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:53:55: Cell 1 executed with state Success
+Info 18:53:57: Cell 3 executed with state Success
+Info 18:53:57: Cell 5 executed with state Success
+Info 18:53:57: Cell 7 executed with state Success
+Info 18:53:58: Cell 9 executed with state Success
+Info 18:53:58: Cell 10 executed with state Idle
+Info 18:54:29: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:54:29: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:54:29: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:54:29: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:54:29: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:54:29: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:54:29: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:54:29: Cell 1 executed with state Success
+Info 18:54:34: Cell 3 executed with state Success
+Info 18:54:35: Cell 5 executed with state Success
+Info 18:54:35: Cell 7 executed with state Success
+Info 18:54:35: Cell 9 executed with state Success
+Info 18:54:35: Cell 10 executed with state Idle
+Info 18:55:50: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:55:50: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:55:50: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:55:50: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:55:50: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:55:50: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:55:50: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:55:50: Cell 1 executed with state Success
+Info 18:55:50: Cell 3 executed with state Success
+Info 18:55:51: Cell 5 executed with state Success
+Info 18:55:51: Cell 7 executed with state Success
+Info 18:55:51: Cell 9 executed with state Success
+Info 18:55:51: Cell 10 executed with state Idle
+Info 18:56:02: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:56:02: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:02: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:02: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:02: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:02: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:02: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:02: Cell 1 executed with state Success
+Info 18:56:03: Cell 3 executed with state Success
+Info 18:56:03: Cell 5 executed with state Success
+Info 18:56:03: Cell 7 executed with state Success
+Info 18:56:04: Cell 9 executed with state Success
+Info 18:56:04: Cell 10 executed with state Idle
+Info 18:56:08: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:56:08: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:08: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:08: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:08: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:08: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:08: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:08: Cell 1 executed with state Success
+Info 18:56:08: Cell 3 executed with state Success
+Info 18:56:09: Cell 5 executed with state Success
+Info 18:56:09: Cell 7 executed with state Success
+Info 18:56:09: Cell 9 executed with state Success
+Info 18:56:09: Cell 10 executed with state Idle
+Info 18:56:17: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:56:17: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:17: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:17: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:17: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:17: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:17: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:17: Cell 1 executed with state Success
+Info 18:56:18: Cell 3 executed with state Success
+Info 18:56:18: Cell 5 executed with state Success
+Info 18:56:18: Cell 7 executed with state Success
+Info 18:56:19: Cell 9 executed with state Success
+Info 18:56:19: Cell 10 executed with state Idle
+Info 18:56:49: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:56:49: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:49: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:49: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:49: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:49: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:49: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:56:49: Cell 1 executed with state Success
+Info 18:56:49: Cell 3 executed with state Success
+Info 18:56:50: Cell 5 executed with state Success
+Info 18:56:50: Cell 7 executed with state Success
+Info 18:56:50: Cell 9 executed with state Success
+Info 18:56:50: Cell 10 executed with state Idle
+Info 18:57:23: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:57:23: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:57:23: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:57:23: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:57:23: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:57:23: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:57:23: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:57:23: Cell 1 executed with state Success
+Info 18:57:24: Cell 3 executed with state Success
+Info 18:57:25: Cell 5 executed with state Success
+Info 18:57:25: Cell 7 executed with state Success
+Info 18:57:25: Cell 9 executed with state Success
+Info 18:57:25: Cell 10 executed with state Idle
+Info 18:58:00: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:58:00: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:00: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:00: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:00: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:00: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:00: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:00: Cell 1 executed with state Success
+Info 18:58:00: Cell 3 executed with state Success
+Info 18:58:01: Cell 5 executed with state Success
+Info 18:58:01: Cell 7 executed with state Success
+Info 18:58:01: Cell 9 executed with state Success
+Info 18:58:01: Cell 10 executed with state Idle
+Info 18:58:34: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:58:34: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:34: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:34: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:34: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:34: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:34: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:34: Cell 1 executed with state Success
+Info 18:58:35: Cell 3 executed with state Success
+Info 18:58:35: Cell 5 executed with state Success
+Info 18:58:35: Cell 7 executed with state Success
+Info 18:58:36: Cell 9 executed with state Success
+Info 18:58:36: Cell 10 executed with state Idle
+Info 18:58:59: Execute Cells request 1, 3, 5, 7, 9, 10
+Info 18:58:59: Execute Cell 1 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:59: Execute Cell 3 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:59: Execute Cell 5 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:59: Execute Cell 7 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:59: Execute Cell 9 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:59: Execute Cell 10 c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\LowPassFilter_step.ipynb
+Info 18:58:59: Cell 1 executed with state Success
+Info 18:59:01: Cell 3 executed with state Success
+Info 18:59:02: Cell 5 executed with state Success
+Info 18:59:02: Cell 7 executed with state Success
+Info 18:59:02: Cell 9 executed with state Success
+Info 18:59:02: Cell 10 executed with state Idle
+Info 18:59:23: Shutting down notebooks for 88f0a7d6-9873-499f-85ab-497bf74303b1
+Info 18:59:23: Disposing HostJupyterExecution 23caa0fe-4a47-4b83-b661-90dbdabea9d0
+Info 18:59:23: Disposing super HostJupyterExecution 23caa0fe-4a47-4b83-b661-90dbdabea9d0
+Info 18:59:23: Dispose kernel file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ButterworthFilter/Design/LowPassFilter_step.ipynb
+Info 18:59:23: Dispose Kernel process
+Info 18:59:23: kill daemon
+Info 18:59:23: Disposing HostJupyterExecution 23caa0fe-4a47-4b83-b661-90dbdabea9d0
+Info 18:59:23: Finished disposing HostJupyterExecution  23caa0fe-4a47-4b83-b661-90dbdabea9d0
+Info 18:59:23: Cleaning up server cache 23caa0fe-4a47-4b83-b661-90dbdabea9d0
+Info 18:59:23: Finished disposing HostJupyterExecution  23caa0fe-4a47-4b83-b661-90dbdabea9d0
