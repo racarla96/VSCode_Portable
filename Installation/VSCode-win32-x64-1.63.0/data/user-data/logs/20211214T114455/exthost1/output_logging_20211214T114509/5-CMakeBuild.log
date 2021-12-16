@@ -1,3 +1,0 @@
-[variant] Loaded new set of variants
-[kit] Successfully loaded 5 kits from C:\Users\racarla1\AppData\Local\CMakeTools\cmake-tools-kits.json
-[rollbar] Unhandled exception: Unhandled Promise rejection: Post-folder-open Canceled: Canceled {"folder":{"uri":{"$mid":1,"fsPath":"c:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects","_sep":1,"external":"file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects","path":"/c:/Users/racarla1/Documents/Git/VSCode_Portable/Projects","scheme":"file"},"name":"Projects","index":0}}

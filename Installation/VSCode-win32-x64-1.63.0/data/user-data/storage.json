@@ -3,6 +3,12 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
+            },
+            {
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-WiFi"
+            },
+            {
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ButterworthFilter/Design"
             },
             {
@@ -12,13 +18,7 @@
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot__"
             },
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
-            },
-            {
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-WiFi"
             },
             {
                 "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-BNO055"
@@ -58,8 +58,8 @@
             "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\17af947e99333d6c7138b51cb1d7f904",
             "uiState": {
                 "mode": 0,
-                "x": 448,
-                "y": 156,
+                "x": 248,
+                "y": 0,
                 "width": 1024,
                 "height": 768
             }
@@ -90,5 +90,5 @@
             "windowBorder": false
         }
     },
-    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects\\ButterworthFilter"
+    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects"
 }

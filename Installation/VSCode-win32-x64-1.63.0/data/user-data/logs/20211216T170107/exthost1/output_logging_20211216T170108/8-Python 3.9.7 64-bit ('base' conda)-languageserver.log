@@ -1,0 +1,12 @@
+[Info  - 17:01:10] Pylance language server 2021.12.2 (pyright 211ebe44) starting
+[Info  - 17:01:10] Server root directory: C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2\dist
+[Info  - 17:01:10] No configuration file found.
+[Info  - 17:01:10] No pyproject.toml file found.
+[Info  - 17:01:10] Setting pythonPath for service "Design": "C:\ProgramData\Miniconda3\python.exe"
+[Warn  - 17:01:10] stubPath c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ButterworthFilter\Design\typings is not a valid directory.
+[Info  - 17:01:10] Assuming Python version 3.9
+[Info  - 17:01:10] Assuming Python platform Windows
+[Info  - 17:01:10] Searching for source files
+[Info  - 17:01:10] No source files found.
+[Info  - 17:01:10] Background analysis(1) root directory: C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-python.vscode-pylance-2021.12.2\dist
+[Info  - 17:01:10] Background analysis(1) started
