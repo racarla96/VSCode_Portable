@@ -1,0 +1,187 @@
+La validación encontró Git en: C:\Program Files\Git\cmd\git.exe
+Usando GIT 2.29.2.windows.3 desde C:\Program Files\Git\cmd\git.exe
+> git rev-parse --git-dir
+Open repository: c:\Users\racarla1\Documents\Git\VSCode_Portable
+> git status -z -u
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n41 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskWiFi.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git cat-file -s 735a10eee289b4f1ae3c9c8add69dc7942d16859
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskWiFi.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git cat-file -s 8b7a2573cd74917887c85db4167ea8d4ee2a4f97
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskCommon.hpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskCommon.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskCommon.hpp
+> git cat-file -s 3d5096978b96bec25c743880e8c7a726c61e9d3f
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git cat-file -s 8b7a2573cd74917887c85db4167ea8d4ee2a4f97
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/main.cpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git cat-file -s 8b7a2573cd74917887c85db4167ea8d4ee2a4f97
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 2d9e36da6f3437f7aa9b27d7e649a298b591cb4f.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n4 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\main.cpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskControl.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git cat-file -s 404fcadca9e6a2e912f0454ae6d258d7fef585b7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\platformio.ini
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/platformio.ini
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\platformio.ini
+> git cat-file -s 9e7a1510b6be234c7e83a80d66edf65fc1b73823
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git show --textconv :Projects/ESP32_FreeRTOS_Robot/src/TaskControl.hpp
+> git ls-files --stage -- C:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git cat-file -s 404fcadca9e6a2e912f0454ae6d258d7fef585b7
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git rev-list --count 874a991183239dddf20006de14d4a832f614fe8c.. -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n3 -- c:\Users\racarla1\Documents\Git\VSCode_Portable\Projects\ESP32_FreeRTOS_Robot\src\TaskControl.hpp

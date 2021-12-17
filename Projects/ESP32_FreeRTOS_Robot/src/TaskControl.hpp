@@ -82,6 +82,11 @@ float DC_MOTOR_REF[N_MOTORS];
 float DC_MOTOR_U[N_MOTORS];
 ZPID *CTRL_PID[N_MOTORS];
 
+// EKF
+#include <ArduinoEigenDense.h>
+using namespace Eigen;
+#define NSTATES 14
+#define NMESURES 8
 
 void MotorsControlTask(void *pvParameters)
 {
@@ -103,6 +108,15 @@ void MotorsControlTask(void *pvParameters)
     const float IKMixer[N_MOTORS][3] = {{1.0f, -1.0f, 1.0f}, {1.0f, 1.0f, -1.0f}, {1.0f, 1.0f, 1.0f}, {1.0f, -1.0f, -1.0f}};
     const float FKMixer[3][N_MOTORS] = {{1.0f, 1.0f, 1.0f, 1.0f}, {-1.0f, 1.0f, 1.0f, -1.0f}, {1.0f, -1.0f, 1.0f, -1.0f}};
 
+    // EKF
+    MatrixXd P(NSTATES, NSTATES);
+    P << MatrixXd::Zero(NSTATES, NSTATES);
+
+    MatrixXd x(NSTATES, 1);
+    x << MatrixXd::Zero(NSTATES, 1);
+
+    MatrixXd D(NMESURES, NMESURES);
+    D << MatrixXd::Zero(NMESURES, NMESURES);
 
     /** LED **/
     // pinMode(LED_R, OUTPUT);
