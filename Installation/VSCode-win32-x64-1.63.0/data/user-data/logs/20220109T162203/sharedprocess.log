@@ -1,0 +1,16 @@
+[2022-01-09 16:22:07.034] [sharedprocess] [info] Starting worker process with pid 12636 (type: watcherServiceParcelSharedProcess, window: 1).
+[2022-01-09 16:22:07.579] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2022-01-09 16:22:10.671] [sharedprocess] [info] Installing extension: bierner.markdown-preview-github-styles
+[2022-01-09 16:22:11.895] [sharedprocess] [info] Downloaded extension: bierner.markdown-preview-github-styles c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\bierner.markdown-preview-github-styles-1.0.0
+[2022-01-09 16:22:11.958] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.2e16a5a4-886d-4761-9839-c54ad2e9b144: bierner.markdown-preview-github-styles
+[2022-01-09 16:22:11.994] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\bierner.markdown-preview-github-styles-1.0.0
+[2022-01-09 16:22:12.029] [sharedprocess] [info] Extracting completed. bierner.markdown-preview-github-styles
+[2022-01-09 16:22:12.038] [sharedprocess] [info] Extension installed successfully: bierner.markdown-preview-github-styles
+[2022-01-09 16:24:29.069] [sharedprocess] [info] Worker process with pid 12636 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
+[2022-01-09 16:24:30.281] [sharedprocess] [info] Starting worker process with pid 9320 (type: watcherServiceParcelSharedProcess, window: 1).
+[2022-01-09 16:24:42.685] [sharedprocess] [info] Installing extension: marlinfirmware.auto-build
+[2022-01-09 16:24:44.114] [sharedprocess] [info] Downloaded extension: marlinfirmware.auto-build c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\marlinfirmware.auto-build-2.1.36
+[2022-01-09 16:24:44.564] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.e04c086f-d181-4bb9-8b5c-8eb79affc24d: marlinfirmware.auto-build
+[2022-01-09 16:24:44.728] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\marlinfirmware.auto-build-2.1.36
+[2022-01-09 16:24:44.735] [sharedprocess] [info] Extracting completed. marlinfirmware.auto-build
+[2022-01-09 16:24:44.736] [sharedprocess] [info] Extension installed successfully: marlinfirmware.auto-build

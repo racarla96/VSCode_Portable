@@ -1,0 +1,50 @@
+[2022-01-09 21:33:54.845] [exthost] [info] Extension host with pid 6988 started
+[2022-01-09 21:33:54.957] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-09 21:33:54.967] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-09 21:33:54.972] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-09 21:33:54.976] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2022-01-09 21:33:55.001] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2022-01-09 21:33:55.042] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: true, activationEvent: '*'
+[2022-01-09 21:33:55.710] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-09 21:33:55.726] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-09 21:33:55.732] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2022-01-09 21:33:56.170] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-09 21:33:56.246] [exthost] [info] ExtensionService#_doActivateExtension marlinfirmware.auto-build, startup: true, activationEvent: '*'
+[2022-01-09 21:33:56.257] [exthost] [info] Eager extensions activated
+[2022-01-09 21:33:56.264] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 21:33:56.274] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 21:33:56.278] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 21:34:10.161] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-09 21:34:10.165] [exthost] [info] Extension host with pid 6988 exiting with code 0
+[2022-01-09 21:34:11.995] [exthost] [info] Extension host with pid 7836 started
+[2022-01-09 21:34:11.995] [exthost] [info] Skipping acquiring lock for c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\e390efde200dd39557e2e0fa61f3b4b8.
+[2022-01-09 21:34:12.084] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-09 21:34:12.095] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-09 21:34:12.099] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-09 21:34:12.132] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-09 21:34:12.149] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-09 21:34:12.201] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-09 21:34:12.278] [exthost] [info] Eager extensions activated
+[2022-01-09 21:34:12.317] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 21:34:12.330] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 21:34:12.338] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 21:34:23.941] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: false, activationEvent: '*'
+[2022-01-09 21:34:23.974] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: false, activationEvent: '*', root cause: marlinfirmware.auto-build
+[2022-01-09 21:34:24.023] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: '*'
+[2022-01-09 21:34:24.712] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: false, activationEvent: '*', root cause: marlinfirmware.auto-build
+[2022-01-09 21:34:25.389] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 21:34:25.395] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 21:34:25.402] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 21:34:25.420] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 21:34:25.449] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-09 21:34:25.465] [exthost] [info] ExtensionService#_doActivateExtension marlinfirmware.auto-build, startup: false, activationEvent: '*'
+[2022-01-09 21:34:27.178] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2022-01-09 21:50:44.858] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-09 21:50:44.945] [exthost] [error] [ms-vscode.cpptools] provider FAILED
+[2022-01-09 21:50:44.945] [exthost] [error] Error: Connection got disposed.
+	at Object.dispose (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode.cpptools-1.8.0-insiders2\dist\main.js:59131:25)
+	at Object.dispose (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode.cpptools-1.8.0-insiders2\dist\main.js:60051:35)
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ms-vscode.cpptools-1.8.0-insiders2\dist\main.js:62045:28
+	at async Promise.all (index 17)
+	at async v.deactivateAll (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:100:10087)
+[2022-01-09 21:50:44.946] [exthost] [info] Extension host with pid 7836 exiting with code 0

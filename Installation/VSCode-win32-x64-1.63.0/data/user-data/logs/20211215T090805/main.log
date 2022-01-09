@@ -1,9 +1,0 @@
-[2021-12-15 09:08:06.093] [main] [info] update#setState idle
-[2021-12-15 09:08:06.160] [main] [info] ExtensionHostStarterWorker created
-[2021-12-15 09:08:06.918] [main] [info] Starting extension host with pid 14748 (fork() took 9 ms).
-[2021-12-15 09:08:36.097] [main] [info] update#setState checking for updates
-[2021-12-15 09:08:36.100] [main] [info] update#setState available for download
-[2021-12-15 09:08:53.634] [main] [info] Extension host with pid 14748 exited with code: 0, signal: null.
-[2021-12-15 09:08:54.379] [main] [info] Starting extension host with pid 11916 (fork() took 6 ms).
-[2021-12-15 10:21:11.131] [main] [info] Waiting for extension host with pid 11916 to exit.
-[2021-12-15 10:21:12.092] [main] [info] Extension host with pid 11916 exited with code: 0, signal: null.

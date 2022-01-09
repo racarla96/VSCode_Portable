@@ -3,63 +3,30 @@
     "openedPathsList": {
         "entries": [
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot"
             },
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-WiFi"
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot_WiFi_JSON"
             },
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ButterworthFilter/Design"
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot_WiFi_JSON"
             },
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-Steps_Identification"
+                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/Marlin_Laser_Engraver_2/project/Marlin-2.0.x"
             },
             {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot__"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot-BNO055"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/Identificacion_Motor_DC"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_WEMOS_FreeRTOS_Robot"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP8266_FreeRTOS_Robot"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FREERTOS_Example_ESFree"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/NEXUS_4WD_MECANUM_WHEEL_MOBILE/Real_Experiments/TEST_1_30_11_2021/Arduino/TEST_1_Robot"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Learning_resources_FreeRTOS"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/racarla1/Documents/PlatformIO/Projects/ESP32_FreeRTOS_Example_Periodic_Task"
-            },
-            {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/PlatformIO/Projects/211208-193242-esp32dev"
+                "fileUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot/src/main.cpp"
             }
         ]
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32_FreeRTOS_Robot",
-            "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\17af947e99333d6c7138b51cb1d7f904",
+            "folder": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot",
+            "backupPath": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\e26cee8c44cc72285de7a103d2adcc56",
             "uiState": {
                 "mode": 0,
-                "x": 248,
-                "y": 0,
+                "x": 128,
+                "y": 155,
                 "width": 1024,
                 "height": 768
             }
@@ -85,10 +52,10 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 281,
+            "sideBarWidth": 235,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
-    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects"
+    "pickerWorkingDir": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Projects\\ESP32"
 }

@@ -1,5 +1,0 @@
-[2021-12-15 17:12:25.220] [renderer10] [error] [Extension Host] (node:13388) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `Code --trace-deprecation ...` to show where the warning was created)
-[2021-12-15 17:12:46.973] [renderer10] [error] [Extension Host] (node:19184) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
-(Use `Code --trace-deprecation ...` to show where the warning was created)
-[2021-12-15 17:12:49.945] [renderer10] [error] ENOENT: no such file or directory, lstat 'C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\conda': Error: ENOENT: no such file or directory, lstat 'C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\conda'

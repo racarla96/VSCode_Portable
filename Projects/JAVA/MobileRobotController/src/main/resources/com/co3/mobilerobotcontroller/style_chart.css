@@ -1,0 +1,7 @@
+.chart-legend{
+     -fx-translate-x: 25;
+}
+
+.chart .chart-content{
+    -fx-padding: 5 5 5 -5;
+}

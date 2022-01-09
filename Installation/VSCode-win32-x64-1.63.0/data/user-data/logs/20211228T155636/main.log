@@ -1,0 +1,7 @@
+[2021-12-28 15:56:36.890] [main] [info] update#setState idle
+[2021-12-28 15:56:36.991] [main] [info] ExtensionHostStarterWorker created
+[2021-12-28 15:56:38.450] [main] [info] Starting extension host with pid 10788 (fork() took 14 ms).
+[2021-12-28 15:57:06.899] [main] [info] update#setState checking for updates
+[2021-12-28 15:57:06.907] [main] [info] update#setState available for download
+[2021-12-28 18:01:15.843] [main] [info] Waiting for extension host with pid 10788 to exit.
+[2021-12-28 18:01:15.848] [main] [info] Extension host with pid 10788 exited with code: 0, signal: null.

@@ -1,0 +1,7 @@
+[2022-01-09 22:57:48.564] [main] [info] update#setState idle
+[2022-01-09 22:57:48.707] [main] [info] ExtensionHostStarterWorker created
+[2022-01-09 22:57:49.777] [main] [info] Starting extension host with pid 1960 (fork() took 12 ms).
+[2022-01-09 22:58:18.572] [main] [info] update#setState checking for updates
+[2022-01-09 22:58:18.576] [main] [info] update#setState available for download
+[2022-01-09 22:58:43.886] [main] [info] Waiting for extension host with pid 1960 to exit.
+[2022-01-09 22:58:43.923] [main] [info] Extension host with pid 1960 exited with code: 0, signal: null.

@@ -1,4 +1,0 @@
-[2021-12-15 19:19:19.762] [sharedprocess] [info] Starting worker process with pid 14520 (type: watcherServiceParcelSharedProcess, window: 1).
-[2021-12-15 19:19:19.859] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
-[2021-12-15 19:19:26.941] [sharedprocess] [info] Worker process with pid 14520 terminated normally (type: watcherServiceParcelSharedProcess, window: 1).
-[2021-12-15 19:19:27.761] [sharedprocess] [info] Starting worker process with pid 13400 (type: watcherServiceParcelSharedProcess, window: 1).

@@ -1,0 +1,2 @@
+[variant] Loaded new set of variants
+[rollbar] Unhandled exception: Unhandled Promise rejection: Post-folder-open Canceled: Canceled {"folder":{"uri":{"$mid":1,"fsPath":"c:\\Users\\Racarla\\Documents\\Git\\Marlin_Laser_Engraver_2\\project\\Marlin-2.0.x","_sep":1,"external":"file:///c%3A/Users/Racarla/Documents/Git/Marlin_Laser_Engraver_2/project/Marlin-2.0.x","path":"/c:/Users/Racarla/Documents/Git/Marlin_Laser_Engraver_2/project/Marlin-2.0.x","scheme":"file"},"name":"Marlin-2.0.x","index":0}}

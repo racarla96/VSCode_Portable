@@ -1,0 +1,12 @@
+@import url("style_chart.css");
+
+.default-color0.chart-series-line { -fx-stroke: transparent; }
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: black;
+    -fx-background-radius: 0px;
+}
+
+.default-color0.chart-legend-item-symbol{
+    -fx-background-color: black;
+ }

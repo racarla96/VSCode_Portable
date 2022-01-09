@@ -1,0 +1,8 @@
+[2021-12-28 15:56:39.542] [sharedprocess] [info] Starting worker process with pid 2368 (type: watcherServiceParcelSharedProcess, window: 1).
+[2021-12-28 15:56:39.778] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2021-12-28 15:59:55.277] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2021-12-28 15:59:57.462] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\CachedExtensionVSIXs\ritwickdey.liveserver-5.6.1
+[2021-12-28 16:00:00.738] [sharedprocess] [info] Extracted extension to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\.9bae9706-bac0-4408-b4f8-6a39dea3266a: ritwickdey.liveserver
+[2021-12-28 16:00:00.769] [sharedprocess] [info] Renamed to C:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\extensions\ritwickdey.liveserver-5.6.1
+[2021-12-28 16:00:00.777] [sharedprocess] [info] Extracting completed. ritwickdey.liveserver
+[2021-12-28 16:00:00.779] [sharedprocess] [info] Extension installed successfully: ritwickdey.liveserver

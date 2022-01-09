@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="480.0" minWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.co3.mobilerobotcontroller.HelloController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="480.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxWidth="200.0" minWidth="200.0" prefWidth="200.0">
+               <children>
+                  <VBox layoutX="79.0" layoutY="90.0" prefHeight="478.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane maxHeight="170.0" minHeight="170.0" prefHeight="170.0">
+                           <children>
+                              <VBox spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="ROBOT COMUNICATION INFO.">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="IPV4 Address" />
+                                    <TextField fx:id="TF_IPV4" prefHeight="25.0" prefWidth="93.0" text="127.0.0.1" />
+                                    <Label text="Comunication Period [s]" />
+                                    <TextField fx:id="TF_ComPeriod" text="0.1" />
+                                    <HBox spacing="70.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="STATUS" />
+                                          <Button fx:id="BTN_StartStop" mnemonicParsing="false" onAction="#BTN_StartStop_Action" text="START" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="55.0" minHeight="55.0" prefHeight="55.0">
+                           <children>
+                              <VBox spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="CONTROL MODES">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="CB_CTRL_Mode" prefWidth="150.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="180.0" minHeight="235.0" minWidth="180.0" prefWidth="180.0">
+                           <children>
+                              <VBox fx:id="Manual_Mode" prefHeight="200.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label text="MANUAL MODE">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane>
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Slider fx:id="MM_BTN_SLIDER_GAIN" blockIncrement="0.1" majorTickUnit="0.1" max="0.5" minorTickCount="4" onMouseReleased="#MM_onSliderGainChange" showTickLabels="true" showTickMarks="true" GridPane.columnSpan="6" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+                                          <Button fx:id="MM_BTN_UP_LEFT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/up-left-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_UP" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fx:id="BTN_UP_LEFT" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/up-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_UP_RIGHT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/up-right-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_LEFT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/left-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_STOP" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/stop-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_RIGHT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/right-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_DOWN_LEFT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/down-left-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_DOWN" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/down-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_DOWN_RIGHT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/down-right-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_ROT_LEFT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/rotate-counterclockwise-left-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button fx:id="MM_BTN_ROT_RIGHT" alignment="CENTER" mnemonicParsing="false" onAction="#MM_BTN_Interaction" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                                             <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@img/rotate-clockwise-right-button-icon.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                              <ScrollPane fx:id="Automatic_Mode" disable="true" hbarPolicy="NEVER" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <content>
+                                  <AnchorPane minWidth="180.0" prefWidth="180.0" />
+                                </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TabPane layoutX="14.0" layoutY="7.0" prefHeight="478.0" prefWidth="432.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="XY View">
+                        <content>
+                          <AnchorPane fx:id="AP_XY_PlotView" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <LineChart fx:id="PLOT_XY_LC" animated="false" stylesheets="@style_chart_XY.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <xAxis>
+                                        <NumberAxis animated="false" label="X [m]" lowerBound="-10.0" side="BOTTOM" tickUnit="0.1" upperBound="10.0" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis animated="false" label="Y [m]" lowerBound="-10.0" side="LEFT" tickUnit="0.1" upperBound="10.0" />
+                                      </yAxis>
+                                    </LineChart>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Position">
+                           <content>
+                              <AnchorPane fx:id="AP_XY_PlotView1" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <LineChart fx:id="PLOT_tX_LC" animated="false" stylesheets="@style_chart.css">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_tX_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="X [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tY_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis11" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="Y [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tO_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="2">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis12" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="θ [rad]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Velocities">
+                           <content>
+                              <AnchorPane fx:id="AP_XY_PlotView11" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <LineChart fx:id="PLOT_tVX_LC" animated="false" stylesheets="@style_chart.css">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis11" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="VX [m/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tVY_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis111" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="VY [m/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tWO_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="2">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis121" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="Wθ [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Motors">
+                           <content>
+                              <AnchorPane fx:id="AP_XY_PlotView111" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane prefHeight="451.0" prefWidth="432.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <LineChart fx:id="PLOT_tW1_LC" animated="false" stylesheets="@style_chart.css">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis111" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="W1 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tW3_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis1211" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="W3 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tW2_LC" animated="false" stylesheets="@style_chart.css" GridPane.columnIndex="1">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis1111" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="W2 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_tW4_LC" animated="false" stylesheets="@style_chart.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis12111" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="W4 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Battery">
+                           <content>
+                              <AnchorPane fx:id="AP_XY_PlotView112" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane prefHeight="451.0" prefWidth="432.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <LineChart fx:id="PLOT_BATT_tV_LC" animated="false" stylesheets="@style_chart.css">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis111" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="VOLTAGE [V]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                          <LineChart fx:id="PLOT_BATT_tI_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
+                                             <xAxis>
+                                                <NumberAxis fx:id="PLOT_XY_NB_X_Axis1112" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                             </xAxis>
+                                             <yAxis>
+                                                <NumberAxis animated="false" label="INTENSITY [A]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                             </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                      <Tab text="Configuration">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="451.0" prefWidth="432.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label text="FIXED BEACONS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                             <children>
+                                                <Label text="BEACON 1 -" />
+                                                <Label text="X [m]:" />
+                                                <TextField fx:id="TF_B1X" maxWidth="60.0" />
+                                                <Label text="Y [m]:" />
+                                                <TextField fx:id="TF_B1Y" maxWidth="60.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                             <children>
+                                                <Label text="BEACON 2 -" />
+                                                <Label text="X [m]:" />
+                                                <TextField fx:id="TF_B2X" maxWidth="60.0" />
+                                                <Label text="Y [m]:" />
+                                                <TextField fx:id="TF_B2Y" maxWidth="60.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                             <children>
+                                                <Label text="BEACON 3 -" />
+                                                <Label text="X [m]:" />
+                                                <TextField fx:id="TF_B3X" maxWidth="60.0" />
+                                                <Label text="Y [m]:" />
+                                                <TextField fx:id="TF_B3Y" maxWidth="60.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                             <children>
+                                                <Label text="BEACON 4 -" />
+                                                <Label text="X [m]:" />
+                                                <TextField fx:id="TF_B4X" maxWidth="60.0" />
+                                                <Label text="Y [m]:" />
+                                                <TextField fx:id="TF_B4Y" maxWidth="60.0" />
+                                             </children>
+                                          </HBox>
+                                          <HBox>
+                                             <children>
+                                                <Label text="UDP PORTS">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                             <children>
+                                                <Label text="Receive" />
+                                                <TextField fx:id="TF_UDP_Recv" maxWidth="60.0" />
+                                                <Label text="Send" />
+                                                <TextField fx:id="TF_UDP_Send" maxWidth="60.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                    <HBox alignment="BOTTOM_LEFT" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#BTN_Save_Config_Action" text="Save config" />
+                                          <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#BTN_Load_Config_Action" text="Load config" />
+                                          <Button mnemonicParsing="false" onAction="#BTN_Restore_Default_Config_Action" text="Restore default config" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children></AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

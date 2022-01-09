@@ -1,0 +1,101 @@
+[2022-01-09 17:34:21.756] [exthost] [info] Extension host with pid 3572 started
+[2022-01-09 17:34:21.757] [exthost] [info] Skipping acquiring lock for c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\43c82c1c83ef7c57068e85aa8eeef276.
+[2022-01-09 17:34:22.047] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-09 17:34:22.062] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2022-01-09 17:34:22.301] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: false, activationEvent: 'onLanguage:cpp'
+[2022-01-09 17:34:22.352] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-09 17:34:22.356] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-09 17:34:22.361] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2022-01-09 17:34:22.387] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: true, activationEvent: '*'
+[2022-01-09 17:34:23.351] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cmake-tools, startup: true, activationEvent: 'workspaceContains:*/CMakeLists.txt,*/*/CMakeLists.txt,*/*/*/CMakeLists.txt'
+[2022-01-09 17:34:23.396] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:23.404] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:23.413] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:23.439] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:23.453] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-09 17:34:23.539] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-09 17:34:23.604] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-09 17:34:23.621] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-09 17:34:23.627] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2022-01-09 17:34:24.729] [exthost] [info] ExtensionService#_doActivateExtension marlinfirmware.auto-build, startup: true, activationEvent: '*'
+[2022-01-09 17:34:24.745] [exthost] [info] Eager extensions activated
+[2022-01-09 17:34:24.751] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 17:34:24.763] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 17:34:24.769] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 17:34:34.425] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-09 17:34:34.456] [exthost] [error] ProxyResolver#resolveProxy Canceled: Canceled
+	at Object.R [as canceled] (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:5:1157)
+	at t._remoteCall (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:13876)
+	at Proxy.O.<computed>.F.charCodeAt.O.<computed> (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:10271)
+	at l.resolveProxy (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:39347)
+	at Object.resolveProxy (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:104:59719)
+	at useProxySettings (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:159:16)
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:107:13
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:335:13
+	at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+[2022-01-09 17:34:34.467] [exthost] [error] ProxyResolver#resolveProxy Canceled: Canceled
+	at Object.R [as canceled] (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:5:1157)
+	at t._remoteCall (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:13876)
+	at Proxy.O.<computed>.F.charCodeAt.O.<computed> (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:10271)
+	at l.resolveProxy (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:39347)
+	at Object.resolveProxy (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:104:59719)
+	at useProxySettings (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:159:16)
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:107:13
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:335:13
+	at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+[2022-01-09 17:34:34.478] [exthost] [error] ProxyResolver#resolveProxy Canceled: Canceled
+	at Object.R [as canceled] (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:5:1157)
+	at t._remoteCall (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:13876)
+	at Proxy.O.<computed>.F.charCodeAt.O.<computed> (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:10271)
+	at l.resolveProxy (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:99:39347)
+	at Object.resolveProxy (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:104:59719)
+	at useProxySettings (c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:159:16)
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:107:13
+	at c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\node_modules.asar\vscode-proxy-agent\out\index.js:335:13
+	at processTicksAndRejections (internal/process/task_queues.js:93:5) 
+[2022-01-09 17:34:34.672] [exthost] [info] Extension host with pid 3572 exiting with code 0
+[2022-01-09 17:34:36.492] [exthost] [info] Extension host with pid 8208 started
+[2022-01-09 17:34:36.492] [exthost] [info] Skipping acquiring lock for c:\Users\Racarla\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\9a0a36592abf876bdcaa278495079214.
+[2022-01-09 17:34:36.692] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-09 17:34:36.703] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2022-01-09 17:34:36.882] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: false, activationEvent: 'onLanguage:cpp'
+[2022-01-09 17:34:36.927] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-09 17:34:36.932] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-09 17:34:36.936] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2022-01-09 17:34:36.958] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: true, activationEvent: '*'
+[2022-01-09 17:34:37.939] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-09 17:34:37.956] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-09 17:34:37.963] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2022-01-09 17:34:38.538] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-09 17:34:38.549] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:38.553] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:38.562] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:38.582] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-09 17:34:38.612] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-01-09 17:34:39.061] [exthost] [info] ExtensionService#_doActivateExtension marlinfirmware.auto-build, startup: true, activationEvent: '*'
+[2022-01-09 17:34:39.072] [exthost] [info] Eager extensions activated
+[2022-01-09 17:34:39.075] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 17:34:39.090] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 17:34:39.095] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-09 17:43:00.281] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 17:43:00.745] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 17:43:01.591] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 18:06:58.549] [exthost] [info] ExtensionService#_doActivateExtension vscode.grunt, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-09 18:06:58.592] [exthost] [info] ExtensionService#_doActivateExtension vscode.gulp, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-09 18:06:58.621] [exthost] [info] ExtensionService#_doActivateExtension vscode.jake, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-09 18:20:01.259] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:10:32.081] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:10:32.132] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:10:32.850] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:10:33.823] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:24:08.068] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:24:09.147] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:26:29.997] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:27:12.577] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:27:13.737] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:27:44.491] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:27:44.824] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:28:25.568] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:28:26.876] [exthost] [warning] ms-vscode.cpptools - Code actions of kind 'quickfix 'requested but returned code action is of kind 'refactor.inline'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+[2022-01-09 21:30:21.259] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-09 21:30:21.377] [exthost] [info] Extension host with pid 8208 exiting with code 0

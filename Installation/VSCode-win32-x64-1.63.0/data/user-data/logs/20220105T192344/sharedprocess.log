@@ -1,0 +1,3 @@
+[2022-01-05 19:23:48.210] [sharedprocess] [info] Starting worker process with pid 12088 (type: watcherServiceParcelSharedProcess, window: 1).
+[2022-01-05 19:23:48.431] [sharedprocess] [info] WSL is not installed, so could not detect WSL profiles
+[2022-01-06 00:45:01.034] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds

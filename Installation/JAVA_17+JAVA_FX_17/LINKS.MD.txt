@@ -1,0 +1,3 @@
+https://www.jetbrains.com/idea/download/
+https://www.azul.com/downloads/?version=java-17-lts&architecture=x86-64-bit&package=jdk-fx
+https://gluonhq.com/products/scene-builder/#download
