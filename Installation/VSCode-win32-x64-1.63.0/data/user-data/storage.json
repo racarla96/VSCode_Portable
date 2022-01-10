@@ -3,7 +3,7 @@
     "openedPathsList": {
         "entries": [
             {
-                "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot"
+                "folderUri": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot"
             },
             {
                 "folderUri": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot_WiFi_JSON"
@@ -21,10 +21,10 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///c%3A/Users/Racarla/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot",
-            "backupPath": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\e26cee8c44cc72285de7a103d2adcc56",
+            "folder": "file:///c%3A/Users/racarla1/Documents/Git/VSCode_Portable/Projects/ESP32/ESP32_FreeRTOS_Robot",
+            "backupPath": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Installation\\VSCode-win32-x64-1.63.0\\data\\user-data\\Backups\\1693549717028b3ddc47fabd263531bb",
             "uiState": {
-                "mode": 0,
+                "mode": 1,
                 "x": 128,
                 "y": 155,
                 "width": 1024,
@@ -57,5 +57,5 @@
             "windowBorder": false
         }
     },
-    "pickerWorkingDir": "C:\\Users\\Racarla\\Documents\\Git\\VSCode_Portable\\Projects\\ESP32"
+    "pickerWorkingDir": "C:\\Users\\racarla1\\Documents\\Git\\VSCode_Portable\\Projects\\ESP32"
 }

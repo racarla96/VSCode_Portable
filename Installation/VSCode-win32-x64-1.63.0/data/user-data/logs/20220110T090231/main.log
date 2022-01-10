@@ -1,0 +1,7 @@
+[2022-01-10 09:02:31.673] [main] [info] update#setState idle
+[2022-01-10 09:02:31.720] [main] [info] ExtensionHostStarterWorker created
+[2022-01-10 09:02:32.318] [main] [info] Starting extension host with pid 3976 (fork() took 9 ms).
+[2022-01-10 09:02:41.481] [main] [info] Extension host with pid 3976 exited with code: 0, signal: null.
+[2022-01-10 09:02:42.128] [main] [info] Starting extension host with pid 16068 (fork() took 6 ms).
+[2022-01-10 09:03:01.639] [main] [info] update#setState checking for updates
+[2022-01-10 09:03:01.877] [main] [info] update#setState available for download

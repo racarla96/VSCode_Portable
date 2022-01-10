@@ -14,4 +14,7 @@ public class RobotStateIn {
     double w4;
     double BV;
     double BI;
+
+    public void String2Object(String toString) {
+    }
 }

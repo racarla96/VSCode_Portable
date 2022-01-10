@@ -1,4 +1,10 @@
-@import url("style_chart.css");
+.chart-legend{
+     -fx-translate-x: 25;
+}
+
+.chart .chart-content{
+    -fx-padding: 5 5 5 -5;
+}
 
 .default-color0.chart-series-line { -fx-stroke: transparent; }
 
@@ -10,3 +16,12 @@
 .default-color0.chart-legend-item-symbol{
     -fx-background-color: black;
  }
+
+
+ .default-color3.chart-line-symbol {
+     -fx-background-color: green;
+ }
+
+ .default-color3.chart-legend-item-symbol{
+     -fx-background-color: green;
+  }

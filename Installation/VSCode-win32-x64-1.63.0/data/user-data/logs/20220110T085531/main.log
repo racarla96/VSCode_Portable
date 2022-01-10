@@ -1,0 +1,11 @@
+[2022-01-10 08:55:31.966] [main] [info] update#setState idle
+[2022-01-10 08:55:32.094] [main] [info] ExtensionHostStarterWorker created
+[2022-01-10 08:55:32.840] [main] [info] Starting extension host with pid 16212 (fork() took 10 ms).
+[2022-01-10 08:55:45.998] [main] [error] [uncaught exception in main]: Error: SharedProcess: crashed (detail: killed, code: 1073807364)
+[2022-01-10 08:55:45.998] [main] [error] Error: SharedProcess: crashed (detail: killed, code: 1073807364)
+    at C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:77:71205
+    at g.fire (C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:16:1712)
+    at C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:14:52933
+    at g.fire (C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:16:1712)
+    at Object.<anonymous> (C:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\resources\app\out\vs\code\electron-main\main.js:76:11946)
+    at Object.emit (events.js:327:22)

@@ -5,3 +5,11 @@
 .chart .chart-content{
     -fx-padding: 5 5 5 -5;
 }
+
+ .default-color2.chart-line-symbol {
+     -fx-background-color: green;
+ }
+
+ .default-color2.chart-legend-item-symbol{
+     -fx-background-color: green;
+  }

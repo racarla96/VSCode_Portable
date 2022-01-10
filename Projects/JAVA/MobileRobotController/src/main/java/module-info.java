@@ -4,8 +4,6 @@ module com.co3.mobilerobotcontroller {
     requires commons.validator;
     requires org.json;
     requires java.desktop;
-    requires Extasys;
-
 
     opens com.co3.mobilerobotcontroller to javafx.fxml;
     exports com.co3.mobilerobotcontroller;

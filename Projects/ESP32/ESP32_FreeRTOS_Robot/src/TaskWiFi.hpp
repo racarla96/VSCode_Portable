@@ -19,12 +19,12 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
-//#define WIFI_SSID "NETGEAR95"
-//#define WIFI_PASS "admin123"
+#define WIFI_SSID "NETGEAR95"
+#define WIFI_PASS "admin123"
 // #define WIFI_SSID "Rafael"
 // #define WIFI_PASS "Rafael@2018"
-#define WIFI_SSID "MiFibra-AE3A"
-#define WIFI_PASS "tyVuRKUa"
+// #define WIFI_SSID "MiFibra-AE3A"
+// #define WIFI_PASS "tyVuRKUa"
 #define WIFI_TIMEOUT_MS 60000       // 20 [s]
 #define WIFI_TASK_CYCLE_RATE_MS 100 // 0.1 [s]
 

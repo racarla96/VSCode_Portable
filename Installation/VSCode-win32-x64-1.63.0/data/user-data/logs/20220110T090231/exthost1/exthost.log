@@ -1,0 +1,61 @@
+[2022-01-10 09:02:32.685] [exthost] [info] Extension host with pid 3976 started
+[2022-01-10 09:02:32.737] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-10 09:02:32.745] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-10 09:02:32.748] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-10 09:02:32.751] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2022-01-10 09:02:32.764] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2022-01-10 09:02:32.794] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: true, activationEvent: '*'
+[2022-01-10 09:02:33.278] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-10 09:02:33.290] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-10 09:02:33.294] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2022-01-10 09:02:33.542] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-10 09:02:33.595] [exthost] [info] ExtensionService#_doActivateExtension marlinfirmware.auto-build, startup: true, activationEvent: '*'
+[2022-01-10 09:02:33.603] [exthost] [info] Eager extensions activated
+[2022-01-10 09:02:33.606] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-10 09:02:33.612] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-10 09:02:33.615] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-10 09:02:41.464] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-01-10 09:02:41.468] [exthost] [info] Extension host with pid 3976 exiting with code 0
+[2022-01-10 09:02:42.546] [exthost] [info] Extension host with pid 16068 started
+[2022-01-10 09:02:42.547] [exthost] [info] Skipping acquiring lock for c:\Users\racarla1\Documents\Git\VSCode_Portable\Installation\VSCode-win32-x64-1.63.0\data\user-data\User\workspaceStorage\d5c4bf7deb3e195a792ea47296dc39db.
+[2022-01-10 09:02:42.606] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+[2022-01-10 09:02:42.613] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-01-10 09:02:42.616] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-01-10 09:02:42.618] [exthost] [info] ExtensionService#_doActivateExtension DanielLin.auto-header, startup: true, activationEvent: '*'
+[2022-01-10 09:02:42.631] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.cpptools, startup: true, activationEvent: '*', root cause: platformio.platformio-ide
+[2022-01-10 09:02:42.661] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: true, activationEvent: '*'
+[2022-01-10 09:02:43.064] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+[2022-01-10 09:02:43.072] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-01-10 09:02:43.084] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-01-10 09:02:43.087] [exthost] [info] ExtensionService#_doActivateExtension platformio.platformio-ide, startup: true, activationEvent: '*'
+[2022-01-10 09:02:43.387] [exthost] [info] ExtensionService#_doActivateExtension marlinfirmware.auto-build, startup: true, activationEvent: '*'
+[2022-01-10 09:02:43.395] [exthost] [info] Eager extensions activated
+[2022-01-10 09:02:43.397] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-10 09:02:43.403] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-10 09:02:43.406] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-wsl-recommender, startup: false, activationEvent: 'onStartupFinished'
+[2022-01-10 09:02:43.650] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 495
+[2022-01-10 09:02:44.909] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 495
+[2022-01-10 09:02:47.496] [exthost] [info] ExtensionService#_doActivateExtension cschlosser.doxdocgen, startup: false, activationEvent: 'onLanguage:cpp'
+[2022-01-10 09:02:50.127] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 508
+[2022-01-10 09:02:55.345] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 508
+[2022-01-10 09:03:00.571] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 509
+[2022-01-10 09:03:05.811] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 508
+[2022-01-10 09:03:09.448] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-10 09:03:09.473] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-10 09:03:09.545] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-10 09:03:09.629] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+[2022-01-10 09:03:11.054] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 509
+[2022-01-10 09:04:55.523] [exthost] [info] ExtensionService#_doActivateExtension vscode.grunt, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-10 09:04:55.542] [exthost] [info] ExtensionService#_doActivateExtension vscode.gulp, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-10 09:04:55.558] [exthost] [info] ExtensionService#_doActivateExtension vscode.jake, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-10 09:04:55.575] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onCommand:workbench.action.tasks.runTask'
+[2022-01-10 09:05:04.253] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 511
+[2022-01-10 09:05:09.468] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 511
+[2022-01-10 09:05:24.292] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 511
+[2022-01-10 09:06:12.359] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 511
+[2022-01-10 10:08:46.435] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 526
+[2022-01-10 10:21:16.535] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 526
+[2022-01-10 11:33:18.678] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 530
+[2022-01-10 12:20:41.655] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 535
+[2022-01-10 12:46:18.498] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 541
+[2022-01-10 13:15:18.736] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 543

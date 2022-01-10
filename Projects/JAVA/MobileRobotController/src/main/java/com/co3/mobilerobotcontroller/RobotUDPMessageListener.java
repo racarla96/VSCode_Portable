@@ -9,8 +9,10 @@ import java.net.SocketTimeoutException;
 public class RobotUDPMessageListener implements Runnable {
 
     private volatile boolean running = false;
-    private volatile int port = 4000;
+    private volatile int port = 34929;
+    private volatile boolean fresh_data = false;
     private volatile RobotStateIn robotStateIN;
+    private RobotStateIn robotStateIN_Copy;
 
     @Override
     public void run() {
@@ -46,6 +48,11 @@ public class RobotUDPMessageListener implements Runnable {
             }
             if(packet_received) {
 //                System.out.println(packet.getData().toString());
+                robotStateIN_Copy.String2Object(packet.getData().toString());
+                if(robotStateIN_Copy != null){
+                    fresh_data = true;
+                    robotStateIN = robotStateIN_Copy;
+                }
             }
         }
         listener.close();
@@ -60,6 +67,11 @@ public class RobotUDPMessageListener implements Runnable {
     }
 
     public RobotStateIn getRobotStateIN(){
+        fresh_data = false;
         return robotStateIN;
+    }
+
+    public boolean isFresh_data(){
+        return fresh_data;
     }
 }
