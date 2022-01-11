@@ -6,22 +6,13 @@
     -fx-padding: 5 5 5 -5;
 }
 
-.default-color0.chart-series-line { -fx-stroke: transparent; }
+.chart-series-line { -fx-stroke: transparent; }
 
-.default-color0.chart-line-symbol {
+.default-color3.chart-line-symbol {
     -fx-background-color: black;
     -fx-background-radius: 0px;
 }
 
-.default-color0.chart-legend-item-symbol{
+.default-color3.chart-legend-item-symbol{
     -fx-background-color: black;
  }
-
-
- .default-color3.chart-line-symbol {
-     -fx-background-color: green;
- }
-
- .default-color3.chart-legend-item-symbol{
-     -fx-background-color: green;
-  }

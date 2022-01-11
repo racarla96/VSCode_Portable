@@ -80,6 +80,7 @@ public class HelloController {
 
     private volatile RobotStateOut robotStateOut;
     private RobotStateIn robotStateIn;
+    private boolean ROBOT_NEW_DATA;
 
     @FXML
     private TextField TF_ComPeriod;
@@ -121,7 +122,15 @@ public class HelloController {
     private CheckBox CB_CAM_Enabled;
     private boolean CAM_Enabled;
 
+    @FXML
+    private TextField TF_CAM_OFF_X;
+    @FXML
+    private TextField TF_CAM_OFF_Y;
 
+    private double CAM_OFF_X;
+    private double CAM_OFF_Y;
+    private String CAM_OFF_X_Key = "CAM_OFF_X";
+    private String CAM_OFF_Y_Key = "CAM_OFF_Y";
 
     // CONTROL MODES
     ObservableList<String> CM_list = FXCollections.observableArrayList("MANUAL", "AUTOMATIC - SQUARE");
@@ -480,24 +489,57 @@ public class HelloController {
             CAM_Counter++;
         }
 
-        Double X = rand.nextDouble();
-        Double Y = rand.nextDouble();
+//        Double X = rand.nextDouble() * 10;
+//        Double Y = rand.nextDouble() * 10;
 
-
+        if(ROBOT_NEW_DATA = robotUDPMessageListener.isFresh_data()) robotStateIn = robotUDPMessageListener.getRobotStateIN();
         if(CAM_NEW_DATA = cameraUDPMessageListener.isFresh_data()) CameraStateGet = cameraUDPMessageListener.getCameraStateIN();
 
         // Update the chart
         Platform.runLater(() -> {
 
-            // put random number with current time
-            PLOT_XY_DT_REF.getData().add(new XYChart.Data<>(X, Y));
-            PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, X));
-            PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, Y));
+//            // put random number with current time
+//            PLOT_XY_DT_REF.getData().add(new XYChart.Data<>(X, Y));
+//            PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, X));
+//            PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, Y));
+
+            if(ROBOT_NEW_DATA){
+                PLOT_XY_DT_OUT.getData().add(new XYChart.Data<>(robotStateIn.X, robotStateIn.Y));
+
+                PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.X));
+                PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.Y));
+                PLOT_tO_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.O));
+
+                PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.X));
+                PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.Y));
+                PLOT_tO_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.O));
+
+                PLOT_tVX_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.VX));
+                PLOT_tVY_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.VY));
+                PLOT_tWO_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.WO));
+
+                PLOT_tW1_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.W1));
+                PLOT_tW2_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.W2));
+                PLOT_tW3_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.W3));
+                PLOT_tW4_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.W4));
+
+                PLOT_BATT_tV_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.BV));
+                PLOT_BATT_tI_DT_OUT.getData().add(new XYChart.Data<>(t, robotStateIn.BI));
+
+                PLOT_tVX_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_VX));
+                PLOT_tVY_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_VY));
+                PLOT_tWO_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_WO));
+
+                PLOT_tW1_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_W1));
+                PLOT_tW2_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_W2));
+                PLOT_tW3_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_W3));
+                PLOT_tW4_DT_REF.getData().add(new XYChart.Data<>(t, robotStateIn.R_W4));
+            }
 
             if(CAM_NEW_DATA) {
                 PLOT_XY_DT_CAM.getData().add(new XYChart.Data<>(CameraStateGet.X, CameraStateGet.Y));
-                PLOT_tX_DT_CAM.getData().add(new XYChart.Data<>(t, CameraStateGet.X));
-                PLOT_tY_DT_CAM.getData().add(new XYChart.Data<>(t, CameraStateGet.Y));
+                PLOT_tX_DT_CAM.getData().add(new XYChart.Data<>(t, CAM_OFF_X + CameraStateGet.X));
+                PLOT_tY_DT_CAM.getData().add(new XYChart.Data<>(t, CAM_OFF_Y + CameraStateGet.Y));
                 PLOT_tO_DT_CAM.getData().add(new XYChart.Data<>(t, CameraStateGet.O));
             }
 
@@ -515,6 +557,8 @@ public class HelloController {
         WINDOW_MOD_COUNTER += 1;
         WINDOW_COUNTER += 1;
     }
+
+
 
     // DISABLE AND ENABLE UI INTERACTION
     private void disable_UI_interaction(){
@@ -580,13 +624,11 @@ public class HelloController {
                 robotStateOut.R_vX = 0;
                 robotStateOut.R_vY = 0;
                 robotStateOut.R_wO = MM_Slider_Gain;
-                System.out.println("Hey");
                 break;
             case "MM_BTN_ROT_RIGHT":
                 robotStateOut.R_vX = 0;
                 robotStateOut.R_vY = 0;
                 robotStateOut.R_wO = -MM_Slider_Gain;
-                System.out.println("Hey");
                 break;
         }
     }
@@ -648,7 +690,6 @@ public class HelloController {
 
                     Double possible_ComPeriod = Double_Validation(possible_ComPeriod_str);
 
-                    System.out.println(possible_ComPeriod);
                     if (possible_ComPeriod == null
                             || !(possible_ComPeriod >= min_ComPeriod && possible_ComPeriod <= max_ComPeriod))
                         TF_ComPeriod.setText(String.valueOf(ComPeriod));
@@ -749,6 +790,24 @@ public class HelloController {
                 }
             }
         });
+
+        TF_CAM_OFF_X.focusedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                Double number = Double_Validation(TF_CAM_OFF_X.getText());
+                if(number == null) TF_CAM_OFF_X.setText(String.valueOf(CAM_OFF_X));
+                else CAM_OFF_X = number;
+            }
+        });
+
+        TF_CAM_OFF_Y.focusedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                Double number = Double_Validation(TF_CAM_OFF_Y.getText());
+                if(number == null) TF_CAM_OFF_Y.setText(String.valueOf(CAM_OFF_Y));
+                else CAM_OFF_Y = number;
+            }
+        });
     }
 
     protected void TF_Beacons_Validation(TextField TF_Beacon) {
@@ -782,7 +841,10 @@ public class HelloController {
 
         if (id >= 0) {
             Double number = Double_Validation(TF_Beacon.getText());
-            if (number != null) Beacons[id] = number;
+            if (number != null){
+                Beacons[id] = number;
+                Update_UI_Beacons();
+            }
             else TF_Beacon.setText(Beacons[id].toString());
         }
     }
@@ -797,6 +859,8 @@ public class HelloController {
         config_JSON_Object.put(CAM_IP_Key, CAM_IPV4_Address);
         config_JSON_Object.put(CAM_UDP_Key, CAM_UDP_Port);
         config_JSON_Object.put(CAM_DP_Key, CAM_DecimPeriod_Trigger);
+        config_JSON_Object.put(CAM_OFF_X_Key, CAM_OFF_X);
+        config_JSON_Object.put(CAM_OFF_Y_Key, CAM_OFF_Y);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(config_JSON_Name, false));) {
             bw.write(config_JSON_Object.toString());
             //Guardamos los cambios del fichero
@@ -882,6 +946,34 @@ public class HelloController {
                             } else throw new Exception(CAM_DP_Key + " has not the expected type");
                         } else throw new Exception("The " + CAM_DP_Key + "has not present");
 
+                        if (possible_config_JSON_Object.has(CAM_OFF_X_Key)) {
+                            obj = possible_config_JSON_Object.get(CAM_OFF_X_Key);
+                            if (obj instanceof Double || obj instanceof Integer) {
+                                Double d = 0.0;
+                                if(obj instanceof Integer) {
+                                    Integer a = (Integer) obj;
+                                    d = a.doubleValue();
+                                } else {
+                                    d = (Double) obj;
+                                }
+                                CAM_OFF_X = d;
+                            } else throw new Exception(CAM_OFF_X_Key + " has not the expected type");
+                        } else throw new Exception("The " + CAM_OFF_X_Key + "has not present");
+
+                        if (possible_config_JSON_Object.has(CAM_OFF_Y_Key)) {
+                            obj = possible_config_JSON_Object.get(CAM_OFF_Y_Key);
+                            if (obj instanceof Double || obj instanceof Integer) {
+                                Double d = 0.0;
+                                if(obj instanceof Integer) {
+                                    Integer a = (Integer) obj;
+                                    d = a.doubleValue();
+                                } else {
+                                    d = (Double) obj;
+                                }
+                                CAM_OFF_Y = d;
+                            } else throw new Exception(CAM_OFF_Y_Key + " has not the expected type");
+                        } else throw new Exception("The " + CAM_OFF_Y_Key + " has not present");
+
                     } catch (JSONException err) {
                         // Show Error Alert loading config
                         Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -933,6 +1025,9 @@ public class HelloController {
         CAM_IPV4_Address = default_IPV4_Address;
         CAM_UDP_Port = default_CAM_UDP_Port;
         CAM_DecimPeriod_Trigger = 1;
+
+        CAM_OFF_X = 0;
+        CAM_OFF_Y = 0;
     }
 
     private void UpdateConfig() {
@@ -954,6 +1049,9 @@ public class HelloController {
         TF_CAM_IPV4.setText(CAM_IPV4_Address);
         TF_CAM_DecimPeriod.setText(String.valueOf(CAM_DecimPeriod_Trigger));
         TF_CAM_UDP_Send.setText(CAM_UDP_Port.toString());
+
+        TF_CAM_OFF_X.setText(String.valueOf(CAM_OFF_X));
+                TF_CAM_OFF_Y.setText(String.valueOf(CAM_OFF_Y));
     }
 
     // CAMERA
@@ -974,26 +1072,23 @@ public class HelloController {
         PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[6], Beacons[7]));
 
         PLOT_XY_DT_REF.setName("Reference");
-        PLOT_XY_DT_OUT.setName("Output");
-        PLOT_XY_DT_OUT_NOW.setName("REMOVE");
+        PLOT_XY_DT_OUT.setName("Odometry");
         PLOT_XY_DT_CAM.setName("Camera");
 
         // POSITIONS
         // tX PLOT
         PLOT_tX_DT_REF.setName("Reference");
-        PLOT_tX_DT_OUT.setName("Output");
+        PLOT_tX_DT_OUT.setName("Odometry");
         PLOT_tX_DT_CAM.setName("Camera");
-
-        PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(0,0));
 
         // tY PLOT
         PLOT_tY_DT_REF.setName("Reference");
-        PLOT_tY_DT_OUT.setName("Output");
+        PLOT_tY_DT_OUT.setName("Odometry");
         PLOT_tY_DT_CAM.setName("Camera");
 
         // tO PLOT
         PLOT_tO_DT_REF.setName("Reference");
-        PLOT_tO_DT_OUT.setName("Output");
+        PLOT_tO_DT_OUT.setName("Odometry");
         PLOT_tO_DT_CAM.setName("Camera");
 
         // VELOCITIES
@@ -1035,10 +1130,11 @@ public class HelloController {
 
         // ASSOCIATE DATASERIES TO CHARTS
         // XY PLOT
-        PLOT_XY_LC.getData().add(PLOT_XY_DT_BEACONS);
         PLOT_XY_LC.getData().add(PLOT_XY_DT_REF);
         PLOT_XY_LC.getData().add(PLOT_XY_DT_OUT);
         PLOT_XY_LC.getData().add(PLOT_XY_DT_CAM);
+        PLOT_XY_LC.getData().add(PLOT_XY_DT_BEACONS);
+
         // POSITIONS
         // tX PLOT
         PLOT_tX_LC.getData().add(PLOT_tX_DT_REF);
@@ -1542,10 +1638,18 @@ public class HelloController {
         });
     }
 
+    private void Update_UI_Beacons(){
+        PLOT_XY_DT_BEACONS.getData().clear();
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[0], Beacons[1]));
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[2], Beacons[3]));
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[4], Beacons[5]));
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[6], Beacons[7]));
+    }
+
     private void reset_plot_view(){
         // CLEAR DATA SERIES
         // XY PLOT
-        PLOT_XY_DT_OUT_NOW.getData().clear();
+        PLOT_XY_DT_CAM.getData().clear();
         PLOT_XY_DT_REF.getData().clear();
         PLOT_XY_DT_OUT.getData().clear();
         // POSITIONS

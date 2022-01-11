@@ -508,6 +508,15 @@
                                                 <TextField fx:id="TF_CAM_DecimPeriod" maxWidth="65.0" prefHeight="25.0" prefWidth="63.0" text="1" />
                                              </children>
                                           </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="5.0">
+                                             <children>
+                                                <Label text="OFFSET -" />
+                                                <Label text="X [m]:" />
+                                                <TextField fx:id="TF_CAM_OFF_X" maxWidth="60.0" />
+                                                <Label text="Y [m]:" />
+                                                <TextField fx:id="TF_CAM_OFF_Y" maxWidth="60.0" />
+                                             </children>
+                                          </HBox>
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

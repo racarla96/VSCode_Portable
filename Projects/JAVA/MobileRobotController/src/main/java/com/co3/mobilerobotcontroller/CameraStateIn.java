@@ -14,7 +14,7 @@ public class CameraStateIn {
         List<String> e = Arrays.asList(msg.split(","));
         if(e.size() == 7) {
             X = Double.parseDouble(e.get(1));
-            Y = Double.parseDouble(e.get(2));
+            Y = -Double.parseDouble(e.get(2));
             O = Double.parseDouble(e.get(5));
             return true;
         }

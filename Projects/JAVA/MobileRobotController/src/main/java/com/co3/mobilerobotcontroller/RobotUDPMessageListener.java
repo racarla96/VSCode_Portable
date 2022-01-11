@@ -18,6 +18,8 @@ public class RobotUDPMessageListener implements Runnable {
     public void run() {
 //        System.out.println("Hello World!");
 
+        robotStateIN_Copy = new RobotStateIn();
+
         byte[] buffer = new byte[1500]; // MTU = 1500 bytes
         DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 
@@ -48,8 +50,9 @@ public class RobotUDPMessageListener implements Runnable {
             }
             if(packet_received) {
 //                System.out.println(packet.getData().toString());
-                robotStateIN_Copy.String2Object(packet.getData().toString());
-                if(robotStateIN_Copy != null){
+                String message = new String( packet.getData(), 0,
+                        packet.getLength() );
+                if(robotStateIN_Copy.String2Object(message)){
                     fresh_data = true;
                     robotStateIN = robotStateIN_Copy;
                 }
