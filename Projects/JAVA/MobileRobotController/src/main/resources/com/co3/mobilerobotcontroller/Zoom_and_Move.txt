@@ -1,0 +1,1193 @@
+        // ZOOM AND MOVE
+        Scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if(!isRunningService){
+                    if (event.getCode() == KeyCode.CONTROL) ZoomX = true;
+                    if (event.getCode() == KeyCode.SHIFT) ZoomY = true;
+                }
+            }
+        });
+
+        Scene.addEventFilter(KeyEvent.KEY_RELEASED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if(!isRunningService){
+                    if (event.getCode() == KeyCode.CONTROL) ZoomX = false;
+                    if (event.getCode() == KeyCode.SHIFT) ZoomY = false;
+                }
+            }
+        });
+
+        // XY PLOT
+        PLOT_XY_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_XY_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_XY_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_XY_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_XY_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_XY_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_XY_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_XY_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_XY_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_XY_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // POSITIONS
+        // tX PLOT
+        PLOT_tX_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tX_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tX_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tX_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tX_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tX_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tX_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tX_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tX_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tX_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // tY PLOT
+        PLOT_tY_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tY_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tY_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tY_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tY_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tY_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tY_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tY_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tY_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tY_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // tO PLOT
+        PLOT_tO_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tO_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tO_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tO_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tO_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tO_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tO_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tO_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tO_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tO_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // VELOCITIES
+        // tVX PLOT
+        PLOT_tVX_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tVX_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tVX_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tVX_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tVX_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tVX_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tVX_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tVX_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tVX_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tVX_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+        // tVY PLOT
+        PLOT_tVY_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tVY_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tVY_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tVY_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tVY_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tVY_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tVY_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tVY_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tVY_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tVY_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // tWO PLOT
+        PLOT_tWO_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tWO_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tWO_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tWO_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tWO_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tWO_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tWO_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tWO_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tWO_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tWO_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // MOTORS
+        // MOTOR 1 - tW1 PLOT
+        PLOT_tW1_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW1_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW1_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tW1_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tW1_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tW1_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tW1_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tW1_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW1_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW1_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // MOTOR 2 - tW2 PLOT
+        PLOT_tW2_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW2_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW2_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tW2_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tW2_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tW2_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tW2_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tW2_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW2_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW2_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // MOTOR 3 - tW3 PLOT
+        PLOT_tW3_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW3_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW3_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tW3_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tW3_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tW3_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tW3_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tW3_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW3_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW3_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // MOTOR 4 - tW4 PLOT
+        PLOT_tW4_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW4_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW4_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_tW4_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_tW4_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_tW4_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_tW4_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_tW4_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_tW4_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_tW4_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // BATTERY
+        // VOLTAGE
+        PLOT_BATT_tV_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_BATT_tV_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_BATT_tV_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_BATT_tV_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_BATT_tV_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_BATT_tV_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_BATT_tV_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_BATT_tV_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_BATT_tV_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_BATT_tV_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });
+
+        // INTENSITY
+        PLOT_BATT_tI_LC.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override
+            public void handle(ScrollEvent ev) {
+                if (ZoomX) {
+                    double zoomFactor = 1.05;
+                    double deltaY = ev.getDeltaY();
+
+                    if (deltaY < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis xAxisLocal = ((NumberAxis) PLOT_BATT_tI_LC.getXAxis());
+                    xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() * zoomFactor);
+                    xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() * zoomFactor);
+                    xAxisLocal.setTickUnit(1);
+                    xAxisLocal.setMinorTickCount(10);
+                }
+                if (ZoomY) {
+                    double zoomFactor = 1.05;
+                    double deltaX = ev.getDeltaX();
+
+                    if (deltaX < 0) {
+                        zoomFactor = 2 - zoomFactor;
+                    }
+
+                    NumberAxis yAxisLocal = ((NumberAxis) PLOT_BATT_tI_LC.getYAxis());
+                    yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() * zoomFactor);
+                    yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() * zoomFactor);
+                    yAxisLocal.setTickUnit(1);
+                    yAxisLocal.setMinorTickCount(10);
+                }
+                ev.consume();
+            }
+        });
+
+        PLOT_BATT_tI_LC.addEventFilter(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveX_Value = mouseEvent.getX();
+                        Chart_ID = PLOT_BATT_tI_LC.getId();
+                    }
+                    if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                        MoveY_Value = mouseEvent.getY();
+                        Chart_ID = PLOT_BATT_tI_LC.getId();
+                    }
+                }
+            }
+        });
+
+        PLOT_BATT_tI_LC.addEventFilter(MouseEvent.MOUSE_RELEASED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if(!isRunningService) {
+                    if (Chart_ID.equals(PLOT_BATT_tI_LC.getId())){
+                        if (ZoomX && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_X = 0.005;
+                            double delta_X = Move_Factor_X * (mouseEvent.getX() - MoveX_Value);
+                            System.out.println("DX: " + delta_X);
+
+                            if (delta_X > 2) delta_X = 2;
+                            if (delta_X < -2) delta_X = -2;
+
+                            NumberAxis xAxisLocal = ((NumberAxis) PLOT_BATT_tI_LC.getXAxis());
+                            xAxisLocal.setUpperBound(xAxisLocal.getUpperBound() - delta_X);
+                            xAxisLocal.setLowerBound(xAxisLocal.getLowerBound() - delta_X);
+                            xAxisLocal.setTickUnit(1);
+                            xAxisLocal.setMinorTickCount(10);
+                        }
+                        if (ZoomY && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                            double Move_Factor_Y = 0.01;
+                            double delta_Y = Move_Factor_Y * (mouseEvent.getY() - MoveY_Value);
+                            System.out.println("DY: " + delta_Y);
+
+                            if (delta_Y > 2) delta_Y = 2;
+                            if (delta_Y < -2) delta_Y = -2;
+
+                            NumberAxis yAxisLocal = ((NumberAxis) PLOT_BATT_tI_LC.getYAxis());
+                            yAxisLocal.setUpperBound(yAxisLocal.getUpperBound() + delta_Y);
+                            yAxisLocal.setLowerBound(yAxisLocal.getLowerBound() + delta_Y);
+                            yAxisLocal.setTickUnit(1);
+                            yAxisLocal.setMinorTickCount(10);
+                        }
+                    }
+                }
+            }
+        });

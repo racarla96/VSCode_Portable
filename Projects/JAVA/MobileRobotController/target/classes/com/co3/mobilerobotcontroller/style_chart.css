@@ -13,3 +13,5 @@
  .default-color2.chart-legend-item-symbol{
      -fx-background-color: green;
   }
+
+  .default-color2.chart-series-line { -fx-background-color: green; }

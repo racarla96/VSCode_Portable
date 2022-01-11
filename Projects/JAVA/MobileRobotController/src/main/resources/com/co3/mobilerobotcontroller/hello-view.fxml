@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
@@ -22,8 +21,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import org.gillius.jfxutils.chart.StableTicksAxis?>
 
-<AnchorPane minHeight="480.0" minWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.co3.mobilerobotcontroller.HelloController">
+<AnchorPane fx:id="Scene" minHeight="480.0" minWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.co3.mobilerobotcontroller.HelloController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" prefHeight="480.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -228,10 +228,10 @@
                                  <children>
                                     <LineChart fx:id="PLOT_XY_LC" animated="false" stylesheets="@style_chart_XY.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                       <xAxis>
-                                        <NumberAxis animated="false" label="X [m]" lowerBound="-10.0" side="BOTTOM" tickUnit="0.1" upperBound="10.0" />
+                                        <StableTicksAxis fx:id="PLOT_XY_NAxis_X" animated="false" label="X [m]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                       </xAxis>
                                       <yAxis>
-                                        <NumberAxis animated="false" label="Y [m]" lowerBound="-10.0" side="LEFT" tickUnit="0.1" upperBound="10.0" />
+                                        <StableTicksAxis fx:id="PLOT_XY_NAxis_Y" animated="false" label="Y [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                       </yAxis>
                                     </LineChart>
                                  </children></AnchorPane>
@@ -253,26 +253,26 @@
                                        <children>
                                           <LineChart fx:id="PLOT_tX_LC" animated="false" stylesheets="@style_chart.css">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tX_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tX_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="X [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="X [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tY_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tY_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tY_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="Y [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="Y [m]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tO_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="2">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tO_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tO_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="θ [rad]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="θ [rad]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                        </children>
@@ -297,26 +297,26 @@
                                        <children>
                                           <LineChart fx:id="PLOT_tVX_LC" animated="false" stylesheets="@style_chart.css">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tVX_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tVX_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="VX [m/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="VX [m/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tVY_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tVY_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tVY_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="VY [m/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="VY [m/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tWO_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="2">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tWO_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tWO_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="Wθ [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="Wθ [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                        </children>
@@ -341,34 +341,34 @@
                                        <children>
                                           <LineChart fx:id="PLOT_tW1_LC" animated="false" stylesheets="@style_chart.css">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tW1_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tW1_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="W1 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="W1 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tW3_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tW3_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tW3_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="W3 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="W3 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tW2_LC" animated="false" stylesheets="@style_chart.css" GridPane.columnIndex="1">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tW2_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tW2_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="W2 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="W2 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_tW4_LC" animated="false" stylesheets="@style_chart.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_tW4_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_tW4_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="W4 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="W4 [rad/s]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                        </children>
@@ -392,18 +392,18 @@
                                        <children>
                                           <LineChart fx:id="PLOT_BATT_tV_LC" animated="false" stylesheets="@style_chart.css">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_BATT_tV_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_BATT_tV_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="VOLTAGE [V]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="VOLTAGE [V]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                           <LineChart fx:id="PLOT_BATT_tI_LC" animated="false" stylesheets="@style_chart.css" GridPane.rowIndex="1">
                                              <xAxis>
-                                                <NumberAxis fx:id="PLOT_BATT_tI_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
+                                                <StableTicksAxis fx:id="PLOT_BATT_tI_NAxis_X" animated="false" label="t [s]" lowerBound="-10.0" side="BOTTOM" upperBound="10.0" />
                                              </xAxis>
                                              <yAxis>
-                                                <NumberAxis animated="false" label="INTENSITY [A]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
+                                                <StableTicksAxis animated="false" label="INTENSITY [A]" lowerBound="-10.0" side="LEFT" upperBound="10.0" />
                                              </yAxis>
                                           </LineChart>
                                        </children>
@@ -498,14 +498,14 @@
                                           </HBox>
                                           <HBox alignment="CENTER_LEFT" spacing="10.0">
                                              <children>
-                                                <Label text="Decimation Period" />
-                                                <TextField fx:id="TF_CAM_DecimPeriod" maxWidth="60.0" prefWidth="60.0" text="1" />
+                                                <Label text="UDP Send Port" />
+                                                <TextField fx:id="TF_CAM_UDP_Send" maxWidth="82.0" prefHeight="25.0" prefWidth="82.0" />
                                              </children>
                                           </HBox>
                                           <HBox alignment="CENTER_LEFT" spacing="10.0">
                                              <children>
-                                                <Label text="UDP Send Port" />
-                                                <TextField fx:id="TF_CAM_UDP_Send" maxWidth="60.0" />
+                                                <Label text="Decimation Period" />
+                                                <TextField fx:id="TF_CAM_DecimPeriod" maxWidth="65.0" prefHeight="25.0" prefWidth="63.0" text="1" />
                                              </children>
                                           </HBox>
                                        </children>

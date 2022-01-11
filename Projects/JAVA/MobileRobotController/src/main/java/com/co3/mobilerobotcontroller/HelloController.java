@@ -6,11 +6,14 @@ import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
+import javafx.scene.input.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 import org.apache.commons.validator.routines.InetAddressValidator;
@@ -22,11 +25,17 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import org.gillius.jfxutils.chart.*;
 import org.json.*;
 
 import static java.lang.Math.sqrt;
 
 public class HelloController {
+
+    // ZOOM AND KEYS
+    @FXML
+    private AnchorPane Scene;
+    private boolean Zoom = false;
 
     // CONFIGURATION
     private String config_JSON_Name = "config.json";
@@ -94,6 +103,11 @@ public class HelloController {
     private CameraStateIn CameraStateGet;
     private boolean CAM_NEW_DATA;
 
+    private String CAM_ENABLED_Key = "CAM_ENABLED";
+    private String CAM_IP_Key = "CAM_IP";
+    private String CAM_DP_Key = "CAM_DP";
+    private String CAM_UDP_Key = "CAM_UDP";
+
     @FXML
     private TextField TF_CAM_DecimPeriod;
 
@@ -106,6 +120,8 @@ public class HelloController {
     @FXML
     private CheckBox CB_CAM_Enabled;
     private boolean CAM_Enabled;
+
+
 
     // CONTROL MODES
     ObservableList<String> CM_list = FXCollections.observableArrayList("MANUAL", "AUTOMATIC - SQUARE");
@@ -126,74 +142,135 @@ public class HelloController {
     // AUTOMATIC PURE PURSUIT SQUARE MODE
 
 
+    // ChartPanManager
+    // XY PLOT
+    private ChartPanManager CPM_PLOT_XY_LC;
+    // POSITIONS
+    // tX PLOT
+    private ChartPanManager CPM_PLOT_tX_LC;
+    // tY PLOT
+    private ChartPanManager CPM_PLOT_tY_LC;
+    // tO PLOT
+    private ChartPanManager CPM_PLOT_tO_LC;
+    // VELOCITIES
+    // tVX PLOT
+    private ChartPanManager CPM_PLOT_tVX_LC;
+    // tVY PLOT
+    private ChartPanManager CPM_PLOT_tVY_LC;
+    // tWO PLOT
+    private ChartPanManager CPM_PLOT_tWO_LC;
+    // MOTORS
+    // MOTOR 1 - tW1 PLOT
+    private ChartPanManager CPM_PLOT_tW1_LC;
+    // MOTOR 2 - tW2 PLOT
+    private ChartPanManager CPM_PLOT_tW2_LC;
+    // MOTOR 3 - tW3 PLOT
+    private ChartPanManager CPM_PLOT_tW3_LC;
+    // MOTOR 4 - tW4 PLOT
+    private ChartPanManager CPM_PLOT_tW4_LC;
+    // BATTERY
+    // VOLTAGE
+    private ChartPanManager CPM_PLOT_BATT_tV_LC;
+    // INTENSITY
+    private ChartPanManager CPM_PLOT_BATT_tI_LC;
+
+
     // PLOTS - CHARTS
     // XY PLOT
     @FXML
     private LineChart PLOT_XY_LC;
+    @FXML
+    private StableTicksAxis PLOT_XY_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_XY_NAxis_Y;
     // POSITIONS
     // tX PLOT
     @FXML
     private LineChart PLOT_tX_LC;
     @FXML
-    private NumberAxis PLOT_tX_NAxis_X;
+    private StableTicksAxis PLOT_tX_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tX_NAxis_Y;
     // tY PLOT
     @FXML
     private LineChart PLOT_tY_LC;
     @FXML
-    private NumberAxis PLOT_tY_NAxis_X;
+    private StableTicksAxis PLOT_tY_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tY_NAxis_Y;
     // tO PLOT
     @FXML
     private LineChart PLOT_tO_LC;
     @FXML
-    private NumberAxis PLOT_tO_NAxis_X;
+    private StableTicksAxis PLOT_tO_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tO_NAxis_Y;
     // VELOCITIES
     // tVX PLOT
     @FXML
     private LineChart PLOT_tVX_LC;
     @FXML
-    private NumberAxis PLOT_tVX_NAxis_X;
+    private StableTicksAxis PLOT_tVX_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tVX_NAxis_Y;
     // tVY PLOT
     @FXML
     private LineChart PLOT_tVY_LC;
     @FXML
-    private NumberAxis PLOT_tVY_NAxis_X;
+    private StableTicksAxis PLOT_tVY_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tVY_NAxis_Y;
     // tWO PLOT
     @FXML
     private LineChart PLOT_tWO_LC;
     @FXML
-    private NumberAxis PLOT_tWO_NAxis_X;
+    private StableTicksAxis PLOT_tWO_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tWO_NAxis_Y;
     // MOTORS
     // MOTOR 1 - tW1 PLOT
     @FXML
     private LineChart PLOT_tW1_LC;
     @FXML
-    private NumberAxis PLOT_tW1_NAxis_X;
+    private StableTicksAxis PLOT_tW1_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tW1_NAxis_Y;
     // MOTOR 2 - tW2 PLOT
     @FXML
     private LineChart PLOT_tW2_LC;
     @FXML
-    private NumberAxis PLOT_tW2_NAxis_X;
+    private StableTicksAxis PLOT_tW2_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tW2_NAxis_Y;
     // MOTOR 3 - tW3 PLOT
     @FXML
     private LineChart PLOT_tW3_LC;
     @FXML
-    private NumberAxis PLOT_tW3_NAxis_X;
+    private StableTicksAxis PLOT_tW3_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tW3_NAxis_Y;
     // MOTOR 4 - tW4 PLOT
     @FXML
     private LineChart PLOT_tW4_LC;
     @FXML
-    private NumberAxis PLOT_tW4_NAxis_X;
+    private StableTicksAxis PLOT_tW4_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_tW4_NAxis_Y;
     // BATTERY
     // VOLTAGE
     @FXML
     private LineChart PLOT_BATT_tV_LC;
     @FXML
-    private NumberAxis PLOT_BATT_tV_NAxis_X;
+    private StableTicksAxis PLOT_BATT_tV_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_BATT_tV_NAxis_Y;
     // INTENSITY
     @FXML
     private LineChart PLOT_BATT_tI_LC;
     @FXML
-    private NumberAxis PLOT_BATT_tI_NAxis_X;
+    private StableTicksAxis PLOT_BATT_tI_NAxis_X;
+    @FXML
+    private StableTicksAxis PLOT_BATT_tI_NAxis_Y;
 
     // DATA SERIES
     // XY PLOT
@@ -292,210 +369,6 @@ public class HelloController {
     }
 
 
-    private void initPlots() {
-        // DATA SERIES
-        // XT PLOT
-        PLOT_XY_DT_BEACONS.setName("Beacons");
-        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[0], Beacons[1]));
-        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[2], Beacons[3]));
-        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[4], Beacons[5]));
-        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[6], Beacons[7]));
-
-        PLOT_XY_DT_REF.setName("Reference");
-        PLOT_XY_DT_OUT.setName("Output");
-        PLOT_XY_DT_OUT_NOW.setName("REMOVE");
-        PLOT_XY_DT_CAM.setName("Camera");
-
-        // POSITIONS
-        // tX PLOT
-        PLOT_tX_DT_REF.setName("Reference");
-        PLOT_tX_DT_OUT.setName("Output");
-        PLOT_tX_DT_CAM.setName("Camera");
-
-        PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(0,0));
-        PLOT_tX_NAxis_X.setAutoRanging(false);
-        PLOT_tX_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tX_NAxis_X.setMinorTickCount(10);
-
-        // tY PLOT
-        PLOT_tY_DT_REF.setName("Reference");
-        PLOT_tY_DT_OUT.setName("Output");
-        PLOT_tY_DT_CAM.setName("Camera");
-
-        PLOT_tY_NAxis_X.setAutoRanging(false);
-        PLOT_tY_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tY_NAxis_X.setMinorTickCount(10);
-
-        // tO PLOT
-        PLOT_tO_DT_REF.setName("Reference");
-        PLOT_tO_DT_OUT.setName("Output");
-        PLOT_tO_DT_CAM.setName("Camera");
-
-        PLOT_tO_NAxis_X.setAutoRanging(false);
-        PLOT_tO_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tO_NAxis_X.setMinorTickCount(10);
-
-        // VELOCITIES
-        // tVX PLOT
-        PLOT_tVX_DT_REF.setName("Reference");
-        PLOT_tVX_DT_OUT.setName("Output");
-        PLOT_tVX_NAxis_X.setAutoRanging(false);
-        PLOT_tVX_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tVX_NAxis_X.setMinorTickCount(10);
-        // tVY PLOT
-        PLOT_tVY_DT_REF.setName("Reference");
-        PLOT_tVY_DT_OUT.setName("Output");
-        PLOT_tVY_NAxis_X.setAutoRanging(false);
-        PLOT_tVY_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tVY_NAxis_X.setMinorTickCount(10);
-        // tWO PLOT
-        PLOT_tWO_DT_REF.setName("Reference");
-        PLOT_tWO_DT_OUT.setName("Output");
-        PLOT_tWO_NAxis_X.setAutoRanging(false);
-        PLOT_tWO_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tWO_NAxis_X.setMinorTickCount(10);
-        // MOTORS
-        // MOTOR 1 - tW1 PLOT
-        PLOT_tW1_DT_REF.setName("Reference");
-        PLOT_tW1_DT_OUT.setName("Output");
-        PLOT_tW1_NAxis_X.setAutoRanging(false);
-        PLOT_tW1_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tW1_NAxis_X.setMinorTickCount(10);
-        // MOTOR 2 - tW2 PLOT
-        PLOT_tW2_DT_REF.setName("Reference");
-        PLOT_tW2_DT_OUT.setName("Output");
-        PLOT_tW2_NAxis_X.setAutoRanging(false);
-        PLOT_tW2_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tW2_NAxis_X.setMinorTickCount(10);
-        // MOTOR 3 - tW1 PLOT
-        PLOT_tW3_DT_REF.setName("Reference");
-        PLOT_tW3_DT_OUT.setName("Output");
-        PLOT_tW3_NAxis_X.setAutoRanging(false);
-        PLOT_tW3_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tW3_NAxis_X.setMinorTickCount(10);
-        // MOTOR 4 - tW4 PLOT
-        PLOT_tW4_DT_REF.setName("Reference");
-        PLOT_tW4_DT_OUT.setName("Output");
-        PLOT_tW4_NAxis_X.setAutoRanging(false);
-        PLOT_tW4_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_tW4_NAxis_X.setMinorTickCount(10);
-        // BATTERY
-        // VOLTAGE
-        PLOT_BATT_tV_DT_OUT.setName("Output");
-        PLOT_BATT_tV_NAxis_X.setAutoRanging(false);
-        PLOT_BATT_tV_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_BATT_tV_NAxis_X.setMinorTickCount(10);
-        // INTENSITY
-        PLOT_BATT_tI_DT_OUT.setName("Output");
-        PLOT_BATT_tI_NAxis_X.setAutoRanging(false);
-        PLOT_BATT_tI_NAxis_X.setTickUnit(ComPeriod * 10);
-        PLOT_BATT_tI_NAxis_X.setMinorTickCount(10);
-
-        // ASSOCIATE DATASERIES TO CHARTS
-        // XY PLOT
-        PLOT_XY_LC.getData().add(PLOT_XY_DT_BEACONS);
-        PLOT_XY_LC.getData().add(PLOT_XY_DT_REF);
-        PLOT_XY_LC.getData().add(PLOT_XY_DT_OUT);
-        PLOT_XY_LC.getData().add(PLOT_XY_DT_CAM);
-        // POSITIONS
-        // tX PLOT
-        PLOT_tX_LC.getData().add(PLOT_tX_DT_REF);
-        PLOT_tX_LC.getData().add(PLOT_tX_DT_OUT);
-        PLOT_tX_LC.getData().add(PLOT_tX_DT_CAM);
-
-        // tY PLOT
-        PLOT_tY_LC.getData().add(PLOT_tY_DT_REF);
-        PLOT_tY_LC.getData().add(PLOT_tY_DT_OUT);
-        PLOT_tY_LC.getData().add(PLOT_tY_DT_CAM);
-
-        // tO PLOT
-        PLOT_tO_LC.getData().add(PLOT_tO_DT_REF);
-        PLOT_tO_LC.getData().add(PLOT_tO_DT_OUT);
-        PLOT_tO_LC.getData().add(PLOT_tO_DT_CAM);
-
-        // VELOCITIES
-        // tVX PLOT
-        PLOT_tVX_LC.getData().add(PLOT_tVX_DT_REF);
-        PLOT_tVX_LC.getData().add(PLOT_tVX_DT_OUT);
-        // tVY PLOT
-        PLOT_tVY_LC.getData().add(PLOT_tVY_DT_REF);
-        PLOT_tVY_LC.getData().add(PLOT_tVY_DT_OUT);
-        // tWO PLOT
-        PLOT_tWO_LC.getData().add(PLOT_tWO_DT_REF);
-        PLOT_tWO_LC.getData().add(PLOT_tWO_DT_OUT);
-        // MOTORS
-        // MOTOR 1 - tW1 PLOT
-        PLOT_tW1_LC.getData().add(PLOT_tW1_DT_REF);
-        PLOT_tW1_LC.getData().add(PLOT_tW1_DT_OUT);
-        // MOTOR 2 - tW2 PLOT
-        PLOT_tW2_LC.getData().add(PLOT_tW2_DT_REF);
-        PLOT_tW2_LC.getData().add(PLOT_tW2_DT_OUT);
-        // MOTOR 3 - tW3 PLOT
-        PLOT_tW3_LC.getData().add(PLOT_tW3_DT_REF);
-        PLOT_tW3_LC.getData().add(PLOT_tW3_DT_OUT);
-        // MOTOR 4 - tW4 PLOT
-        PLOT_tW4_LC.getData().add(PLOT_tW4_DT_REF);
-        PLOT_tW4_LC.getData().add(PLOT_tW4_DT_OUT);
-        // BATTERY
-        // VOLTAGE
-        PLOT_BATT_tV_LC.getData().add(PLOT_BATT_tV_DT_OUT);
-        // INTENSITY
-        PLOT_BATT_tI_LC.getData().add(PLOT_BATT_tI_DT_OUT);
-
-        reset_plot_view();
-
-        // FILTERING LEGEND
-
-    }
-
-    private void reset_plot_view(){
-        // CLEAR DATA SERIES
-        // XY PLOT
-        PLOT_XY_DT_OUT_NOW.getData().clear();
-        PLOT_XY_DT_REF.getData().clear();
-        PLOT_XY_DT_OUT.getData().clear();
-        // POSITIONS
-        // tX PLOT
-        PLOT_tX_DT_REF.getData().clear();
-        PLOT_tX_DT_OUT.getData().clear();
-        // tY PLOT
-        PLOT_tY_DT_REF.getData().clear();
-        PLOT_tY_DT_OUT.getData().clear();
-        // tO PLOT
-        PLOT_tO_DT_REF.getData().clear();
-        PLOT_tO_DT_OUT.getData().clear();
-        // VELOCITIES
-        // tVX PLOT
-        PLOT_tVX_DT_REF.getData().clear();
-        PLOT_tVX_DT_OUT.getData().clear();
-        // tVY PLOT
-        PLOT_tVY_DT_REF.getData().clear();
-        PLOT_tVY_DT_OUT.getData().clear();
-        // tWO PLOT
-        PLOT_tWO_DT_REF.getData().clear();
-        PLOT_tWO_DT_OUT.getData().clear();
-        // MOTORS
-        // MOTOR 1 - tW1 PLOT
-        PLOT_tW1_DT_REF.getData().clear();
-        PLOT_tW1_DT_OUT.getData().clear();
-        // MOTOR 2 - tW2 PLOT
-        PLOT_tW2_DT_REF.getData().clear();
-        PLOT_tW2_DT_OUT.getData().clear();
-        // MOTOR 3 - tW3 PLOT
-        PLOT_tW3_DT_REF.getData().clear();
-        PLOT_tW3_DT_OUT.getData().clear();
-        // MOTOR 4 - tW4 PLOT
-        PLOT_tW4_DT_REF.getData().clear();
-        PLOT_tW4_DT_OUT.getData().clear();
-        // BATTERY
-        // VOLTAGE
-        PLOT_BATT_tV_DT_OUT.getData().clear();
-        // INTENSITY
-        PLOT_BATT_tI_DT_OUT.getData().clear();
-
-        // SET AXIS
-        set_Plot_View(0, WINDOW_SIZE * ComPeriod);
-    }
 
     private void auto_select_Mode_View() {
         Manual_Mode.setDisable(true);
@@ -532,7 +405,7 @@ public class HelloController {
 
             BTN_StartStop.setText("START");
             enable_UI_interaction();
-            set_Plot_View(0, WINDOW_COUNTER * ComPeriod);
+            set_Plot_View_X(0, WINDOW_COUNTER * ComPeriod);
         } else {
             disable_UI_interaction();
 
@@ -583,48 +456,7 @@ public class HelloController {
         }
     }
 
-    private void set_Plot_View(double low, double up) {
-        // SET AXIS
-        // tX PLOT
-        PLOT_tX_NAxis_X.setLowerBound(low);
-        PLOT_tX_NAxis_X.setUpperBound(up);
-        // tY PLOT
-        PLOT_tY_NAxis_X.setLowerBound(low);
-        PLOT_tY_NAxis_X.setUpperBound(up);
-        // tO PLOT
-        PLOT_tO_NAxis_X.setLowerBound(low);
-        PLOT_tO_NAxis_X.setUpperBound(up);
-        // VELOCITIES
-        // tVX PLOT
-        PLOT_tVX_NAxis_X.setLowerBound(low);
-        PLOT_tVX_NAxis_X.setUpperBound(up);
-        // tVY PLOT
-        PLOT_tVY_NAxis_X.setLowerBound(low);
-        PLOT_tVY_NAxis_X.setUpperBound(up);
-        // tWO PLOT
-        PLOT_tWO_NAxis_X.setLowerBound(low);
-        PLOT_tWO_NAxis_X.setUpperBound(up);
-        // MOTORS
-        // MOTOR 1 - tW1 PLOT
-        PLOT_tW1_NAxis_X.setLowerBound(low);
-        PLOT_tW1_NAxis_X.setUpperBound(up);
-        // MOTOR 2 - tW2 PLOT
-        PLOT_tW2_NAxis_X.setLowerBound(low);
-        PLOT_tW2_NAxis_X.setUpperBound(up);
-        // MOTOR 3 - tW1 PLOT
-        PLOT_tW3_NAxis_X.setLowerBound(low);
-        PLOT_tW3_NAxis_X.setUpperBound(up);
-        // MOTOR 4 - tW4 PLOT
-        PLOT_tW4_NAxis_X.setLowerBound(low);
-        PLOT_tW4_NAxis_X.setUpperBound(up);
-        // BATTERY
-        // VOLTAGE
-        PLOT_BATT_tV_NAxis_X.setLowerBound(low);
-        PLOT_BATT_tV_NAxis_X.setUpperBound(up);
-        // INTENSITY
-        PLOT_BATT_tI_NAxis_X.setLowerBound(low);
-        PLOT_BATT_tI_NAxis_X.setUpperBound(up);
-    }
+
 
 
     // https://stackoverflow.com/questions/1881714/how-to-start-stop-restart-a-thread-in-java
@@ -648,8 +480,8 @@ public class HelloController {
             CAM_Counter++;
         }
 
-//        Double X = rand.nextDouble();
-//        Double Y = rand.nextDouble();
+        Double X = rand.nextDouble();
+        Double Y = rand.nextDouble();
 
 
         if(CAM_NEW_DATA = cameraUDPMessageListener.isFresh_data()) CameraStateGet = cameraUDPMessageListener.getCameraStateIN();
@@ -658,9 +490,9 @@ public class HelloController {
         Platform.runLater(() -> {
 
             // put random number with current time
-//            PLOT_XY_DT_REF.getData().add(new XYChart.Data<>(X, Y));
-//            PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, X));
-//            PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, Y));
+            PLOT_XY_DT_REF.getData().add(new XYChart.Data<>(X, Y));
+            PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, X));
+            PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, Y));
 
             if(CAM_NEW_DATA) {
                 PLOT_XY_DT_CAM.getData().add(new XYChart.Data<>(CameraStateGet.X, CameraStateGet.Y));
@@ -674,7 +506,7 @@ public class HelloController {
 //            }
 
             if (WINDOW_MOD_COUNTER >= WINDOW_SIZE) {
-                set_Plot_View((WINDOW_COUNTER * ComPeriod), ((WINDOW_COUNTER + WINDOW_MOD_COUNTER) * ComPeriod));
+                set_Plot_View_X((WINDOW_COUNTER * ComPeriod), ((WINDOW_COUNTER + WINDOW_MOD_COUNTER) * ComPeriod));
                 WINDOW_MOD_COUNTER = 0;
             }
         });
@@ -962,7 +794,9 @@ public class HelloController {
         config_JSON_Object.put(Beacons_Key, Beacons);
         config_JSON_Object.put(IP_Key, IPV4_Address);
         config_JSON_Object.put(UDP_Key, UDP_Ports);
-        System.out.println();
+        config_JSON_Object.put(CAM_IP_Key, CAM_IPV4_Address);
+        config_JSON_Object.put(CAM_UDP_Key, CAM_UDP_Port);
+        config_JSON_Object.put(CAM_DP_Key, CAM_DecimPeriod_Trigger);
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(config_JSON_Name, false));) {
             bw.write(config_JSON_Object.toString());
             //Guardamos los cambios del fichero
@@ -1005,6 +839,7 @@ public class HelloController {
                             obj = possible_config_JSON_Object.get(IP_Key);
                             if (obj instanceof String) {
                                 IPV4_Address = (String) obj;
+                                if(!InetAddressValidator.getInstance().isValidInet4Address(IPV4_Address)) throw new Exception(IP_Key + " has not valid IP address: " + IPV4_Address);
                             } else throw new Exception(IP_Key + " has not the expected type");
                         } else throw new Exception("The " + IP_Key + "has not present");
 
@@ -1016,12 +851,36 @@ public class HelloController {
                                 for (int i = 0; i < UDP_Ports.length; i++) {
                                     try {
                                         UDP_Ports[i] = aux.getInt(i);
+                                        if(!isPortInDomain(UDP_Ports[i])) throw new Exception(UDP_Key + " has not valid port");
                                     } catch (Exception e) {
                                         throw new Exception(UDP_Key + " has not the expected type in the element " + i + " of array");
                                     }
                                 }
                             } else throw new Exception(UDP_Key + " has not the expected type");
                         } else throw new Exception("The " + UDP_Key + "has not present");
+
+                        if (possible_config_JSON_Object.has(CAM_IP_Key)) {
+                            obj = possible_config_JSON_Object.get(CAM_IP_Key);
+                            if (obj instanceof String) {
+                                CAM_IPV4_Address = (String) obj;
+                                if(!InetAddressValidator.getInstance().isValidInet4Address(CAM_IPV4_Address)) throw new Exception(CAM_IP_Key + " has not valid IP address: " + CAM_IPV4_Address);
+                            } else throw new Exception(CAM_IP_Key + " has not the expected type");
+                        } else throw new Exception("The " + CAM_IP_Key + "has not present");
+
+                        if (possible_config_JSON_Object.has(CAM_UDP_Key)) {
+                            obj = possible_config_JSON_Object.get(CAM_UDP_Key);
+                            if (obj instanceof Integer) {
+                                CAM_UDP_Port = (Integer) obj;
+                                if(!isPortInDomain(CAM_UDP_Port)) throw new Exception(CAM_UDP_Key + " has not valid port");
+                            } else throw new Exception(CAM_UDP_Key + " has not the expected type");
+                        } else throw new Exception("The " + CAM_UDP_Key + "has not present");
+
+                        if (possible_config_JSON_Object.has(CAM_DP_Key)) {
+                            obj = possible_config_JSON_Object.get(CAM_DP_Key);
+                            if (obj instanceof Integer) {
+                                CAM_DecimPeriod_Trigger = (Integer) obj;
+                            } else throw new Exception(CAM_DP_Key + " has not the expected type");
+                        } else throw new Exception("The " + CAM_DP_Key + "has not present");
 
                     } catch (JSONException err) {
                         // Show Error Alert loading config
@@ -1101,6 +960,692 @@ public class HelloController {
     @FXML
     private void CB_CAM_Action(){
         CAM_Enabled = CB_CAM_Enabled.isSelected();
+    }
+
+    // PLOTS
+
+    private void initPlots() {
+        // DATA SERIES
+        // XT PLOT
+        PLOT_XY_DT_BEACONS.setName("Beacons");
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[0], Beacons[1]));
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[2], Beacons[3]));
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[4], Beacons[5]));
+        PLOT_XY_DT_BEACONS.getData().add(new XYChart.Data( Beacons[6], Beacons[7]));
+
+        PLOT_XY_DT_REF.setName("Reference");
+        PLOT_XY_DT_OUT.setName("Output");
+        PLOT_XY_DT_OUT_NOW.setName("REMOVE");
+        PLOT_XY_DT_CAM.setName("Camera");
+
+        // POSITIONS
+        // tX PLOT
+        PLOT_tX_DT_REF.setName("Reference");
+        PLOT_tX_DT_OUT.setName("Output");
+        PLOT_tX_DT_CAM.setName("Camera");
+
+        PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(0,0));
+
+        // tY PLOT
+        PLOT_tY_DT_REF.setName("Reference");
+        PLOT_tY_DT_OUT.setName("Output");
+        PLOT_tY_DT_CAM.setName("Camera");
+
+        // tO PLOT
+        PLOT_tO_DT_REF.setName("Reference");
+        PLOT_tO_DT_OUT.setName("Output");
+        PLOT_tO_DT_CAM.setName("Camera");
+
+        // VELOCITIES
+        // tVX PLOT
+        PLOT_tVX_DT_REF.setName("Reference");
+        PLOT_tVX_DT_OUT.setName("Output");
+
+        // tVY PLOT
+        PLOT_tVY_DT_REF.setName("Reference");
+        PLOT_tVY_DT_OUT.setName("Output");
+
+        // tWO PLOT
+        PLOT_tWO_DT_REF.setName("Reference");
+        PLOT_tWO_DT_OUT.setName("Output");
+
+        // MOTORS
+        // MOTOR 1 - tW1 PLOT
+        PLOT_tW1_DT_REF.setName("Reference");
+        PLOT_tW1_DT_OUT.setName("Output");
+
+        // MOTOR 2 - tW2 PLOT
+        PLOT_tW2_DT_REF.setName("Reference");
+        PLOT_tW2_DT_OUT.setName("Output");
+
+        // MOTOR 3 - tW1 PLOT
+        PLOT_tW3_DT_REF.setName("Reference");
+        PLOT_tW3_DT_OUT.setName("Output");
+
+        // MOTOR 4 - tW4 PLOT
+        PLOT_tW4_DT_REF.setName("Reference");
+        PLOT_tW4_DT_OUT.setName("Output");
+
+        // BATTERY
+        // VOLTAGE
+        PLOT_BATT_tV_DT_OUT.setName("Output");
+
+        // INTENSITY
+        PLOT_BATT_tI_DT_OUT.setName("Output");
+
+        // ASSOCIATE DATASERIES TO CHARTS
+        // XY PLOT
+        PLOT_XY_LC.getData().add(PLOT_XY_DT_BEACONS);
+        PLOT_XY_LC.getData().add(PLOT_XY_DT_REF);
+        PLOT_XY_LC.getData().add(PLOT_XY_DT_OUT);
+        PLOT_XY_LC.getData().add(PLOT_XY_DT_CAM);
+        // POSITIONS
+        // tX PLOT
+        PLOT_tX_LC.getData().add(PLOT_tX_DT_REF);
+        PLOT_tX_LC.getData().add(PLOT_tX_DT_OUT);
+        PLOT_tX_LC.getData().add(PLOT_tX_DT_CAM);
+
+        // tY PLOT
+        PLOT_tY_LC.getData().add(PLOT_tY_DT_REF);
+        PLOT_tY_LC.getData().add(PLOT_tY_DT_OUT);
+        PLOT_tY_LC.getData().add(PLOT_tY_DT_CAM);
+
+        // tO PLOT
+        PLOT_tO_LC.getData().add(PLOT_tO_DT_REF);
+        PLOT_tO_LC.getData().add(PLOT_tO_DT_OUT);
+        PLOT_tO_LC.getData().add(PLOT_tO_DT_CAM);
+
+        // VELOCITIES
+        // tVX PLOT
+        PLOT_tVX_LC.getData().add(PLOT_tVX_DT_REF);
+        PLOT_tVX_LC.getData().add(PLOT_tVX_DT_OUT);
+        // tVY PLOT
+        PLOT_tVY_LC.getData().add(PLOT_tVY_DT_REF);
+        PLOT_tVY_LC.getData().add(PLOT_tVY_DT_OUT);
+        // tWO PLOT
+        PLOT_tWO_LC.getData().add(PLOT_tWO_DT_REF);
+        PLOT_tWO_LC.getData().add(PLOT_tWO_DT_OUT);
+        // MOTORS
+        // MOTOR 1 - tW1 PLOT
+        PLOT_tW1_LC.getData().add(PLOT_tW1_DT_REF);
+        PLOT_tW1_LC.getData().add(PLOT_tW1_DT_OUT);
+        // MOTOR 2 - tW2 PLOT
+        PLOT_tW2_LC.getData().add(PLOT_tW2_DT_REF);
+        PLOT_tW2_LC.getData().add(PLOT_tW2_DT_OUT);
+        // MOTOR 3 - tW3 PLOT
+        PLOT_tW3_LC.getData().add(PLOT_tW3_DT_REF);
+        PLOT_tW3_LC.getData().add(PLOT_tW3_DT_OUT);
+        // MOTOR 4 - tW4 PLOT
+        PLOT_tW4_LC.getData().add(PLOT_tW4_DT_REF);
+        PLOT_tW4_LC.getData().add(PLOT_tW4_DT_OUT);
+        // BATTERY
+        // VOLTAGE
+        PLOT_BATT_tV_LC.getData().add(PLOT_BATT_tV_DT_OUT);
+        // INTENSITY
+        PLOT_BATT_tI_LC.getData().add(PLOT_BATT_tI_DT_OUT);
+
+        reset_plot_view();
+
+        // Axis
+        PLOT_tX_NAxis_X.setAutoRangePadding(0);
+
+        // ZOOM AND MOVE
+        Scene.addEventFilter(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if(!isRunningService){
+                    if (event.getCode() == KeyCode.CONTROL) Zoom = true;
+                }
+            }
+        });
+
+        Scene.addEventFilter(KeyEvent.KEY_RELEASED, new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                if (event.getCode() == KeyCode.CONTROL) Zoom = false;
+            }
+        });
+
+        // ZOOM AND MOVE
+        // XY PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_XY_LC = new ChartPanManager(PLOT_XY_LC);
+        CPM_PLOT_XY_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_XY_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_XY_LC);
+        PLOT_XY_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_XY_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_XY_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_XY_LC.getYAxis().setAutoRanging( true );
+                    PLOT_XY_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // POSITIONS
+        // tX PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tX_LC = new ChartPanManager(PLOT_tX_LC);
+        CPM_PLOT_tX_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tX_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tX_LC);
+        PLOT_tX_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tX_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tX_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tX_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tX_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // tY PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tY_LC = new ChartPanManager(PLOT_tY_LC);
+        CPM_PLOT_tY_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tY_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tY_LC);
+        PLOT_tY_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tY_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tY_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tY_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tY_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+
+        // tO PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tO_LC = new ChartPanManager(PLOT_tO_LC);
+        CPM_PLOT_tO_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tO_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tO_LC);
+        PLOT_tO_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tO_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tO_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tO_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tO_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // VELOCITIES
+        // tVX PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tVX_LC = new ChartPanManager(PLOT_tVX_LC);
+        CPM_PLOT_tVX_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tVX_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tVX_LC);
+        PLOT_tVX_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tVX_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tVX_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tVX_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tVX_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // tVY PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tVY_LC = new ChartPanManager(PLOT_tVY_LC);
+        CPM_PLOT_tVY_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tVY_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tVY_LC);
+        PLOT_tVY_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tVY_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tVY_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tVY_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tVY_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // tWO PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tWO_LC = new ChartPanManager(PLOT_tWO_LC);
+        CPM_PLOT_tWO_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tWO_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tWO_LC);
+        PLOT_tWO_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tWO_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tWO_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tWO_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tWO_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // MOTORS
+        // MOTOR 1 - tW1 PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tW1_LC = new ChartPanManager(PLOT_tW1_LC);
+        CPM_PLOT_tW1_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tW1_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tW1_LC);
+        PLOT_tW1_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tW1_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tW1_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tW1_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tW1_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // MOTOR 2 - tW2 PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tW2_LC = new ChartPanManager(PLOT_tW2_LC);
+        CPM_PLOT_tW2_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tW2_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tW2_LC);
+        PLOT_tW2_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tW2_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tW2_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tW2_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tW2_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // MOTOR 3 - tW3 PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tW3_LC = new ChartPanManager(PLOT_tW3_LC);
+        CPM_PLOT_tW3_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tW3_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tW3_LC);
+        PLOT_tW3_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tW3_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tW3_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tW3_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tW3_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // MOTOR 4 - tW4 PLOT
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_tW4_LC = new ChartPanManager(PLOT_tW4_LC);
+        CPM_PLOT_tW4_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_tW4_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_tW4_LC);
+        PLOT_tW4_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_tW4_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_tW4_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_tW4_LC.getYAxis().setAutoRanging( true );
+                    PLOT_tW4_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // BATTERY
+        // VOLTAGE
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_BATT_tV_LC = new ChartPanManager(PLOT_BATT_tV_LC);
+        CPM_PLOT_BATT_tV_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_BATT_tV_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_BATT_tV_LC);
+        PLOT_BATT_tV_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_BATT_tV_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_BATT_tV_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_BATT_tV_LC.getYAxis().setAutoRanging( true );
+                    PLOT_BATT_tV_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+
+        // INTENSITY
+        //Panning works via either secondary (right) mouse or primary with ctrl held down
+        CPM_PLOT_BATT_tI_LC = new ChartPanManager(PLOT_BATT_tI_LC);
+        CPM_PLOT_BATT_tI_LC.setMouseFilter( new EventHandler<MouseEvent>() {
+            @Override
+            public void handle( MouseEvent mouseEvent ) {
+                                if (Zoom && mouseEvent.getButton() == MouseButton.PRIMARY) {
+                } else {
+                    mouseEvent.consume();
+                }
+            }
+        } );
+        CPM_PLOT_BATT_tI_LC.start();
+
+        //Zooming works only via primary mouse button with ctrl held down
+        JFXChartUtil.setupZooming(PLOT_BATT_tI_LC);
+        PLOT_BATT_tI_LC.setOnScroll(event -> {
+            if(!Zoom) event.consume();
+        });
+        PLOT_BATT_tI_LC.setOnDragDetected(event -> {
+            event.consume();
+        });
+
+        PLOT_BATT_tI_LC.setOnMouseClicked(event -> {
+            if(isRunningService) event.consume();
+            else {
+                if ( event.getClickCount() == 2 && event.getButton() == MouseButton.PRIMARY ) {
+                    PLOT_BATT_tI_LC.getYAxis().setAutoRanging( true );
+                    PLOT_BATT_tI_LC.getXAxis().setAutoRanging( true );
+                }
+            }
+        });
+    }
+
+    private void reset_plot_view(){
+        // CLEAR DATA SERIES
+        // XY PLOT
+        PLOT_XY_DT_OUT_NOW.getData().clear();
+        PLOT_XY_DT_REF.getData().clear();
+        PLOT_XY_DT_OUT.getData().clear();
+        // POSITIONS
+        // tX PLOT
+        PLOT_tX_DT_REF.getData().clear();
+        PLOT_tX_DT_OUT.getData().clear();
+        // tY PLOT
+        PLOT_tY_DT_REF.getData().clear();
+        PLOT_tY_DT_OUT.getData().clear();
+        // tO PLOT
+        PLOT_tO_DT_REF.getData().clear();
+        PLOT_tO_DT_OUT.getData().clear();
+        // VELOCITIES
+        // tVX PLOT
+        PLOT_tVX_DT_REF.getData().clear();
+        PLOT_tVX_DT_OUT.getData().clear();
+        // tVY PLOT
+        PLOT_tVY_DT_REF.getData().clear();
+        PLOT_tVY_DT_OUT.getData().clear();
+        // tWO PLOT
+        PLOT_tWO_DT_REF.getData().clear();
+        PLOT_tWO_DT_OUT.getData().clear();
+        // MOTORS
+        // MOTOR 1 - tW1 PLOT
+        PLOT_tW1_DT_REF.getData().clear();
+        PLOT_tW1_DT_OUT.getData().clear();
+        // MOTOR 2 - tW2 PLOT
+        PLOT_tW2_DT_REF.getData().clear();
+        PLOT_tW2_DT_OUT.getData().clear();
+        // MOTOR 3 - tW3 PLOT
+        PLOT_tW3_DT_REF.getData().clear();
+        PLOT_tW3_DT_OUT.getData().clear();
+        // MOTOR 4 - tW4 PLOT
+        PLOT_tW4_DT_REF.getData().clear();
+        PLOT_tW4_DT_OUT.getData().clear();
+        // BATTERY
+        // VOLTAGE
+        PLOT_BATT_tV_DT_OUT.getData().clear();
+        // INTENSITY
+        PLOT_BATT_tI_DT_OUT.getData().clear();
+
+        // AXIS
+        PLOT_tX_NAxis_X.setAutoRanging(false);
+        PLOT_tY_NAxis_X.setAutoRanging(false);
+        PLOT_tO_NAxis_X.setAutoRanging(false);
+        PLOT_tVX_NAxis_X.setAutoRanging(false);
+        PLOT_tVY_NAxis_X.setAutoRanging(false);
+        PLOT_tWO_NAxis_X.setAutoRanging(false);
+        PLOT_tW1_NAxis_X.setAutoRanging(false);
+        PLOT_tW2_NAxis_X.setAutoRanging(false);
+        PLOT_tW3_NAxis_X.setAutoRanging(false);
+        PLOT_tW4_NAxis_X.setAutoRanging(false);
+        PLOT_BATT_tV_NAxis_X.setAutoRanging(false);
+        PLOT_BATT_tI_NAxis_X.setAutoRanging(false);
+
+        // SET AXIS
+        set_Plot_View_X(0, WINDOW_SIZE * ComPeriod);
+    }
+
+    private void set_Plot_View_X(double low, double up) {
+        // SET AXIS
+        // tX PLOT
+        PLOT_tX_NAxis_X.setLowerBound(low);
+        PLOT_tX_NAxis_X.setUpperBound(up);
+        // tY PLOT
+        PLOT_tY_NAxis_X.setLowerBound(low);
+        PLOT_tY_NAxis_X.setUpperBound(up);
+        // tO PLOT
+        PLOT_tO_NAxis_X.setLowerBound(low);
+        PLOT_tO_NAxis_X.setUpperBound(up);
+        // VELOCITIES
+        // tVX PLOT
+        PLOT_tVX_NAxis_X.setLowerBound(low);
+        PLOT_tVX_NAxis_X.setUpperBound(up);
+        // tVY PLOT
+        PLOT_tVY_NAxis_X.setLowerBound(low);
+        PLOT_tVY_NAxis_X.setUpperBound(up);
+        // tWO PLOT
+        PLOT_tWO_NAxis_X.setLowerBound(low);
+        PLOT_tWO_NAxis_X.setUpperBound(up);
+        // MOTORS
+        // MOTOR 1 - tW1 PLOT
+        PLOT_tW1_NAxis_X.setLowerBound(low);
+        PLOT_tW1_NAxis_X.setUpperBound(up);
+        // MOTOR 2 - tW2 PLOT
+        PLOT_tW2_NAxis_X.setLowerBound(low);
+        PLOT_tW2_NAxis_X.setUpperBound(up);
+        // MOTOR 3 - tW1 PLOT
+        PLOT_tW3_NAxis_X.setLowerBound(low);
+        PLOT_tW3_NAxis_X.setUpperBound(up);
+        // MOTOR 4 - tW4 PLOT
+        PLOT_tW4_NAxis_X.setLowerBound(low);
+        PLOT_tW4_NAxis_X.setUpperBound(up);
+        // BATTERY
+        // VOLTAGE
+        PLOT_BATT_tV_NAxis_X.setLowerBound(low);
+        PLOT_BATT_tV_NAxis_X.setUpperBound(up);
+        // INTENSITY
+        PLOT_BATT_tI_NAxis_X.setLowerBound(low);
+        PLOT_BATT_tI_NAxis_X.setUpperBound(up);
     }
 
 
