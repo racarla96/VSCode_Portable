@@ -16,6 +16,8 @@ import javafx.scene.input.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import org.apache.commons.validator.routines.InetAddressValidator;
 
 import java.io.*;
@@ -355,6 +357,14 @@ public class HelloController {
     // TIMER - UI
     // https://stackoverflow.com/questions/16128423/how-to-update-the-label-box-every-2-seconds-in-java-fx
 
+    // EXPERIMENT STORE VARIABLES
+    private double EXP_CAM_OFF_X;
+    private double EXP_CAM_OFF_Y;
+    private double EXP_ComPeriod;
+    private int EXP_CAM_DecimPeriod_Trigger;
+    private Double EXP_Beacons[] = new Double[2*Number_Beacons]; // Default values to zero
+    ArrayList<ExperimentState> experiment = new ArrayList<ExperimentState>(); // Create an ArrayList object
+
     public HelloController() {}
 
     @FXML
@@ -416,6 +426,13 @@ public class HelloController {
             enable_UI_interaction();
             set_Plot_View_X(0, WINDOW_COUNTER * ComPeriod);
         } else {
+
+            EXP_CAM_OFF_X = CAM_OFF_X;
+            EXP_CAM_OFF_Y = CAM_OFF_Y;
+            EXP_ComPeriod = ComPeriod;
+            EXP_CAM_DecimPeriod_Trigger = CAM_DecimPeriod_Trigger;
+            EXP_Beacons = Beacons;
+
             disable_UI_interaction();
 
             reset_plot_view();
@@ -537,7 +554,7 @@ public class HelloController {
             }
 
             if(CAM_NEW_DATA) {
-                PLOT_XY_DT_CAM.getData().add(new XYChart.Data<>(CameraStateGet.X, CameraStateGet.Y));
+                PLOT_XY_DT_CAM.getData().add(new XYChart.Data<>(CAM_OFF_X + CameraStateGet.X,CAM_OFF_Y + CameraStateGet.Y));
                 PLOT_tX_DT_CAM.getData().add(new XYChart.Data<>(t, CAM_OFF_X + CameraStateGet.X));
                 PLOT_tY_DT_CAM.getData().add(new XYChart.Data<>(t, CAM_OFF_Y + CameraStateGet.Y));
                 PLOT_tO_DT_CAM.getData().add(new XYChart.Data<>(t, CameraStateGet.O));
@@ -552,6 +569,41 @@ public class HelloController {
                 WINDOW_MOD_COUNTER = 0;
             }
         });
+
+        ExperimentState a = new ExperimentState(t);
+        if(ROBOT_NEW_DATA){
+            a.setODOM_X(robotStateIn.X);
+            a.setODOM_Y(robotStateIn.Y);
+            a.setODOM_O(robotStateIn.O);
+
+            a.setODOM_VX(robotStateIn.VX);
+            a.setODOM_VY(robotStateIn.VY);
+            a.setODOM_WO(robotStateIn.WO);
+
+            a.setODOM_W1(robotStateIn.W1);
+            a.setODOM_W2(robotStateIn.W2);
+            a.setODOM_W3(robotStateIn.W3);
+            a.setODOM_W4(robotStateIn.W4);
+
+            a.setBV(robotStateIn.BV);
+            a.setBI(robotStateIn.BI);
+
+            a.setR_X(robotStateIn.R_VX);
+            a.setR_Y(robotStateIn.R_VY);
+            a.setR_O(robotStateIn.R_WO);
+
+            a.setR_W1(robotStateIn.R_W1);
+            a.setR_W2(robotStateIn.R_W2);
+            a.setR_W3(robotStateIn.R_W3);
+            a.setR_W4(robotStateIn.R_W4);
+        }
+        if(CAM_NEW_DATA) {
+            a.setCAM_X(CameraStateGet.X);
+            a.setCAM_Y(CameraStateGet.Y);
+            a.setCAM_O(CameraStateGet.O);
+        }
+
+        experiment.add(a);
 
         t += ComPeriod;
         WINDOW_MOD_COUNTER += 1;
@@ -1752,6 +1804,141 @@ public class HelloController {
         PLOT_BATT_tI_NAxis_X.setUpperBound(up);
     }
 
+    // SAVE AND LOAD EXPERIMENTS
+    @FXML
+    private void BTN_Save_Experiment_Action(){
+        if(experiment.isEmpty()){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Info");
+            alert.setContentText("No experiment for save.");
+            alert.showAndWait();
+            LoadDefaultConfig();
+            return;
+        }
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Save Experiment");
+        File file = fileChooser.showSaveDialog((Stage) Scene.getScene().getWindow());
+        if (file != null) {
+            try {
+                JSONObject exp_config = new JSONObject();
+                exp_config.put("EXP_CAM_OFF_X", EXP_CAM_OFF_X);
+                exp_config.put("EXP_CAM_OFF_Y", EXP_CAM_OFF_Y);
+                exp_config.put("EXP_ComPeriod", EXP_ComPeriod);
+                exp_config.put("EXP_CAM_DP", EXP_CAM_DecimPeriod_Trigger);
+                exp_config.put("EXP_Beacons", EXP_Beacons);
+
+                PrintWriter writer;
+                writer = new PrintWriter(file);
+                writer.println(exp_config.toString());
+                writer.println(experiment.get(0).Header());
+                for (int i = 0; i<experiment.size(); i++) writer.println(experiment.get(i).toString());
+                writer.close();
+            } catch (IOException ex) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Info");
+                alert.setContentText("No experiment for save.");
+                alert.showAndWait();
+                LoadDefaultConfig();
+            }
+        }
+
+    }
+    @FXML
+    private void BTN_Load_Experiment_Action(){
+        reset_plot_view();
+
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Load Experiment");
+        File file = fileChooser.showOpenDialog((Stage) Scene.getScene().getWindow());
+        if (file != null) {
+            BufferedReader reader;
+            try {
+                reader = new BufferedReader(new FileReader(file));
+                String line = reader.readLine();
+                JSONObject jsonObject = new JSONObject(line);
+                CAM_OFF_X = jsonObject.getDouble("EXP_CAM_OFF_X");
+                CAM_OFF_Y = jsonObject.getDouble("EXP_CAM_OFF_Y");
+                ComPeriod = jsonObject.getDouble("EXP_ComPeriod");
+                CAM_DecimPeriod_Trigger = jsonObject.getInt("EXP_CAM_DP");
+                JSONArray array = jsonObject.getJSONArray("EXP_Beacons");
+                if(array.length() == 8) {
+                    for (int i = 0; i < Beacons.length; i++) {
+                        Beacons[i] = array.getDouble(i);
+                    }
+                } else throw new Exception();
+                line = reader.readLine(); // REMOVE CSV HEADER
+                line = reader.readLine();
+                while (line != null) {
+                    String[] line_split = line.split(",");
+                    if(line_split.length == 26){
+                        Double t = Double.parseDouble(line_split[0]);
+                        ExperimentState a = new ExperimentState(t);
+                        a.setState(line_split);
+
+                        if (!Double.isNaN(a.CAM_X)) CAM_NEW_DATA = true;
+                        else CAM_NEW_DATA = false;
+
+                        if (!Double.isNaN(a.ODOM_X)) ROBOT_NEW_DATA = true;
+                        else ROBOT_NEW_DATA = false;
+
+                        if(ROBOT_NEW_DATA){
+                            PLOT_XY_DT_OUT.getData().add(new XYChart.Data<>(a.ODOM_X, a.ODOM_Y));
+
+                            PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_X));
+                            PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_Y));
+                            PLOT_tO_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_O));
+
+                            PLOT_tX_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_X));
+                            PLOT_tY_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_Y));
+                            PLOT_tO_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_O));
+
+                            PLOT_tVX_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_VX));
+                            PLOT_tVY_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_VY));
+                            PLOT_tWO_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_WO));
+
+                            PLOT_tW1_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_W1));
+                            PLOT_tW2_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_W2));
+                            PLOT_tW3_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_W3));
+                            PLOT_tW4_DT_OUT.getData().add(new XYChart.Data<>(t, a.ODOM_W4));
+
+                            PLOT_BATT_tV_DT_OUT.getData().add(new XYChart.Data<>(t, a.BV));
+                            PLOT_BATT_tI_DT_OUT.getData().add(new XYChart.Data<>(t, a.BI));
+
+                            PLOT_tVX_DT_REF.getData().add(new XYChart.Data<>(t, a.R_VX));
+                            PLOT_tVY_DT_REF.getData().add(new XYChart.Data<>(t, a.R_VY));
+                            PLOT_tWO_DT_REF.getData().add(new XYChart.Data<>(t, a.R_WO));
+
+                            PLOT_tW1_DT_REF.getData().add(new XYChart.Data<>(t, a.R_W1));
+                            PLOT_tW2_DT_REF.getData().add(new XYChart.Data<>(t, a.R_W2));
+                            PLOT_tW3_DT_REF.getData().add(new XYChart.Data<>(t, a.R_W3));
+                            PLOT_tW4_DT_REF.getData().add(new XYChart.Data<>(t, a.R_W4));
+                        }
+
+                        if(CAM_NEW_DATA) {
+                            PLOT_XY_DT_CAM.getData().add(new XYChart.Data<>(CAM_OFF_X + a.CAM_X, CAM_OFF_Y + a.CAM_Y));
+                            PLOT_tX_DT_CAM.getData().add(new XYChart.Data<>(t, CAM_OFF_X + a.CAM_X));
+                            PLOT_tY_DT_CAM.getData().add(new XYChart.Data<>(t, CAM_OFF_Y + a.CAM_Y));
+                            PLOT_tO_DT_CAM.getData().add(new XYChart.Data<>(t, a.CAM_O));
+                        }
+                    }
+                    line = reader.readLine();
+                }
+                reader.close();
+            } catch (Exception e) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Info");
+                alert.setContentText("Error loading experiment.");
+                alert.showAndWait();
+                LoadDefaultConfig();
+            }
+
+            ROBOT_NEW_DATA = false;
+            CAM_NEW_DATA = false;
+        }
+    }
 
     // UTILS
     private Double Double_Validation(String possible_double_str) {

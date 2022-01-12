@@ -522,6 +522,15 @@
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                        </padding>
                                     </VBox>
+                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" spacing="5.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#BTN_Save_Experiment_Action" text="Save experiment" />
+                                          <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#BTN_Load_Experiment_Action" text="Load experiment" />
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </HBox>
                                     <HBox alignment="BOTTOM_LEFT" maxHeight="35.0" minHeight="35.0" prefHeight="35.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                                        <children>
                                           <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#BTN_Save_Config_Action" text="Save config" />

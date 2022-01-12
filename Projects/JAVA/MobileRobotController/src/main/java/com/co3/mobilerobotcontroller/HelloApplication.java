@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
         stage.setMinWidth(640+20);
         stage.setMinHeight(480+40);
 
-        stage.setTitle("Hello!");
+        stage.setTitle("Robot Remote Controller");
         stage.setScene(scene);
         stage.show();
     }
